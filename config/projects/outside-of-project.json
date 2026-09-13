@@ -1,0 +1,12 @@
+{
+  "id": "outside-of-project",
+  "name": "Outside of Project",
+  "permissionGrants": {
+    "permissionGrants": {
+      "allow": [
+        "command(git status)",
+        "command(choco list --local-only)"
+      ]
+    }
+  }
+}

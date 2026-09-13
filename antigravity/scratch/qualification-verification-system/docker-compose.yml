@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  # 1. PostgreSQL Database Service
+  postgres-db:
+    image: postgres:15-alpine
+    container_name: qvs-postgres-db
+    environment:
+      POSTGRES_DB: qvs_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - qvs-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d qvs_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - qvs-network
+
+  # 2. Spring Boot Qualification Verification Application
+  qvs-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: qvs-backend-app
+    depends_on:
+      postgres-db:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-db:5432/qvs_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgrespassword
+      APP_JWT_SECRET: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    ports:
+      - "8080:8080"
+    networks:
+      - qvs-network
+    restart: unless-stopped
+
+networks:
+  qvs-network:
+    driver: bridge
+
+volumes:
+  qvs-pgdata:
+    driver: local

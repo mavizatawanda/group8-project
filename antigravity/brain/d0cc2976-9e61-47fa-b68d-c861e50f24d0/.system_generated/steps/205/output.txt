@@ -1,0 +1,12 @@
+Task: d0cc2976-9e61-47fa-b68d-c861e50f24d0/task-199
+Status: RUNNING
+Log: C:\Users\Madziva\.gemini\antigravity\brain\d0cc2976-9e61-47fa-b68d-c861e50f24d0\.system_generated\tasks\task-199.log
+Log output:
+<truncated 156 lines>
+ Start completed.
+2026-09-06T19:21:51.115+02:00  WARN 16428 --- [qualification-verification-system] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-06T19:21:53.704+02:00  INFO 16428 --- [qualification-verification-system] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-06T19:21:53.937+02:00  INFO 16428 --- [qualification-verification-system] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-06T19:21:54.923+02:00  INFO 16428 --- [qualification-verification-system] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+
+Last progress: 0s ago

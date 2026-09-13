@@ -1,0 +1,150 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\static\css\style.css. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1247,9 +1247,141 @@
+ .form-label {
+     display: block;
+     font-size: 0.85rem;
+-    font-weight: 700;
+-    color: #334155;
+-    margin-bottom: 0.35rem;
++    font-weight: 600;
++    color: #334155;
++    margin-bottom: 0.4rem;
++    letter-spacing: -0.01em;
++}
++
++/* Auth Page & Form Presentation */
++.auth-page-wrapper {
++    flex: 1;
++    display: flex;
++    align-items: center;
++    justify-content: center;
++    padding: 3.5rem 1.5rem;
++    min-height: calc(100vh - 140px);
++    background: radial-gradient(circle at 50% 10%, #eff6ff 0%, #f8fafc 55%, #f1f5f9 100%);
++}
++
++.auth-card {
++    width: 100%;
++    max-width: 520px;
++    margin: 0 auto;
++    background: #ffffff;
++    border-radius: 20px;
++    border: 1px solid rgba(226, 232, 240, 0.9);
++    box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(226, 232, 240, 0.6);
++    padding: 2.5rem;
++    position: relative;
++}
++
++.auth-icon-badge {
++    width: 56px;
++    height: 56px;
++    border-radius: 16px;
++    background: linear-gradient(135deg, rgba(37, 99, 235, 0.12) 0%, rgba(79, 70, 229, 0.12) 100%);
++    border: 1.5px solid rgba(37, 99, 235, 0.2);
++    font-size: 1.85rem;
++    display: flex;
++    align-items: center;
++    justify-content: center;
++    margin: 0 auto 1.25rem;
++    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
++}
++
++.auth-title {
++    font-size: 1.6rem;
++    font-weight: 800;
++    text-align: center;
++    margin-bottom: 0.45rem;
++    color: #0f172a;
++    letter-spacing: -0.025em;
++}
++
++.auth-subtitle {
++    color: #64748b;
++    text-align: center;
++    font-size: 0.9rem;
++    margin-bottom: 1.75rem;
++    line-height: 1.5;
++}
++
++.demo-matrix-box {
++    margin-top: 1.75rem;
++    background: #f8fafc;
++    border: 1px solid #e2e8f0;
++    border-radius: 14px;
++    padding: 1.25rem;
++}
++
++.demo-matrix-header {
++    display: flex;
++    justify-content: space-between;
++    align-items: center;
++    font-size: 0.825rem;
++    font-weight: 700;
++    color: #1e293b;
++    margin-bottom: 0.85rem;
++}
++
++.demo-item {
++    background: #ffffff;
++    border: 1.5px solid #e2e8f0;
++    border-radius: 10px;
++    padding: 0.75rem 0.85rem;
++    margin-bottom: 0.65rem;
++    transition: all 0.2s ease;
++}
++
++.demo-item:hover {
++    border-color: #cbd5e1;
++    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
++}
++
++.demo-fill-btn {
++    cursor: pointer;
++    background: transparent;
++    border: none;
++    width: 100%;
++    text-align: left;
++    display: flex;
++    justify-content: space-between;
++    align-items: center;
++    font-size: 0.85rem;
++    font-weight: 600;
++    color: #1e293b;
++    padding: 0;
++    margin-bottom: 0.35rem;
++}
++
++.role-tag {
++    font-size: 0.72rem;
++    font-family: 'JetBrains Mono', monospace;
++    font-weight: 600;
++    padding: 0.15rem 0.5rem;
++    border-radius: 6px;
++    background: #eff6ff;
++    color: #1d4ed8;
++    border: 1px solid #dbeafe;
++}
++
++.role-tag-verifier {
++    background: #ecfdf5;
++    color: #047857;
++    border-color: #a7f3d0;
++}
++
++.role-tag-officer {
++    background: #eff6ff;
++    color: #1d4ed8;
++    border-color: #bfdbfe;
++}
++
++.role-tag-admin {
++    background: #f5f3ff;
++    color: #6d28d9;
++    border-color: #ddd6fe;
+ }
+ 
+ .ai-scan-output-card {
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

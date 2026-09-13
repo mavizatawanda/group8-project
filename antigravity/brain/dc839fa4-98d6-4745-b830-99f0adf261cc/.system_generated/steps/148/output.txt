@@ -1,0 +1,16 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -149,8 +149,8 @@
+                 <div class="step-card">
+                     <div class="step-badge">Step 3</div>
+                     <div class="step-icon">🔍</div>
+-                    <h3 class="step-title">Instant Verification</h3>
+-                    <p class="step-desc">Employers and institutions verify the certificate serial number. The system performs real-time hash matching, blockchain validation, and AI fraud risk scoring.</p>
++                    <h3 class="step-title">Authorized Verification</h3>
++                    <p class="step-desc">Accredited verifiers, employers and institutions sign in to verify certificate serial numbers, inspect SHA-256 digital hashes, and evaluate real-time AI fraud risk scores.</p>
+                 </div>
+             </div>
+         </div>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

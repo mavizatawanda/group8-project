@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+{
+    "reply":  "?? **Official Registry \u0026 Blockchain AI Record for Itai Muringani (`ZOU-2023-ITM-190020`)**:\n\n�?� **Status**: �?\u0085 **Active (Genuine \u0026 Valid)**\n�?� **Degree / Award**: Bachelor of Science Honours in Information Technology (Network Administration \u0026 Cloud Systems)\n�?� **Classification**: First Class Honours\n�?� **Awarding Institution**: Zimbabwe Open University\n�?� **Award Date**: 2023-11-24\n�?� **Student ID**: ITM 190020\n�?� **AI Fraud Score**: **90/100 (LOW RISK)**\n�?� **AI Recommendation**: ACCEPT CREDENTIAL: Full confidence in academic authenticity and digital integrity.",
+    "intent":  "VERIFY_ACTIVE",
+    "status":  "SUCCESS",
+    "timestamp":  "2026-09-12T21:57:50.3398272"
+}
+

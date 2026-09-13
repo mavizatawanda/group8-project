@@ -1,0 +1,59 @@
+
+The command exited with code 0.
+Output:
+<truncated 168 lines>
+2026-09-06T19:22:00.385+02:00  INFO 16428 --- [qualification-verification-system] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-09-06T19:22:00.385+02:00  INFO 16428 --- [qualification-verification-system] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-06T19:22:00.388+02:00  INFO 16428 --- [qualification-verification-system] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-09-06T19:22:00.506+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.q.c.AuthControllerIntegrationTest    : Started AuthControllerIntegrationTest in 16.963 seconds (process running for 19.553)
+2026-09-06T19:22:00.598+02:00  INFO 16428 --- [qualification-verification-system] [           main] com.devops.qvs.config.DataInitializer    : Initializing Sample DevOps Qualification Data & Blockchain Blocks...
+2026-09-06T19:22:01.105+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #1 mined on QVS Ledger for Cert [QVS-2024-BSC-8891]. Hash: 5e00a8d423a864eb20b47593cbaca8b28369d4a18c660806e1377ec1efcf5a6b
+2026-09-06T19:22:01.115+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #2 mined on QVS Ledger for Cert [QVS-2023-MSC-4412]. Hash: 9a52f4d1fd7d07846ae04e09f97a9940bfd61c8f4789f7deb8f840929fd1fd9f
+2026-09-06T19:22:01.125+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #3 mined on QVS Ledger for Cert [QVS-2022-DIP-1109]. Hash: 39c843371d0b854e759488bce9a072ff3f25a4c7452bdb432eae7e4c00233741
+2026-09-06T19:22:01.126+02:00  INFO 16428 --- [qualification-verification-system] [           main] com.devops.qvs.config.DataInitializer    : Sample qualification data & blockchain ledger successfully initialized.
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.98 s -- in com.devops.qvs.controller.AuthControllerIntegrationTest
+[INFO] Running com.devops.qvs.controller.QualificationControllerIntegrationTest
+2026-09-06T19:22:03.444+02:00  INFO 16428 --- [qualification-verification-system] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.devops.qvs.controller.QualificationControllerIntegrationTest]: QualificationControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-06T19:22:03.452+02:00  INFO 16428 --- [qualification-verification-system] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.devops.qvs.QualificationVerificationApplication for test class com.devops.qvs.controller.QualificationControllerIntegrationTest
+2026-09-06T19:22:04.495+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #4 mined on QVS Ledger for Cert [CERT-INT-1788715324269]. Hash: be7d1916e6cb88349d8b53cae921594b069125479d578f9e0c67140798400cc1
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.072 s -- in com.devops.qvs.controller.QualificationControllerIntegrationTest
+[INFO] Running com.devops.qvs.controller.VerificationControllerIntegrationTest
+2026-09-06T19:22:04.524+02:00  INFO 16428 --- [qualification-verification-system] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.devops.qvs.controller.VerificationControllerIntegrationTest]: VerificationControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-06T19:22:04.529+02:00  INFO 16428 --- [qualification-verification-system] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.devops.qvs.QualificationVerificationApplication for test class com.devops.qvs.controller.VerificationControllerIntegrationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.203 s -- in com.devops.qvs.controller.VerificationControllerIntegrationTest
+[INFO] Running com.devops.qvs.service.AiFraudDetectionServiceTest
+2026-09-06T19:22:05.704+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.qvs.service.AiFraudDetectionService  : Agentic AI Fraud Detection initiated for certificate: QVS-2022-DIP-1109
+2026-09-06T19:22:05.820+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.qvs.service.AiFraudDetectionService  : Agentic AI Fraud Detection initiated for certificate: QVS-2024-BSC-8891
+2026-09-06T19:22:05.831+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.qvs.service.AiFraudDetectionService  : Agentic AI Fraud Detection initiated for certificate: FAKE-999
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.097 s -- in com.devops.qvs.service.AiFraudDetectionServiceTest
+[INFO] Running com.devops.qvs.service.AuditLogServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.419 s -- in com.devops.qvs.service.AuditLogServiceTest
+[INFO] Running com.devops.qvs.service.BlockchainLedgerServiceTest
+2026-09-06T19:22:06.482+02:00 ERROR 16428 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Blockchain corruption detected at Block #1: expected hash e802311a19b2c28b28e6aa530cd37d6ab05380c468dbe84921e83877880320f8 but found 7f1c54cc46a9928a819442d1d75781151d09714a63d0af14a8ce34c48abbbc0c
+2026-09-06T19:22:06.493+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Initializing Blockchain Genesis Block for Qualification Verification System...
+2026-09-06T19:22:06.494+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Genesis block successfully forged. Block Hash: d3231869c68fb295cc7f7055dc0d0ae40726afe459a25d77f538887de8ea2e83
+2026-09-06T19:22:06.520+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #1 mined on QVS Ledger for Cert [QVS-2024-TEST-001]. Hash: 724e6257fa9d94e572b9e0a73891282c1e9f8c9292224280c6ea388183e3b0c0
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.250 s -- in com.devops.qvs.service.BlockchainLedgerServiceTest
+[INFO] Running com.devops.qvs.service.CryptoHashServiceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s -- in com.devops.qvs.service.CryptoHashServiceTest
+[INFO] Running com.devops.qvs.service.QualificationServiceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.545 s -- in com.devops.qvs.service.QualificationServiceTest
+[INFO] Running com.devops.qvs.service.VerificationServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s -- in com.devops.qvs.service.VerificationServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.11:report (report) @ qualification-verification-system ---
+[INFO] Loading execution data file C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\target\jacoco.exec
+[INFO] Analyzed bundle 'qualification-verification-system' with 64 classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  33.075 s
+[INFO] Finished at: 2026-09-06T19:22:09+02:00
+[INFO] ------------------------------------------------------------------------
+

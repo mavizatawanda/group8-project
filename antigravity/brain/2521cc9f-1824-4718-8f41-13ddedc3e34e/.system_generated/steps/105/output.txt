@@ -1,0 +1,19 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\login.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -70,8 +70,12 @@
+ 
+                 <!-- Officer Role -->
+                 <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 0.75rem; margin-bottom: 0.75rem;">
++                    <button type="button" class="chip-btn chip-neutral" style="text-align: left; width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;" onclick="document.getElementById('username').value='officer_zou';document.getElementById('password').value='Officer@12345';">
++                        <span>🏛️ <strong>ZOU Registrar Officer</strong> (Zimbabwe Open University)</span>
++                        <span style="font-size: 0.75rem; font-family: monospace;">officer_zou</span>
++                    </button>
+                     <button type="button" class="chip-btn chip-neutral" style="text-align: left; width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;" onclick="document.getElementById('username').value='officer';document.getElementById('password').value='Officer@12345';">
+-                        <span>🏛️ <strong>Registrar Officer</strong> (Accredited University Registrar)</span>
++                        <span>🏛️ <strong>NIT Registrar Officer</strong> (National Institute of Tech)</span>
+                         <span style="font-size: 0.75rem; font-family: monospace;">officer</span>
+                     </button>
+                     <div style="font-size: 0.75rem; color: #475569; padding-left: 0.5rem; line-height: 1.4;">
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

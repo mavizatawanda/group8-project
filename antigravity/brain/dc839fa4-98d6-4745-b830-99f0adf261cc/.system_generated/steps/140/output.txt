@@ -1,0 +1,152 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -62,120 +62,32 @@
+                 an immutable on-chain cryptographic ledger, and agentic AI anomaly heuristics.
+             </p>
+ 
+-            <!-- Verification Search Card -->
+-            <div class="search-box-wrapper" id="verifySection">
+-                <div class="search-card">
+-                    <div class="search-card-header">
+-                        <label for="verificationInput" class="search-label">
+-                            🔍 Instant Credential & Blockchain Lookup
+-                        </label>
+-                        <span class="search-hint">Enter Certificate ID or SHA-256 Hash</span>
+-                    </div>
+-
+-                    <div class="input-group">
+-                        <input type="text" id="verificationInput" class="input-control" placeholder="e.g. QVS-2024-BSC-8891" autofocus>
+-                        <button class="btn-primary btn-search" onclick="verifyCredential()">
+-                            <span>Verify Authenticity</span> ➔
+-                        </button>
+-                    </div>
+-
+-                    <!-- Quick Test Chips -->
+-                    <div class="quick-test-bar">
+-                        <span class="quick-test-label">Demo Records:</span>
+-                        <button class="chip-btn chip-success" onclick="verifyCredential('QVS-2024-BSC-8891')">
+-                            ✓ Sarah Jenkins (Active BSc)
+-                        </button>
+-                        <button class="chip-btn chip-success" onclick="verifyCredential('QVS-2023-MSC-4412')">
+-                            ✓ David Miller (Active MSc)
+-                        </button>
+-                        <button class="chip-btn chip-danger" onclick="verifyCredential('QVS-2022-DIP-1109')">
+-                            ⚠ Marcus Vance (Revoked)
+-                        </button>
+-                        <button class="chip-btn chip-neutral" onclick="verifyCredential('FAKE-INVALID-999')">
+-                            ✕ Fake Certificate
+-                        </button>
+-                    </div>
+-                </div>
+-            </div>
+-
+-            <!-- Loading Spinner -->
+-            <div id="loadingIndicator" class="loading-box" style="display: none;">
+-                <div class="spinner"></div>
+-                <p>Querying institutional registry, verifying SHA-256 hash, and validating blockchain block consensus...</p>
+-            </div>
+-
+-            <!-- Verification Result Card -->
+-            <div id="resultCard" class="result-card" style="display: none;">
+-                <div class="result-header">
+-                    <div>
+-                        <span class="result-eyebrow">Official Verification Response</span>
+-                        <h2 id="resultTitle" class="result-title">Verification Outcome</h2>
+-                        <p id="statusMessage" class="result-desc"></p>
+-                    </div>
+-                    <span id="statusBadge" class="status-badge status-badge-success">GENUINE</span>
+-                </div>
+-
+-                <div id="certDetails" class="cert-details-body">
+-                    <!-- Credential Data Grid -->
+-                    <div class="credential-grid">
+-                        <div class="data-card">
+-                            <span class="data-label">Graduate Full Name</span>
+-                            <span class="data-value" id="resStudentName">-</span>
+-                        </div>
+-                        <div class="data-card">
+-                            <span class="data-label">Student ID / Registry Ref</span>
+-                            <span class="data-value" id="resStudentId">-</span>
+-                        </div>
+-                        <div class="data-card">
+-                            <span class="data-label">Award Title & Degree</span>
+-                            <span class="data-value" id="resAwardTitle">-</span>
+-                        </div>
+-                        <div class="data-card">
+-                            <span class="data-label">Major / Specialization</span>
+-                            <span class="data-value" id="resSpecialization">-</span>
+-                        </div>
+-                        <div class="data-card">
+-                            <span class="data-label">Grade / Honors</span>
+-                            <span class="data-value" id="resClassification">-</span>
+-                        </div>
+-                        <div class="data-card">
+-                            <span class="data-label">Awarding Institution</span>
+-                            <span class="data-value" id="resInstitution">-</span>
+-                        </div>
+-                        <div class="data-card">
+-                            <span class="data-label">Conferment Date</span>
+-                            <span class="data-value" id="resAwardDate">-</span>
+-                        </div>
+-                        <div class="data-card">
+-                            <span class="data-label">Certificate Serial Number</span>
+-                            <span class="data-value font-mono" id="resCertNumber">-</span>
+-                        </div>
+-                    </div>
+-
+-                    <!-- Cryptographic Proof Box -->
+-                    <div class="crypto-proof-box">
+-                        <div class="proof-header">
+-                            <span>🔒 Tamper-Evident SHA-256 Digital Fingerprint</span>
+-                            <span class="verified-tag">✓ Cryptographically Intact</span>
+-                        </div>
+-                        <div class="hash-code" id="resFingerprint">-</div>
+-                    </div>
+-
+-                    <!-- AI Fraud Assessment Preview Banner -->
+-                    <div class="ai-assessment-box" id="resAiAssessmentBox">
+-                        <div class="ai-box-header">
+-                            <span class="ai-icon">🤖</span>
+-                            <div>
+-                                <strong>Agentic AI Fraud Risk Assessment:</strong>
+-                                <span id="resAiRiskBadge" class="ai-badge ai-badge-low">LOW RISK (100/100)</span>
+-                            </div>
+-                        </div>
+-                        <p id="resAiExplanation" class="ai-box-text">All heuristic risk vectors verified: zero payload modification, active institutional accreditation, and authentic chronological issuance.</p>
+-                    </div>
+-
+-                    <div class="result-footer">
+-                        <span>Audit Log ID: <strong id="resAuditId">AUDIT-0</strong></span>
+-                        <span>Consensus Node: <strong>QVS-VALIDATOR-01 (UK Cloud)</strong></span>
++            <!-- Authorized Verification Access Gateway Box -->
++            <div class="search-box-wrapper" id="authPortalHeroCard">
++                <div class="search-card" style="text-align: center; padding: 2.75rem 2rem;">
++                    <div style="display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: rgba(37, 99, 235, 0.1); border-radius: 18px; margin-bottom: 1.25rem; font-size: 2rem;">
++                        🛡️
++                    </div>
++                    <h2 style="font-size: 1.6rem; font-weight: 800; color: #0f172a; margin-bottom: 0.6rem;">
++                        Authorized Credential Verification Console
++                    </h2>
++                    <p style="color: #64748b; font-size: 1rem; max-width: 620px; margin: 0 auto 1.75rem; line-height: 1.6;">
++                        Instant credential verification and cryptographic blockchain inspections are strictly restricted to authorized entities. Please log in with an accredited Verifier, Partner Institution, or Administrator account to verify qualifications.
++                    </p>
++
++                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
++                        <a href="/login?notice=verify_required" class="btn-primary" style="font-size: 1rem; padding: 0.9rem 1.85rem;">
++                            <span>🔐 Sign In to Verify Credentials</span> ➔
++                        </a>
++                        <a href="/dashboard?tab=verifyTab" class="btn-outline" style="font-size: 1rem; padding: 0.9rem 1.85rem;">
++                            Access Portal Dashboard
++                        </a>
++                    </div>
++
++                    <div style="margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid #f1f5f9; display: flex; justify-content: center; gap: 1.75rem; font-size: 0.85rem; color: #475569; flex-wrap: wrap;">
++                        <span>🔒 <strong>Role-Gated</strong> Verification Engine</span>
++                        <span>⛓️ <strong>SHA-256</strong> Blockchain Consensus</span>
++                        <span>🤖 <strong>Agentic AI</strong> Fraud Detection</span>
+                     </div>
+                 </div>
+             </div>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

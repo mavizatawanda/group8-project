@@ -1,0 +1,2 @@
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\target\\classes\\templates\\audit.html","LineNumber":21,"LineContent":"                \u003ca href=\"/login\" class=\"btn-nav-action\"\u003eLogin\u003c/a\u003e"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\resources\\templates\\audit.html","LineNumber":21,"LineContent":"                \u003ca href=\"/login\" class=\"btn-nav-action\"\u003eLogin\u003c/a\u003e"}

@@ -1,0 +1,1 @@
+{"id":"63c98a20-4e5a-4258-adb5-a87d9c4e0215","recipient":"dbeb5914-02b0-421e-b3f2-bf49be569d2f","sender":"dbeb5914-02b0-421e-b3f2-bf49be569d2f/task-74","priority":"MESSAGE_PRIORITY_HIGH","timestamp":"2026-09-03T16:21:55.910430400Z","renderDetails":{"messageTitle":"Wait for app startup: Timer has expired"},"content":"Check Spring Boot application startup status"}

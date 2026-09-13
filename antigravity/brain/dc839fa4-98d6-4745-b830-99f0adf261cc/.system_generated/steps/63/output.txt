@@ -1,0 +1,23 @@
+Task: dc839fa4-98d6-4745-b830-99f0adf261cc/task-48
+Status: RUNNING
+Log: C:\Users\Madziva\.gemini\antigravity\brain\dc839fa4-98d6-4745-b830-99f0adf261cc\.system_generated\tasks\task-48.log
+Log output:
+<truncated 122 lines>
+anges detected - recompiling the module! :source
+[INFO] Compiling 51 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ qualification-verification-system ---
+[INFO] skip non existing resourceDirectory C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ qualification-verification-system ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 9 source files with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ qualification-verification-system ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+
+Last progress: 2s ago

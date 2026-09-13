@@ -1,0 +1,1 @@
+{"id":"12d48c11-2b3e-4ea6-94ee-cb0f621aec6e","recipient":"dbeb5914-02b0-421e-b3f2-bf49be569d2f","sender":"dbeb5914-02b0-421e-b3f2-bf49be569d2f/task-310","priority":"MESSAGE_PRIORITY_HIGH","timestamp":"2026-09-05T19:59:42.535285900Z","renderDetails":{"messageTitle":"Wait for server startup: Timer has expired"},"content":"Check Spring Boot startup status"}

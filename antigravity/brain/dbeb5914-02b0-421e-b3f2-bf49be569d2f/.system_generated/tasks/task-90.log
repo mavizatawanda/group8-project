@@ -1,0 +1,7 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-05T09:25:26+02:00
+Prompt: Check Spring Boot startup status
+Early Termination: never
+
+[2026-09-05T09:25:21+02:00] Still waiting. Remaining time: 5s
+[2026-09-05T09:25:26+02:00] Timer fired.

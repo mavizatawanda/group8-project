@@ -1,0 +1,1 @@
+{"id":"47e45849-ef72-405d-bcca-b435a84f5a68","recipient":"dbeb5914-02b0-421e-b3f2-bf49be569d2f","sender":"dbeb5914-02b0-421e-b3f2-bf49be569d2f/task-38","priority":"MESSAGE_PRIORITY_HIGH","timestamp":"2026-09-03T16:16:30.535854Z","renderDetails":{"messageTitle":"Wait for compile: Timer has expired"},"content":"Check if mvn test-compile has completed"}

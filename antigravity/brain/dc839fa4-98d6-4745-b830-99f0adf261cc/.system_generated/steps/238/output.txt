@@ -1,0 +1,22 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -75,13 +75,11 @@
+                         Instant credential verification and cryptographic blockchain inspections are strictly restricted to authorized entities. Please log in with an accredited Verifier, Partner Institution, or Administrator account to verify qualifications.
+                     </p>
+ 
+-                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+-                        <a href="/login?notice=verify_required" class="btn-primary" style="font-size: 1rem; padding: 0.9rem 1.85rem;">
++                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;">
++                        <a href="/login?notice=verify_required" class="btn-primary" style="font-size: 1.05rem; padding: 1rem 2.25rem;">
+                             <span>🔐 Sign In to Verify Credentials</span> ➔
+                         </a>
+-                        <a href="/dashboard?tab=verifyTab" class="btn-outline" style="font-size: 1rem; padding: 0.9rem 1.85rem;">
+-                            Access Portal Dashboard
+-                        </a>
++                        <span style="font-size: 0.85rem; color: #64748b;">Requires accredited Verifier, Institution Officer, or Administrator credentials</span>
+                     </div>
+ 
+                     <div style="margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid #f1f5f9; display: flex; justify-content: center; gap: 1.75rem; font-size: 0.85rem; color: #475569; flex-wrap: wrap;">
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

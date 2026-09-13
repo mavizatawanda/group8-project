@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\static\js\app.js. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -640,7 +640,7 @@
+     if (navAuthContainer && user) {
+         const roleLabel = user.role ? user.role.replace('ROLE_', '') : 'USER';
+         navAuthContainer.innerHTML = `
+-            <span style="color: #cbd5e1; font-size: 0.85rem; margin-right: 0.5rem;">User: <strong>${user.username}</strong> <small style="color: #38bdf8;">(${roleLabel})</small></span>
++            <span style="color: #0c4a6e; font-size: 0.85rem; margin-right: 0.5rem; font-weight: 600;">User: <strong>${user.username}</strong> <small style="color: #0369a1; font-weight: 700;">(${roleLabel})</small></span>
+             <a href="/dashboard?tab=verifyTab" class="chip-btn chip-success" style="text-decoration: none; margin-right: 0.35rem;">Console</a>
+             <button class="chip-btn chip-danger" onclick="logout()">Logout</button>
+         `;
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

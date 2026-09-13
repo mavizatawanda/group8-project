@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Management & DevOps Telemetry Dashboard | QVS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css?v=skyblue">
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <div class="brand-logo">🎓</div>
+                <div class="brand-text">
+                    <span class="brand-title">DevOps QVS</span>
+                    <span class="brand-subtitle">Institution Portal</span>
+                </div>
+            </a>
+
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Verify</a>
+                <a href="/dashboard" class="nav-link active">Dashboard</a>
+                <a href="/audit" class="nav-link">Audit Trail</a>
+                <a href="/swagger-ui.html" target="_blank" class="nav-link">API Docs</a>
+                <div id="navAuthStatus" class="nav-auth">
+                    <a href="/login" class="btn-primary btn-sm">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container dashboard-main">
+        <!-- Dashboard Header -->
+        <div class="dash-header">
+            <div>
+                <h1 class="dash-title" id="dashHeaderTitle">Enterprise Credential & Verification Center</h1>
+                <p class="dash-subtitle" id="dashHeaderSubtitle">Instant qualification verification, blockchain ledger explorer, AI anomaly heuristics, and telemetry center.</p>
+            </div>
+            <button id="btnIssueQual" class="btn-primary" onclick="showIssueForm()">
+                + Issue New Qualification
+            </button>
+        </div>
+
+        <!-- Role Permission Scope Banner -->
+        <div id="roleScopeBanner" style="display: flex; justify-content: space-between; align-items: center; background: #ffffff; border: 1px solid #e2e8f0; border-left: 5px solid #2563eb; border-radius: 12px; padding: 0.9rem 1.25rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm); flex-wrap: wrap; gap: 0.75rem;">
+            <div style="display: flex; align-items: center; gap: 0.85rem;">
+                <span id="roleScopeIcon" style="font-size: 1.6rem;">🛡️</span>
+                <div>
+                    <div style="font-size: 0.95rem; font-weight: 700; color: #0f172a;" id="roleScopeTitle">Authenticated Session</div>
+                    <div style="font-size: 0.8rem; color: #64748b;" id="roleScopeDesc">Enforcing role-based access permissions...</div>
+                </div>
+            </div>
+            <div id="roleScopeBadges" style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                <!-- dynamic tags -->
+            </div>
+        </div>
+
+        <!-- Dashboard Navigation Tabs -->
+        <div class="dash-tabs">
+            <button class="dash-tab-btn active" id="tabBtnVerify" onclick="switchTab('verifyTab', this)">
+                🔍 Verify Credential
+            </button>
+            <button class="dash-tab-btn" id="tabBtnQuals" onclick="switchTab('qualificationsTab', this)">
+                📋 Qualifications Registry
+            </button>
+            <button class="dash-tab-btn" id="tabBtnBlockchain" onclick="switchTab('blockchainTab', this)">
+                ⛓️ Blockchain Ledger Explorer
+            </button>
+            <button class="dash-tab-btn" id="tabBtnAi" onclick="switchTab('aiTab', this)">
+                🤖 AI Fraud Shield & Anomaly Scanner
+            </button>
+            <button class="dash-tab-btn" id="tabBtnTelemetry" onclick="switchTab('telemetryTab', this)">
+                📊 Live Real-Time Telemetry
+            </button>
+        </div>
+
+        <!-- TAB 0: Credential Verification (Authorized Users) -->
+        <div id="verifyTab" class="tab-pane active">
+            <div class="dash-card">
+                <div class="dash-card-header">
+                    <div>
+                        <h3 style="margin: 0; font-size: 1.2rem; color: #0f172a;">🔍 Instant Credential & Blockchain Lookup</h3>
+                        <p style="margin: 0.25rem 0 0; color: #64748b; font-size: 0.85rem;">Authorized credential verification console with real-time SHA-256 digital fingerprint matching and agentic AI fraud heuristics.</p>
+                    </div>
+                    <span class="badge badge-success">Authorized Verification Console</span>
+                </div>
+
+                <div class="search-box-wrapper" style="max-width: 100%; margin: 1.5rem 0 0;">
+                    <div class="input-group">
+                        <div class="input-wrapper" style="flex: 1;">
+                            <span class="input-icon-left">🔍</span>
+                            <input type="text" id="verificationInput" class="input-control has-icon-left" placeholder="Enter Certificate ID, Student ID, or SHA-256 Hash (e.g. QVS-2024-BSC-8891, ITM 190020)" autofocus>
+                        </div>
+                        <button class="btn-primary btn-search" onclick="verifyCredential()">
+                            <span>Verify Authenticity</span> ➔
+                        </button>
+                    </div>
+
+                    <!-- Quick Test Chips -->
+                    <div class="quick-test-bar" style="margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                        <span class="quick-test-label">Demo Records:</span>
+                        <button class="chip-btn chip-success" onclick="verifyCredential('ITM 190020')">
+                            ✓ ZOU: Itai Muringani (ITM 190020 - BSc IT)
+                        </button>
+                        <button class="chip-btn chip-success" onclick="verifyCredential('EH250001')">
+                            ✓ ZOU: Sekai Mataranyika (EH250001 - PGDE '25)
+                        </button>
+                        <button class="chip-btn chip-success" onclick="verifyCredential('UZ-2024-BSC-3112')">
+                            ✓ UZ: Tendai Moyo (BSc CompSci)
+                        </button>
+                        <button class="chip-btn chip-success" onclick="verifyCredential('NUST-2025-CSC-4321')">
+                            ✓ NUST: Sibusiso Nyathi (BSc CompSci)
+                        </button>
+                        <button class="chip-btn chip-success" onclick="verifyCredential('HIT-2024-BSE-0234')">
+                            ✓ HIT: Craig Mupanduki (BTech SE)
+                        </button>
+                        <button class="chip-btn chip-success" onclick="verifyCredential('QVS-2024-BSC-8891')">
+                            ✓ Sarah Jenkins (BSc)
+                        </button>
+                        <button class="chip-btn chip-danger" onclick="verifyCredential('QVS-2022-DIP-1109')">
+                            ⚠ Marcus Vance (Revoked)
+                        </button>
+                        <button class="chip-btn chip-neutral" onclick="verifyCredential('FAKE-INVALID-999')">
+                            ✕ Fake Certificate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Loading Spinner -->
+                <div id="loadingIndicator" class="loading-box" style="display: none; margin: 1.5rem 0;">
+                    <div class="spinner"></div>
+                    <p>Querying institutional registry, verifying SHA-256 hash, and validating blockchain block consensus...</p>
+                </div>
+
+                <!-- Verification Result Card -->
+                <div id="resultCard" class="result-card" style="display: none; margin-top: 1.5rem;">
+                    <div class="result-header">
+                        <div>
+                            <span class="result-eyebrow">Official Verification Response</span>
+                            <h2 id="resultTitle" class="result-title">Verification Outcome</h2>
+                            <p id="statusMessage" class="result-desc"></p>
+                        </div>
+                        <span id="statusBadge" class="status-badge status-badge-success">GENUINE</span>
+                    </div>
+
+                    <div id="certDetails" class="cert-details-body">
+                        <!-- Credential Data Grid -->
+                        <div class="credential-grid">
+                            <div class="data-card">
+                                <span class="data-label">Graduate Full Name</span>
+                                <span class="data-value" id="resStudentName">-</span>
+                            </div>
+                            <div class="data-card">
+                                <span class="data-label">Student ID / Registry Ref</span>
+                                <span class="data-value" id="resStudentId">-</span>
+                            </div>
+                            <div class="data-card">
+                                <span class="data-label">Award Title & Degree</span>
+                                <span class="data-value" id="resAwardTitle">-</span>
+                            </div>
+                            <div class="data-card">
+                                <span class="data-label">Major / Specialization</span>
+                                <span class="data-value" id="resSpecialization">-</span>
+                            </div>
+                            <div class="data-card">
+                                <span class="data-label">Grade / Honors</span>
+                                <span class="data-value" id="resClassification">-</span>
+                            </div>
+                            <div class="data-card">
+                                <span class="data-label">Awarding Institution</span>
+                                <span class="data-value" id="resInstitution">-</span>
+                            </div>
+                            <div class="data-card">
+                                <span class="data-label">Conferment Date</span>
+                                <span class="data-value" id="resAwardDate">-</span>
+                            </div>
+                            <div class="data-card">
+                                <span class="data-label">Certificate Serial Number</span>
+                                <span class="data-value font-mono" id="resCertNumber">-</span>
+                            </div>
+                        </div>
+
+                        <!-- Cryptographic Proof Box -->
+                        <div class="crypto-proof-box">
+                            <div class="proof-header">
+                                <span>🔒 Tamper-Evident SHA-256 Digital Fingerprint</span>
+                                <span class="verified-tag">✓ Cryptographically Intact</span>
+                            </div>
+                            <div class="hash-code" id="resFingerprint">-</div>
+                        </div>
+
+                        <!-- AI Fraud Assessment Preview Banner -->
+                        <div class="ai-assessment-box" id="resAiAssessmentBox">
+                            <div class="ai-box-header">
+                                <span class="ai-icon">🤖</span>
+                                <div>
+                                    <strong>Agentic AI Fraud Risk Assessment:</strong>
+                                    <span id="resAiRiskBadge" class="ai-badge ai-badge-low">LOW RISK (100/100)</span>
+                                </div>
+                            </div>
+                            <p id="resAiExplanation" class="ai-box-text">All heuristic risk vectors verified: zero payload modification, active institutional accreditation, and authentic chronological issuance.</p>
+                        </div>
+
+                        <div class="result-footer">
+                            <span>Audit Log ID: <strong id="resAuditId">AUDIT-0</strong></span>
+                            <span>Consensus Node: <strong>QVS-VALIDATOR-01 (UK Cloud)</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 1: Qualifications Registry -->
+        <div id="qualificationsTab" class="tab-pane" style="display: none;">
+            <div class="dash-card">
+                <div class="dash-card-header">
+                    <h3 style="margin: 0; font-size: 1.15rem; color: #0f172a;">Accredited Qualification Records</h3>
+                    <span class="badge badge-success">Live Registry</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Certificate No.</th>
+                                <th>Student & ID</th>
+                                <th>Degree & Specialization</th>
+                                <th>Classification</th>
+                                <th>Institution</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="qualificationsTableBody">
+                            <tr><td colspan="7" style="text-align: center; color: #64748b;">Loading registered qualifications...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Issue New Qualification Form -->
+            <div id="registerSection" class="dash-card" style="margin-top: 2rem;">
+                <div class="dash-card-header">
+                    <div>
+                        <h3 style="margin: 0; font-size: 1.15rem; color: #0f172a;">Issue New Academic Credential</h3>
+                        <p style="margin: 0.25rem 0 0; color: #64748b; font-size: 0.85rem;">Automatically computes SHA-256 digital fingerprint and mines a new notarization block on the blockchain ledger.</p>
+                    </div>
+                </div>
+
+                <form id="qualificationForm" onsubmit="handleRegisterQualification(event)">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 0.5rem;">
+                        <div class="form-group">
+                            <label class="form-label" for="certNumber">Certificate Serial Number <span class="required-star">*</span></label>
+                            <input type="text" id="certNumber" class="input-control font-mono" placeholder="e.g. QVS-2024-BENG-1092" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="studentName">Student Full Name <span class="required-star">*</span></label>
+                            <input type="text" id="studentName" class="input-control" placeholder="e.g. Alexander Clark" required>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 0.5rem;">
+                        <div class="form-group">
+                            <label class="form-label" for="studentId">Student ID / Registry Ref <span class="required-star">*</span></label>
+                            <input type="text" id="studentId" class="input-control font-mono" placeholder="e.g. STU-119283, ITM 190020" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="awardTitle">Award Title <span class="required-star">*</span></label>
+                            <input type="text" id="awardTitle" class="input-control" placeholder="e.g. Bachelor of Science Honours in Computer Science" required>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; margin-bottom: 1.5rem;">
+                        <div class="form-group">
+                            <label class="form-label" for="majorSpec">Major / Specialization <span class="required-star">*</span></label>
+                            <input type="text" id="majorSpec" class="input-control" placeholder="e.g. Cloud Computing & DevOps" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="classification">Classification / Grade <span class="required-star">*</span></label>
+                            <input type="text" id="classification" class="input-control" placeholder="e.g. First Class Honours" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="awardDate">Award Date <span class="required-star">*</span></label>
+                            <input type="date" id="awardDate" class="input-control" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; height: 50px; font-size: 1rem;">
+                        🔒 Sign, Notarize on Blockchain & Register Credential
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- TAB 2: Blockchain Block Explorer -->
+        <div id="blockchainTab" class="tab-pane" style="display: none;">
+            <div class="dash-card">
+                <div class="dash-card-header">
+                    <div>
+                        <h3 style="margin: 0; font-size: 1.15rem; color: #0f172a;">⛓️ Immutable Blockchain Block Explorer</h3>
+                        <p style="margin: 0.25rem 0 0; color: #64748b; font-size: 0.85rem;">Cryptographic ledger anchoring every qualification creation and revocation event with SHA-256 hash chaining.</p>
+                    </div>
+                    <button class="btn-outline btn-sm" onclick="validateBlockchain()">
+                        🔍 Verify Blockchain Consensus
+                    </button>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="blockchain-table">
+                        <thead>
+                            <tr>
+                                <th>Block #</th>
+                                <th>Timestamp</th>
+                                <th>Certificate No.</th>
+                                <th>Payload Hash</th>
+                                <th>Previous Block Hash</th>
+                                <th>Block Hash</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dashBlockchainTableBody">
+                            <tr><td colspan="7" style="text-align: center; color: #64748b;">Loading blockchain blocks...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 3: AI Fraud Shield & Anomaly Scanner -->
+        <div id="aiTab" class="tab-pane" style="display: none;">
+            <div class="dash-card">
+                <div class="dash-card-header">
+                    <div>
+                        <h3 style="margin: 0; font-size: 1.15rem; color: #0f172a;">🤖 Agentic AI Fraud & Anomaly Scanner</h3>
+                        <p style="margin: 0.25rem 0 0; color: #64748b; font-size: 0.85rem;">Run automated multi-vector heuristic analysis on any certificate to calculate fraud probability and detect forged records.</p>
+                    </div>
+                </div>
+
+                <div class="input-group" style="max-width: 720px; margin-bottom: 1.5rem;">
+                    <div class="input-wrapper" style="flex: 1;">
+                        <span class="input-icon-left">🤖</span>
+                        <input type="text" id="aiScanInput" class="input-control has-icon-left font-mono" placeholder="Enter Certificate Serial Number (e.g. QVS-2024-BSC-8891, ZOU-2023-ITM-190020)">
+                    </div>
+                    <button class="btn-primary" onclick="runAiScan()" style="height: 52px; white-space: nowrap;">
+                        <span>Run AI Fraud Scan</span> ➔
+                    </button>
+                </div>
+
+                <div id="aiScanResult" style="display: none;" class="ai-scan-output-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <div>
+                            <h4 style="margin: 0; font-size: 1.2rem; color: #0f172a;">AI Evaluation Summary</h4>
+                            <span id="aiScanCert" style="font-size: 0.85rem; color: #64748b; font-family: monospace;">-</span>
+                        </div>
+                        <span id="aiScanScoreBadge" class="ai-badge ai-badge-low">SCORE: 100/100 (LOW RISK)</span>
+                    </div>
+
+                    <div style="margin-bottom: 1rem;">
+                        <label style="font-weight: 600; font-size: 0.85rem; color: #475569;">Recommendation:</label>
+                        <p id="aiScanRecommendation" style="font-weight: 700; color: #0f172a; margin: 0.2rem 0;"></p>
+                    </div>
+
+                    <div style="margin-bottom: 1rem;">
+                        <label style="font-weight: 600; font-size: 0.85rem; color: #475569;">Agent Explanation:</label>
+                        <p id="aiScanExplanation" style="color: #334155; font-size: 0.95rem; margin: 0.2rem 0; line-height: 1.5;"></p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+                        <div class="ai-checks-box">
+                            <h5 style="color: #16a34a; margin: 0 0 0.5rem;">✓ Passed Heuristic Checks</h5>
+                            <ul id="aiPassedList" style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #1e293b;"></ul>
+                        </div>
+                        <div class="ai-checks-box">
+                            <h5 style="color: #dc2626; margin: 0 0 0.5rem;">⚠️ Triggered Anomaly Flags</h5>
+                            <ul id="aiAnomalyList" style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #1e293b;"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 4: Live Real-Time Telemetry & Monitoring -->
+        <div id="telemetryTab" class="tab-pane" style="display: none;">
+            <div class="stats-grid" style="margin-bottom: 2rem;">
+                <div class="stat-card">
+                    <div class="stat-icon">💾</div>
+                    <div class="stat-number" id="metricRam">0 MB</div>
+                    <div class="stat-title">JVM Heap Memory Used</div>
+                    <div class="stat-sub" id="metricRamTotal">Total Allocated: 0 MB</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-number" id="metricUptime">0s</div>
+                    <div class="stat-title">System Runtime Uptime</div>
+                    <div class="stat-sub">Zero Downtime Node</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-number" id="metricVerifCount">0</div>
+                    <div class="stat-title">Total Verifications Processed</div>
+                    <div class="stat-sub" id="metricSuccessRate">Success Rate: 100%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⛓️</div>
+                    <div class="stat-number" id="metricChainHeight">0</div>
+                    <div class="stat-title">Blockchain Ledger Height</div>
+                    <div class="stat-sub" id="metricChainStatus">Consensus: Valid</div>
+                </div>
+            </div>
+
+            <div class="dash-card">
+                <div class="dash-card-header">
+                    <h3 style="margin: 0; font-size: 1.15rem; color: #0f172a;">Live Health Status & Telemetry Endpoints</h3>
+                    <button class="btn-outline btn-sm" onclick="fetchTelemetry()">🔄 Refresh Telemetry</button>
+                </div>
+                <div style="font-size: 0.9rem; color: #475569; line-height: 1.6;">
+                    <p>• <strong>Spring Boot Actuator Health:</strong> <a href="/actuator/health" target="_blank" style="color: #2563eb; font-weight: 600;">/actuator/health</a></p>
+                    <p>• <strong>OpenAPI Swagger Explorer:</strong> <a href="/swagger-ui.html" target="_blank" style="color: #2563eb; font-weight: 600;">/swagger-ui.html</a></p>
+                    <p>• <strong>Real-Time JSON Telemetry Stream:</strong> <a href="/api/metrics/realtime" target="_blank" style="color: #2563eb; font-weight: 600;">/api/metrics/realtime</a></p>
+                    <p>• <strong>Blockchain Consensus Endpoint:</strong> <a href="/api/blockchain/validate" target="_blank" style="color: #2563eb; font-weight: 600;">/api/blockchain/validate</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom" style="text-align: center; color: #64748b; font-size: 0.85rem;">
+            DevOps Qualification Verification System &copy; 2026. High-Integrity Credential Infrastructure.
+        </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+    <script>
+        function switchTab(tabId, btn) {
+            document.querySelectorAll('.tab-pane').forEach(p => p.style.display = 'none');
+            document.querySelectorAll('.dash-tab-btn').forEach(b => b.classList.remove('active'));
+            const targetPane = document.getElementById(tabId);
+            if (targetPane) targetPane.style.display = 'block';
+            if (btn) btn.classList.add('active');
+
+            if (tabId === 'blockchainTab') loadDashboardBlockchain();
+            if (tabId === 'telemetryTab') fetchTelemetry();
+        }
+
+        function showIssueForm() {
+            switchTab('qualificationsTab', document.getElementById('tabBtnQuals'));
+            const reg = document.getElementById('registerSection');
+            if (reg) reg.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Enforce authentication on dashboard
+            const token = getAuthToken();
+            if (!token) {
+                window.location.href = '/login?notice=verify_required';
+                return;
+            }
+
+            const user = getStoredUser();
+
+            // 2. Role-based adjustments and Permission Scopes
+            const role = user ? user.role : 'ROLE_VERIFIER';
+            const roleIcon = document.getElementById('roleScopeIcon');
+            const roleTitle = document.getElementById('roleScopeTitle');
+            const roleDesc = document.getElementById('roleScopeDesc');
+            const roleBadges = document.getElementById('roleScopeBadges');
+            const btnIssue = document.getElementById('btnIssueQual');
+            const tabQuals = document.getElementById('tabBtnQuals');
+            const tabTelemetry = document.getElementById('tabBtnTelemetry');
+
+            if (role === 'ROLE_VERIFIER') {
+                if (btnIssue) btnIssue.style.display = 'none';
+                if (tabQuals) tabQuals.style.display = 'none'; // Verifiers cannot browse all registered students
+                if (tabTelemetry) tabTelemetry.style.display = 'none'; // Verifiers cannot view server JVM/telemetry
+                const regSection = document.getElementById('registerSection');
+                if (regSection) regSection.style.display = 'none';
+
+                document.getElementById('dashHeaderTitle').innerText = 'Accredited Credential Verification Portal';
+                document.getElementById('dashHeaderSubtitle').innerText = 'Verify academic credentials, inspect blockchain blocks, and evaluate AI fraud heuristics.';
+
+                if (roleIcon) roleIcon.innerText = '🔍';
+                if (roleTitle) roleTitle.innerText = `Accredited Verifier Session (${user.username})`;
+                if (roleDesc) roleDesc.innerText = 'Scope: Credential verification, blockchain validation & AI anomaly scoring. Student registry and server metrics are restricted.';
+                if (roleBadges) roleBadges.innerHTML = `
+                    <span class="chip-btn chip-success">✓ Verify Credentials</span>
+                    <span class="chip-btn chip-success">✓ Blockchain Ledger</span>
+                    <span class="chip-btn" style="background:#fee2e2; color:#991b1b;">✕ No Issuance Rights</span>
+                    <span class="chip-btn" style="background:#fee2e2; color:#991b1b;">✕ No Revocation Rights</span>
+                `;
+            } else if (role === 'ROLE_INSTITUTION') {
+                if (btnIssue) btnIssue.style.display = 'inline-flex';
+                if (tabQuals) tabQuals.style.display = 'inline-flex';
+                if (tabTelemetry) tabTelemetry.style.display = 'none'; // Officers cannot access internal server telemetry
+
+                document.getElementById('dashHeaderTitle').innerText = 'Registrar Credential Management & Issuance Portal';
+                document.getElementById('dashHeaderSubtitle').innerText = 'Issue new accredited qualifications, manage institutional registry, and verify credentials.';
+
+                if (roleIcon) roleIcon.innerText = '🏛️';
+                const instName = user.institutionName || 'Accredited Institution';
+                if (roleTitle) roleTitle.innerText = `Registrar Officer Session (${user.username} - ${instName})`;
+                if (roleDesc) roleDesc.innerText = 'Scope: Institutional credential issuance & registry management. System server telemetry and credential revocation are restricted.';
+                if (roleBadges) roleBadges.innerHTML = `
+                    <span class="chip-btn chip-success">✓ Issue Qualifications</span>
+                    <span class="chip-btn chip-success">✓ Manage Registry</span>
+                    <span class="chip-btn chip-success">✓ Verify Credentials</span>
+                    <span class="chip-btn chip-danger">✕ Revocation Restricted (Admin Only)</span>
+                `;
+            } else if (role === 'ROLE_ADMIN') {
+                if (btnIssue) btnIssue.style.display = 'inline-flex';
+                if (tabQuals) tabQuals.style.display = 'inline-flex';
+                if (tabTelemetry) tabTelemetry.style.display = 'inline-flex';
+
+                document.getElementById('dashHeaderTitle').innerText = 'Master Credential Administration & DevOps Telemetry';
+                document.getElementById('dashHeaderSubtitle').innerText = 'Full administrative control: credential issuance, official revocation, server JVM telemetry, and blockchain audits.';
+
+                if (roleIcon) roleIcon.innerText = '🛡️';
+                if (roleTitle) roleTitle.innerText = `System Administrator Session (${user.username} - Master Authority)`;
+                if (roleDesc) roleDesc.innerText = 'Scope: Master authority across all institutional registries, exclusive credential revocation, system telemetry, and audit trails.';
+                if (roleBadges) roleBadges.innerHTML = `
+                    <span class="chip-btn chip-success">✓ Master Privileges</span>
+                    <span class="chip-btn chip-danger">✓ Exclusive Revocation Authority</span>
+                    <span class="chip-btn chip-success">✓ Server Telemetry & Audits</span>
+                `;
+            }
+
+            // 3. Tab routing via URL query parameter
+            const params = new URLSearchParams(window.location.search);
+            const targetTab = params.get('tab');
+            const certQuery = params.get('cert');
+
+            if (targetTab === 'qualificationsTab' && role !== 'ROLE_VERIFIER') {
+                switchTab('qualificationsTab', document.getElementById('tabBtnQuals'));
+            } else if (targetTab === 'blockchainTab') {
+                switchTab('blockchainTab', document.getElementById('tabBtnBlockchain'));
+            } else if (targetTab === 'aiTab') {
+                switchTab('aiTab', document.getElementById('tabBtnAi'));
+            } else if (targetTab === 'telemetryTab' && role === 'ROLE_ADMIN') {
+                switchTab('telemetryTab', document.getElementById('tabBtnTelemetry'));
+            } else if (role === 'ROLE_INSTITUTION' && !targetTab) {
+                switchTab('qualificationsTab', document.getElementById('tabBtnQuals'));
+            } else {
+                // Default to Verification Console
+                switchTab('verifyTab', document.getElementById('tabBtnVerify'));
+            }
+
+            // 4. Auto-verify if cert query parameter is present
+            if (certQuery) {
+                const input = document.getElementById('verificationInput');
+                if (input) input.value = certQuery;
+                verifyCredential(certQuery);
+            }
+
+            // 5. Load data
+            if (role !== 'ROLE_VERIFIER') {
+                loadQualifications();
+            }
+            if (role === 'ROLE_ADMIN') {
+                fetchTelemetry();
+            }
+        });
+    </script>
+</body>
+</html>

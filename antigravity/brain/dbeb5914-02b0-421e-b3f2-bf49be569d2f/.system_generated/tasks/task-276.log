@@ -1,0 +1,249 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------< com.devops.qvs:qualification-verification-system >----------
+[INFO] Building qualification-verification-system 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ qualification-verification-system ---
+[INFO] Deleting C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\target
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (validate) @ qualification-verification-system ---
+[INFO] Starting audit...
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\DataInitializer.java:19:1: Extra separation in import group before 'java.time.LocalDate' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\DataInitializer.java:19:1: Wrong lexicographical order for 'java.time.LocalDate' import. Should be before 'org.springframework.stereotype.Component'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\JwtAuthenticationFilter.java:16:1: Extra separation in import group before 'java.io.IOException' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\JwtAuthenticationFilter.java:16:1: Wrong lexicographical order for 'java.io.IOException' import. Should be before 'org.springframework.web.filter.OncePerRequestFilter'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\JwtUtils.java:16:1: Extra separation in import group before 'java.nio.charset.StandardCharsets' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\JwtUtils.java:16:1: Wrong lexicographical order for 'java.nio.charset.StandardCharsets' import. Should be before 'org.springframework.stereotype.Component'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\JwtUtils.java:17:1: Wrong lexicographical order for 'java.security.Key' import. Should be before 'org.springframework.stereotype.Component'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\JwtUtils.java:18:1: Wrong lexicographical order for 'java.util.Date' import. Should be before 'org.springframework.stereotype.Component'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\JwtUtils.java:19:1: Wrong lexicographical order for 'java.util.function.Function' import. Should be before 'org.springframework.stereotype.Component'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\UserDetailsServiceImpl.java:11:1: Extra separation in import group before 'java.util.Collections' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\UserDetailsServiceImpl.java:11:1: Wrong lexicographical order for 'java.util.Collections' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\controller\AuditLogController.java:13:1: Extra separation in import group before 'java.util.List' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\controller\AuditLogController.java:13:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.web.bind.annotation.RestController'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\controller\BlockchainController.java:14:1: Extra separation in import group before 'java.util.HashMap' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\controller\BlockchainController.java:14:1: Wrong lexicographical order for 'java.util.HashMap' import. Should be before 'org.springframework.web.bind.annotation.RestController'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\controller\BlockchainController.java:15:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.web.bind.annotation.RestController'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\controller\BlockchainController.java:16:1: Wrong lexicographical order for 'java.util.Map' import. Should be before 'org.springframework.web.bind.annotation.RestController'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\controller\MetricsController.java:18:1: Extra separation in import group before 'java.lang.management.ManagementFactory' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\controller\MetricsController.java:18:1: Wrong lexicographical order for 'java.lang.management.ManagementFactory' import. Should be before 'org.springframework.web.bind.annotation.RestController'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\controller\MetricsController.java:19:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.web.bind.annotation.RestController'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\controller\QualificationController.java:22:1: Extra separation in import group before 'java.util.List' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\controller\QualificationController.java:22:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.web.bind.annotation.RestController'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\AiAnalysisResultDto.java:8:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\AiAnalysisResultDto.java:8:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'lombok.NoArgsConstructor'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\AiAnalysisResultDto.java:9:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'lombok.NoArgsConstructor'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\AiChatResponse.java:8:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\AiChatResponse.java:8:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'lombok.NoArgsConstructor'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\AuditLogDto.java:9:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\AuditLogDto.java:9:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'lombok.NoArgsConstructor'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\BlockDto.java:8:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\BlockDto.java:8:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'lombok.NoArgsConstructor'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\QualificationRequest.java:10:1: Extra separation in import group before 'java.time.LocalDate' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\QualificationRequest.java:10:1: Wrong lexicographical order for 'java.time.LocalDate' import. Should be before 'lombok.NoArgsConstructor'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\QualificationResponse.java:9:1: Extra separation in import group before 'java.time.LocalDate' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\QualificationResponse.java:9:1: Wrong lexicographical order for 'java.time.LocalDate' import. Should be before 'lombok.NoArgsConstructor'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\QualificationResponse.java:10:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'lombok.NoArgsConstructor'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\SystemMetricsDto.java:8:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\SystemMetricsDto.java:8:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'lombok.NoArgsConstructor'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\VerificationResultDto.java:10:1: Extra separation in import group before 'java.time.LocalDate' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\VerificationResultDto.java:10:1: Wrong lexicographical order for 'java.time.LocalDate' import. Should be before 'lombok.NoArgsConstructor'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\dto\VerificationResultDto.java:11:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'lombok.NoArgsConstructor'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\exception\GlobalExceptionHandler.java:12:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\exception\GlobalExceptionHandler.java:12:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.web.bind.annotation.RestControllerAdvice'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\exception\GlobalExceptionHandler.java:13:1: Wrong lexicographical order for 'java.util.HashMap' import. Should be before 'org.springframework.web.bind.annotation.RestControllerAdvice'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\exception\GlobalExceptionHandler.java:14:1: Wrong lexicographical order for 'java.util.Map' import. Should be before 'org.springframework.web.bind.annotation.RestControllerAdvice'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\model\AuditLog.java:17:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\model\AuditLog.java:17:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'lombok.Setter'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\model\Block.java:15:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\model\Block.java:15:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'lombok.Setter'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\model\Institution.java:15:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\model\Institution.java:15:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'lombok.Setter'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\model\Qualification.java:20:1: Extra separation in import group before 'java.time.LocalDate' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\model\Qualification.java:20:1: Wrong lexicographical order for 'java.time.LocalDate' import. Should be before 'lombok.Setter'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\model\Qualification.java:21:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'lombok.Setter'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\model\User.java:20:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\model\User.java:20:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'lombok.Setter'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\repository\AuditLogRepository.java:8:1: Extra separation in import group before 'java.util.List' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\repository\AuditLogRepository.java:8:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.stereotype.Repository'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\repository\BlockRepository.java:7:1: Extra separation in import group before 'java.util.List' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\repository\BlockRepository.java:7:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.stereotype.Repository'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\repository\BlockRepository.java:8:1: Wrong lexicographical order for 'java.util.Optional' import. Should be before 'org.springframework.stereotype.Repository'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\repository\InstitutionRepository.java:7:1: Extra separation in import group before 'java.util.Optional' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\repository\InstitutionRepository.java:7:1: Wrong lexicographical order for 'java.util.Optional' import. Should be before 'org.springframework.stereotype.Repository'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\repository\QualificationRepository.java:10:1: Extra separation in import group before 'java.util.List' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\repository\QualificationRepository.java:10:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.stereotype.Repository'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\repository\QualificationRepository.java:11:1: Wrong lexicographical order for 'java.util.Optional' import. Should be before 'org.springframework.stereotype.Repository'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\repository\UserRepository.java:7:1: Extra separation in import group before 'java.util.Optional' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\repository\UserRepository.java:7:1: Wrong lexicographical order for 'java.util.Optional' import. Should be before 'org.springframework.stereotype.Repository'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AiFraudDetectionService.java:13:1: Extra separation in import group before 'java.time.LocalDate' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AiFraudDetectionService.java:13:1: Wrong lexicographical order for 'java.time.LocalDate' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AiFraudDetectionService.java:14:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AiFraudDetectionService.java:15:1: Wrong lexicographical order for 'java.util.ArrayList' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AiFraudDetectionService.java:16:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AiFraudDetectionService.java:17:1: Wrong lexicographical order for 'java.util.Optional' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AuditLogService.java:10:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AuditLogService.java:10:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AuditLogService.java:11:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AuditLogService.java:12:1: Wrong lexicographical order for 'java.util.stream.Collectors' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\BlockchainLedgerService.java:12:1: Extra separation in import group before 'java.nio.charset.StandardCharsets' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\BlockchainLedgerService.java:12:1: Wrong lexicographical order for 'java.nio.charset.StandardCharsets' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\BlockchainLedgerService.java:13:1: Wrong lexicographical order for 'java.security.MessageDigest' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\BlockchainLedgerService.java:14:1: Wrong lexicographical order for 'java.security.NoSuchAlgorithmException' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\BlockchainLedgerService.java:15:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\BlockchainLedgerService.java:16:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\BlockchainLedgerService.java:17:1: Wrong lexicographical order for 'java.util.stream.Collectors' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\CryptoHashService.java:6:1: Extra separation in import group before 'java.nio.charset.StandardCharsets' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\CryptoHashService.java:6:1: Wrong lexicographical order for 'java.nio.charset.StandardCharsets' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\CryptoHashService.java:7:1: Wrong lexicographical order for 'java.security.MessageDigest' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\CryptoHashService.java:8:1: Wrong lexicographical order for 'java.security.NoSuchAlgorithmException' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\CryptoHashService.java:9:1: Wrong lexicographical order for 'java.time.LocalDate' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\QualificationService.java:16:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\QualificationService.java:16:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\QualificationService.java:17:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\QualificationService.java:18:1: Wrong lexicographical order for 'java.util.stream.Collectors' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\VerificationService.java:13:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\VerificationService.java:13:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\VerificationService.java:14:1: Wrong lexicographical order for 'java.util.Optional' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ qualification-verification-system ---
+[INFO] argLine set to -javaagent:C:\\Users\\Madziva\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.11\\org.jacoco.agent-0.8.11-runtime.jar=destfile=C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\target\\jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ qualification-verification-system ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 6 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ qualification-verification-system ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 51 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ qualification-verification-system ---
+[INFO] skip non existing resourceDirectory C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ qualification-verification-system ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 9 source files with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ qualification-verification-system ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.devops.qvs.controller.AuthControllerIntegrationTest
+21:49:09.534 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.devops.qvs.controller.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:49:10.053 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.devops.qvs.QualificationVerificationApplication for test class com.devops.qvs.controller.AuthControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-09-05T21:49:11.369+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.q.c.AuthControllerIntegrationTest    : Starting AuthControllerIntegrationTest using Java 17.0.10 with PID 5472 (started by Madziva in C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system)
+2026-09-05T21:49:11.373+02:00 DEBUG 5472 --- [qualification-verification-system] [           main] c.d.q.c.AuthControllerIntegrationTest    : Running with Spring Boot v3.2.3, Spring v6.1.4
+2026-09-05T21:49:11.374+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.q.c.AuthControllerIntegrationTest    : The following 1 profile is active: "dev"
+2026-09-05T21:49:14.604+02:00  INFO 5472 --- [qualification-verification-system] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-05T21:49:14.792+02:00  INFO 5472 --- [qualification-verification-system] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 5 JPA repository interfaces.
+2026-09-05T21:49:16.760+02:00  INFO 5472 --- [qualification-verification-system] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-05T21:49:16.993+02:00  INFO 5472 --- [qualification-verification-system] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-09-05T21:49:17.114+02:00  INFO 5472 --- [qualification-verification-system] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-05T21:49:17.888+02:00  INFO 5472 --- [qualification-verification-system] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-05T21:49:17.973+02:00  INFO 5472 --- [qualification-verification-system] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-05T21:49:18.735+02:00  INFO 5472 --- [qualification-verification-system] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:qvsdb user=SA
+2026-09-05T21:49:18.740+02:00  INFO 5472 --- [qualification-verification-system] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-05T21:49:18.824+02:00  WARN 5472 --- [qualification-verification-system] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-05T21:49:21.123+02:00  INFO 5472 --- [qualification-verification-system] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-05T21:49:21.299+02:00  INFO 5472 --- [qualification-verification-system] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-05T21:49:23.025+02:00  INFO 5472 --- [qualification-verification-system] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-05T21:49:24.941+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Initializing Blockchain Genesis Block for Qualification Verification System...
+2026-09-05T21:49:25.024+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Genesis block successfully forged. Block Hash: 276b320ce36b637efaf6040f26df419c050541a8972218b88433c6de5ad24cca
+2026-09-05T21:49:25.647+02:00  WARN 5472 --- [qualification-verification-system] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-05T21:49:26.017+02:00  INFO 5472 --- [qualification-verification-system] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-09-05T21:49:26.882+02:00  INFO 5472 --- [qualification-verification-system] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-09-05T21:49:27.048+02:00  INFO 5472 --- [qualification-verification-system] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4180dad5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71367037, org.springframework.security.web.context.SecurityContextHolderFilter@7e50cafd, org.springframework.security.web.header.HeaderWriterFilter@40331a64, org.springframework.security.web.authentication.logout.LogoutFilter@41f2b5f6, com.devops.qvs.config.JwtAuthenticationFilter@60ae1183, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fd48a39, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1254be3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e60c7e1, org.springframework.security.web.session.SessionManagementFilter@2fc8a7b0, org.springframework.security.web.access.ExceptionTranslationFilter@5eaaae07, org.springframework.security.web.access.intercept.AuthorizationFilter@7cae9695]
+2026-09-05T21:49:28.298+02:00  INFO 5472 --- [qualification-verification-system] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:qvsdb'
+2026-09-05T21:49:28.473+02:00 DEBUG 5472 --- [qualification-verification-system] [           main] c.d.qvs.config.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-09-05T21:49:28.475+02:00  INFO 5472 --- [qualification-verification-system] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-09-05T21:49:28.476+02:00  INFO 5472 --- [qualification-verification-system] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-05T21:49:28.477+02:00  INFO 5472 --- [qualification-verification-system] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-05T21:49:28.605+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.q.c.AuthControllerIntegrationTest    : Started AuthControllerIntegrationTest in 18.128 seconds (process running for 20.742)
+2026-09-05T21:49:28.719+02:00  INFO 5472 --- [qualification-verification-system] [           main] com.devops.qvs.config.DataInitializer    : Initializing Sample DevOps Qualification Data & Blockchain Blocks...
+2026-09-05T21:49:29.099+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #1 mined on QVS Ledger for Cert [QVS-2024-BSC-8891]. Hash: a485717e9c61f2a80751d95e2f0b1a7a48370f48fbd7ce2bcb55c277531c98ae
+2026-09-05T21:49:29.124+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #2 mined on QVS Ledger for Cert [QVS-2023-MSC-4412]. Hash: e280f96c3cb5324ef8530063268285171b284ffe9cdd4f2ac932dc3719af9800
+2026-09-05T21:49:29.136+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #3 mined on QVS Ledger for Cert [QVS-2022-DIP-1109]. Hash: 953d685abfa148546de3d92845a659936ef271f69c5dfc511043ac0e4d0e93a4
+2026-09-05T21:49:29.138+02:00  INFO 5472 --- [qualification-verification-system] [           main] com.devops.qvs.config.DataInitializer    : Sample qualification data & blockchain ledger successfully initialized.
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.42 s -- in com.devops.qvs.controller.AuthControllerIntegrationTest
+[INFO] Running com.devops.qvs.controller.QualificationControllerIntegrationTest
+2026-09-05T21:49:31.504+02:00  INFO 5472 --- [qualification-verification-system] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.devops.qvs.controller.QualificationControllerIntegrationTest]: QualificationControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-05T21:49:31.509+02:00  INFO 5472 --- [qualification-verification-system] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.devops.qvs.QualificationVerificationApplication for test class com.devops.qvs.controller.QualificationControllerIntegrationTest
+2026-09-05T21:49:32.241+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #4 mined on QVS Ledger for Cert [CERT-INT-1788637772058]. Hash: 49a439339ddc22cf0eb938adb2f8b51876228348704c7e4d80c0805e1076a801
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.758 s -- in com.devops.qvs.controller.QualificationControllerIntegrationTest
+[INFO] Running com.devops.qvs.controller.VerificationControllerIntegrationTest
+2026-09-05T21:49:32.266+02:00  INFO 5472 --- [qualification-verification-system] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.devops.qvs.controller.VerificationControllerIntegrationTest]: VerificationControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-05T21:49:32.272+02:00  INFO 5472 --- [qualification-verification-system] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.devops.qvs.QualificationVerificationApplication for test class com.devops.qvs.controller.VerificationControllerIntegrationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 s -- in com.devops.qvs.controller.VerificationControllerIntegrationTest
+[INFO] Running com.devops.qvs.service.AiFraudDetectionServiceTest
+2026-09-05T21:49:33.522+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.AiFraudDetectionService  : Agentic AI Fraud Detection initiated for certificate: QVS-2022-DIP-1109
+2026-09-05T21:49:33.775+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.AiFraudDetectionService  : Agentic AI Fraud Detection initiated for certificate: QVS-2024-BSC-8891
+2026-09-05T21:49:33.789+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.AiFraudDetectionService  : Agentic AI Fraud Detection initiated for certificate: FAKE-999
+[ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.350 s <<< FAILURE! -- in com.devops.qvs.service.AiFraudDetectionServiceTest
+[ERROR] com.devops.qvs.service.AiFraudDetectionServiceTest.testChatWithAgent -- Time elapsed: 0.131 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <SUCCESS> but was: <INFO>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.devops.qvs.service.AiFraudDetectionServiceTest.testChatWithAgent(AiFraudDetectionServiceTest.java:138)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.devops.qvs.service.AuditLogServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.345 s -- in com.devops.qvs.service.AuditLogServiceTest
+[INFO] Running com.devops.qvs.service.BlockchainLedgerServiceTest
+2026-09-05T21:49:34.459+02:00 ERROR 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Blockchain corruption detected at Block #1: expected hash 594f286717de58a9e3ecb49def86452268516f37b1b55919e24e9e7f517adccc but found e21aa20b8525c41b171eed520b027b8abb0663c90fce414e33428a5995d00cfd
+2026-09-05T21:49:34.473+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Initializing Blockchain Genesis Block for Qualification Verification System...
+2026-09-05T21:49:34.474+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Genesis block successfully forged. Block Hash: c662b9a1a2023c7a3eba9d7e45ba080dd1c696bb35c97942039f0eadc9ccd744
+2026-09-05T21:49:34.508+02:00  INFO 5472 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #1 mined on QVS Ledger for Cert [QVS-2024-TEST-001]. Hash: 7fe6173b03d828d15db2da9c61a97d66190c005c169fa3a0d5630d4de841a261
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.317 s -- in com.devops.qvs.service.BlockchainLedgerServiceTest
+[INFO] Running com.devops.qvs.service.CryptoHashServiceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in com.devops.qvs.service.CryptoHashServiceTest
+[INFO] Running com.devops.qvs.service.QualificationServiceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.519 s -- in com.devops.qvs.service.QualificationServiceTest
+[INFO] Running com.devops.qvs.service.VerificationServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 s -- in com.devops.qvs.service.VerificationServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   AiFraudDetectionServiceTest.testChatWithAgent:138 expected: <SUCCESS> but was: <INFO>
+[INFO] 
+[ERROR] Tests run: 35, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  38.058 s
+[INFO] Finished at: 2026-09-05T21:49:36+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project qualification-verification-system: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

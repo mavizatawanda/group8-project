@@ -1,0 +1,12 @@
+Task: dc839fa4-98d6-4745-b830-99f0adf261cc/task-48
+Status: RUNNING
+Log: C:\Users\Madziva\.gemini\antigravity\brain\dc839fa4-98d6-4745-b830-99f0adf261cc\.system_generated\tasks\task-48.log
+Log output:
+<truncated 158 lines>
+n-verification-system] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-06T11:17:05.842+02:00  INFO 12436 --- [qualification-verification-system] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-06T11:17:07.546+02:00  INFO 12436 --- [qualification-verification-system] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:qvsdb user=SA
+2026-09-06T11:17:07.555+02:00  INFO 12436 --- [qualification-verification-system] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-06T11:17:07.749+02:00  WARN 12436 --- [qualification-verification-system] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+
+Last progress: 1s ago

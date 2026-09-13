@@ -1,0 +1,4 @@
+{"name":"main","isDir":true}
+{"name":"test","isDir":true}
+
+Summary: This directory contains 2 subdirectories and 0 files.

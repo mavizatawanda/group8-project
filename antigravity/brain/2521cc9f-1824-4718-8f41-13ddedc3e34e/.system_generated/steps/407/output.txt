@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+{
+    "reply":  "?? **Official Registry \u0026 Blockchain AI Record for Sekai Mataranyika (`ZOU-2025-PGDE-EH250001`)**:\n\n�?� **Status**: �?\u0085 **Active (Genuine \u0026 Valid)**\n�?� **Degree / Award**: Postgraduate Diploma in Education (Mathematics) (Secondary Mathematics Pedagogy)\n�?� **Classification**: Distinction\n�?� **Awarding Institution**: Zimbabwe Open University\n�?� **Award Date**: 2025-11-28\n�?� **Student ID**: EH250001\n�?� **AI Fraud Score**: **90/100 (LOW RISK)**\n�?� **AI Recommendation**: ACCEPT CREDENTIAL: Full confidence in academic authenticity and digital integrity.",
+    "intent":  "VERIFY_ACTIVE",
+    "status":  "SUCCESS",
+    "timestamp":  "2026-09-12T21:57:39.8518222"
+}
+

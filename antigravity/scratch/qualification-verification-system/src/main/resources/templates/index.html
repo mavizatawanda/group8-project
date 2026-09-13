@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualification Verification System | Public Portal & Blockchain Ledger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css?v=skyblue">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement">
+        <span>🛡️ <strong>DevOps-Enabled QVS 2.0</strong> • Immutable Blockchain Ledger • Agentic AI Fraud Shield • Multi-Cloud Ready</span>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <div class="brand-logo">🎓</div>
+                <div class="brand-text">
+                    <span class="brand-title">DevOps QVS</span>
+                    <span class="brand-subtitle">Enterprise Verification</span>
+                </div>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="/dashboard?tab=verifyTab" class="nav-link">Verify Credential 🔒</a>
+                <a href="#blockchainSection" class="nav-link">Blockchain Ledger</a>
+                <a href="#aiSection" class="nav-link">AI Fraud Shield</a>
+                <a href="#featuresSection" class="nav-link">DevOps Architecture</a>
+                <a href="/audit" class="nav-link">Audit Trail</a>
+                <a href="/swagger-ui.html" target="_blank" class="nav-link">API Docs</a>
+                <div class="nav-auth" id="navAuthStatus">
+                    <a href="/login" class="btn-primary btn-sm">Sign In ➔</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Welcome Section -->
+    <header class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                <span>Automated CI/CD Quality Gates & Cryptographic Consensus</span>
+            </div>
+            <h1 class="hero-title">
+                Academic & Professional <br>
+                <span class="text-gradient">Qualification Verification</span> System
+            </h1>
+            <p class="hero-description">
+                Instant, tamper-evident credential verification powered by SHA-256 digital fingerprinting,
+                an immutable on-chain cryptographic ledger, and agentic AI anomaly heuristics.
+            </p>
+
+            <!-- Authorized Verification Access Gateway Box -->
+            <div class="search-box-wrapper" id="authPortalHeroCard">
+                <div class="search-card" style="text-align: center; padding: 2.75rem 2rem;">
+                    <div style="display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: rgba(37, 99, 235, 0.1); border-radius: 18px; margin-bottom: 1.25rem; font-size: 2rem;">
+                        🛡️
+                    </div>
+                    <h2 style="font-size: 1.6rem; font-weight: 800; color: #0f172a; margin-bottom: 0.6rem;">
+                        Authorized Credential Verification Console
+                    </h2>
+                    <p style="color: #64748b; font-size: 1rem; max-width: 620px; margin: 0 auto 1.75rem; line-height: 1.6;">
+                        Instant credential verification and cryptographic blockchain inspections are strictly restricted to authorized entities. Please log in with an accredited Verifier, Partner Institution, or Administrator account to verify qualifications.
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;">
+                        <a href="/login?notice=verify_required" class="btn-primary" style="font-size: 1.05rem; padding: 1rem 2.25rem;">
+                            <span>🔐 Sign In to Verify Credentials</span> ➔
+                        </a>
+                        <span style="font-size: 0.85rem; color: #64748b;">Requires accredited Verifier, Institution Officer, or Administrator credentials</span>
+                    </div>
+
+                    <div style="margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid #f1f5f9; display: flex; justify-content: center; gap: 1.75rem; font-size: 0.85rem; color: #475569; flex-wrap: wrap;">
+                        <span>🔒 <strong>Role-Gated</strong> Verification Engine</span>
+                        <span>⛓️ <strong>SHA-256</strong> Blockchain Consensus</span>
+                        <span>🤖 <strong>Agentic AI</strong> Fraud Detection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Live Statistics Counter Grid -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">🎓</div>
+                <div class="stat-number" id="statQualifications">3</div>
+                <div class="stat-title">Qualifications Registered</div>
+                <div class="stat-sub">100% Notarized on Chain</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⛓️</div>
+                <div class="stat-number" id="statBlocks">4</div>
+                <div class="stat-title">Blockchain Blocks</div>
+                <div class="stat-sub">SHA-256 Hash Chained</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🛡️</div>
+                <div class="stat-number" id="statVerifications">100%</div>
+                <div class="stat-title">Integrity Success Rate</div>
+                <div class="stat-sub">Zero Forgery Tolerance</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-number">99.9%</div>
+                <div class="stat-title">DevOps CI/CD Uptime</div>
+                <div class="stat-sub">Automated Quality Gates</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Zero-Trust Process</span>
+                <h2 class="section-title">How Cryptographic Verification Works</h2>
+                <p class="section-subtitle">A decentralized, automated verification flow from university registrar to employer verification.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-badge">Step 1</div>
+                    <div class="step-icon">🏛️</div>
+                    <h3 class="step-title">Institutional Issuance</h3>
+                    <p class="step-desc">The accredited registrar registers the graduate's award. A deterministic SHA-256 cryptographic signature is computed over student identity and academic parameters.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-badge">Step 2</div>
+                    <div class="step-icon">⛓️</div>
+                    <h3 class="step-title">Blockchain Mining</h3>
+                    <p class="step-desc">The qualification fingerprint is mined into an immutable block containing the previous block hash and proof-of-integrity nonce, preventing any future record alterations.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-badge">Step 3</div>
+                    <div class="step-icon">🔍</div>
+                    <h3 class="step-title">Authorized Verification</h3>
+                    <p class="step-desc">Accredited verifiers, employers and institutions sign in to verify certificate serial numbers, inspect SHA-256 digital hashes, and evaluate real-time AI fraud risk scores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blockchain Explorer Section (Bonus Feature 1) -->
+    <section class="blockchain-section" id="blockchainSection">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Bonus Feature: Distributed Ledger</span>
+                <h2 class="section-title">Live Blockchain Credential Ledger</h2>
+                <p class="section-subtitle">Real-time immutable cryptographic blocks anchoring qualification certificates.</p>
+            </div>
+
+            <div class="blockchain-card">
+                <div class="blockchain-card-header">
+                    <div>
+                        <h3 style="margin: 0; font-size: 1.15rem; color: #0f172a;">⛓️ Cryptographic Block Stream</h3>
+                        <span style="font-size: 0.85rem; color: #64748b;">Consensus: Proof-of-Integrity (PoI) • Hash Algorithm: SHA-256</span>
+                    </div>
+                    <button class="btn-outline btn-sm" onclick="validateBlockchain()">
+                        🔍 Validate Full Chain Integrity
+                    </button>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="blockchain-table">
+                        <thead>
+                            <tr>
+                                <th>Block #</th>
+                                <th>Timestamp</th>
+                                <th>Certificate No.</th>
+                                <th>Payload Hash</th>
+                                <th>Previous Block Hash</th>
+                                <th>Block Hash</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="blockchainTableBody">
+                            <tr><td colspan="7" style="text-align: center; color: #64748b;">Loading blockchain blocks...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agentic AI & Advanced Features (Bonus Features 2 & 3) -->
+    <section class="features-section" id="featuresSection">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">DevOps & Enterprise Security</span>
+                <h2 class="section-title">DevOps Architecture & Bonus Modules</h2>
+                <p class="section-subtitle">Engineered to meet enterprise software quality, CI/CD, and multi-cloud deployment benchmarks.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Agentic AI Fraud Detection</h3>
+                    <p>Heuristic anomaly engine analyzing date timelines, signature patterns, and serial formatting to catch forged degrees before acceptance.</p>
+                    <span class="feature-pill">AI Anomaly Scoring</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⛓️</div>
+                    <h3>Blockchain Ledger</h3>
+                    <p>Cryptographic hash chaining with Genesis block foundation and Proof-of-Integrity consensus ensuring zero retroactive tampering.</p>
+                    <span class="feature-pill">SHA-256 Chaining</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☁️</div>
+                    <h3>Infrastructure-as-Code</h3>
+                    <p>Production Terraform modules (VPC, ECS Fargate, RDS) and Kubernetes manifests for automated multi-cloud provisioning.</p>
+                    <span class="feature-pill">Terraform & K8s</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Real-Time Telemetry</h3>
+                    <p>Live Actuator metrics, JVM memory telemetry, and verification velocity monitoring dashboards.</p>
+                    <span class="feature-pill">Prometheus & Actuator</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Advanced Security & RBAC</h3>
+                    <p>Stateless JWT authentication, BCrypt password hashing, and role-based permissions (Admin, Institution, Verifier).</p>
+                    <span class="feature-pill">Zero-Trust JWT</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>DevOps CI/CD Pipelines</h3>
+                    <p>Automated GitHub Actions workflow running Checkstyle static analysis, JaCoCo >80% coverage quality gates, and Docker multi-stage builds.</p>
+                    <span class="feature-pill">GitHub Actions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Agentic AI Verification Assistant Widget -->
+    <div class="ai-widget-container" id="aiSection">
+        <button class="ai-floating-btn" onclick="toggleAiChat()" id="aiToggleBtn" title="Ask QVS AI Assistant">
+            <span class="ai-btn-icon">🤖</span>
+            <span class="ai-btn-text">AI Verification Assistant</span>
+            <span class="ai-btn-pulse"></span>
+        </button>
+
+        <div class="ai-chat-window" id="aiChatWindow" style="display: none;">
+            <div class="ai-chat-header">
+                <div class="ai-header-info">
+                    <span class="ai-avatar">🤖</span>
+                    <div>
+                        <strong>QVS Agentic AI Assistant</strong>
+                        <span class="ai-online-status">● Live Heuristic Agent</span>
+                    </div>
+                </div>
+                <button class="ai-close-btn" onclick="toggleAiChat()">✕</button>
+            </div>
+
+            <div class="ai-chat-messages" id="aiChatMessages">
+                <div class="ai-message ai-bot">
+                    <p>Hello! I am your <strong>QVS Agentic AI Assistant</strong>. Ask me any question, such as:</p>
+                    <ul>
+                        <li>• <strong>What does the system do?</strong></li>
+                        <li>• <strong>How to run the system?</strong></li>
+                        <li>• <strong>How to log in to the system?</strong></li>
+                        <li>• <strong>Check certificates</strong> (e.g. <em>"Check EH250001"</em> or <em>"Check Sarah Jenkins"</em>)</li>
+                        <li>• <strong>Explain Blockchain</strong> and AI Fraud detection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ai-quick-prompts">
+                <button onclick="sendAiPrompt('What does the system do?')">What does system do?</button>
+                <button onclick="sendAiPrompt('How to run the system?')">How to run?</button>
+                <button onclick="sendAiPrompt('How to log in to the system?')">How to log in?</button>
+                <button onclick="sendAiPrompt('Check ZOU student EH250001')">Check EH250001</button>
+                <button onclick="sendAiPrompt('Explain how the blockchain protects credentials')">Explain Blockchain</button>
+            </div>
+
+            <div class="ai-chat-input-row">
+                <input type="text" id="aiChatInput" placeholder="Ask anything about credential verification..." onkeydown="if(event.key==='Enter') sendAiMessage()">
+                <button class="btn-primary btn-sm" onclick="sendAiMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modern Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="brand-logo">🎓</div>
+                <div>
+                    <h4 style="margin: 0; font-size: 1.1rem; color: #fff;">DevOps Qualification Verification System</h4>
+                    <p style="margin: 0.25rem 0 0; font-size: 0.85rem; color: #94a3b8;">High-Integrity Academic & Professional Credential Infrastructure</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="/swagger-ui.html" target="_blank">Swagger OpenAPI</a>
+                <a href="/actuator/health" target="_blank">Health Status</a>
+                <a href="/audit">Audit Trail</a>
+                <a href="/dashboard">Institution Dashboard</a>
+                <a href="/login">Officer Login</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #64748b;">
+                <span>&copy; 2026 DevOps QVS. Automated CI/CD • JaCoCo &gt;80% Gate • Docker Ready.</span>
+                <span>Version 2.0.0 (Enterprise Release)</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

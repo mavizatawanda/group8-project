@@ -1,0 +1,6 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-07T19:42:34+02:00
+Prompt: Check if test-compile task has completed
+Early Termination: never
+
+[2026-09-07T19:42:34+02:00] Timer fired.

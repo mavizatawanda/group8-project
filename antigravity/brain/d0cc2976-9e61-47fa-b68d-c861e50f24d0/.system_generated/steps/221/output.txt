@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+<truncated 218 lines>
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper-distribution/3.3.4/maven-wrapper-distribution-3.3.4-only-script.zip
+Progress (1): 7.7/8.5 kBProgress (1): 8.5 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper-distribution/3.3.4/maven-wrapper-distribution-3.3.4-only-script.zip (8.5 kB at 16 kB/s)
+[INFO] Unpacked only-script type wrapper distribution org.apache.maven.wrapper:maven-wrapper-distribution:zip:only-script:3.3.4
+[INFO] Configuring .mvn/wrapper/maven-wrapper.properties to use Maven 3.9.6 and download from https://repo.maven.apache.org/maven2
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  56.130 s
+[INFO] Finished at: 2026-09-06T19:26:21+02:00
+[INFO] ------------------------------------------------------------------------
+

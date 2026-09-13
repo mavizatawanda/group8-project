@@ -1,0 +1,48 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\static\css\style.css. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -108,7 +108,7 @@
+     font-weight: 800;
+     letter-spacing: -0.02em;
+     display: block;
+-    color: #0f172a;
++    color: #0c4a6e;
+ }
+ 
+ .brand-subtitle {
+@@ -115,7 +115,8 @@
+-    color: #64748b;
+-    text-transform: uppercase;
+-    letter-spacing: 0.05em;
+-    display: block;
++    color: #0369a1;
++    text-transform: uppercase;
++    letter-spacing: 0.05em;
++    display: block;
++    font-weight: 700;
+ }
+ 
+ .nav-menu, .nav-links {
+@@ -124,10 +124,10 @@
+ }
+ 
+ .nav-link {
+-    color: #475569;
+-    text-decoration: none;
+-    font-size: 0.9rem;
+-    font-weight: 600;
++    color: #0c4a6e;
++    text-decoration: none;
++    font-size: 0.9rem;
++    font-weight: 700;
+     transition: color 0.2s;
+ }
+ 
+@@ -134,4 +134,4 @@
+-    color: var(--primary);
++    color: #0369a1;
+ }
+ 
+ .nav-auth {
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,30 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\static\js\app.js. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -581,7 +581,11 @@
+     const urlParams = new URLSearchParams(window.location.search);
+     const certQuery = urlParams.get('cert');
+     if (certQuery) {
+-        verifyCredential(certQuery);
++        if (document.getElementById('verificationInput')) {
++            verifyCredential(certQuery);
++        } else {
++            window.location.href = '/dashboard?tab=verifyTab&cert=' + encodeURIComponent(certQuery);
++        }
+     }
+ 
+     // Load blockchain block table on landing page
+@@ -593,8 +593,10 @@
+     const user = getStoredUser();
+     const navAuthContainer = document.getElementById('navAuthStatus');
+     if (navAuthContainer && user) {
++        const roleLabel = user.role ? user.role.replace('ROLE_', '') : 'USER';
+         navAuthContainer.innerHTML = `
+-            <span style="color: #cbd5e1; font-size: 0.85rem; margin-right: 0.5rem;">User: <strong>${user.username}</strong></span>
++            <span style="color: #cbd5e1; font-size: 0.85rem; margin-right: 0.5rem;">User: <strong>${user.username}</strong> <small style="color: #38bdf8;">(${roleLabel})</small></span>
++            <a href="/dashboard?tab=verifyTab" class="chip-btn chip-success" style="text-decoration: none; margin-right: 0.35rem;">Console</a>
+             <button class="chip-btn chip-danger" onclick="logout()">Logout</button>
+         `;
+     }
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

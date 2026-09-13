@@ -1,0 +1,229 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\static\css\style.css. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -41,16 +41,17 @@
+ 
+ /* Announcement Header */
+ .top-announcement {
+-    background: #0f172a;
+-    color: #94a3b8;
+-    font-size: 0.8rem;
+-    text-align: center;
+-    padding: 0.4rem 1rem;
+-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
++    background: #f8fafc;
++    color: #475569;
++    font-size: 0.82rem;
++    text-align: center;
++    padding: 0.5rem 1rem;
++    border-bottom: 1px solid var(--border);
+ }
+ 
+ .top-announcement strong {
+-    color: #38bdf8;
++    color: var(--primary);
++    font-weight: 700;
+ }
+ 
+ /* Navbar */
+@@ -57,9 +57,10 @@
+-    background: rgba(15, 23, 42, 0.95);
+-    backdrop-filter: blur(10px);
++    background: rgba(255, 255, 255, 0.96);
++    backdrop-filter: blur(12px);
+     position: sticky;
+     top: 0;
+     z-index: 100;
+-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
++    border-bottom: 1px solid var(--border);
++    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+ }
+ 
+ .nav-container {
+@@ -84,7 +84,7 @@
+     align-items: center;
+     gap: 0.75rem;
+     text-decoration: none;
+-    color: white;
++    color: #0f172a;
+ }
+ 
+ .brand-logo {
+@@ -91,4 +91,4 @@
+-    background: linear-gradient(135deg, #3b82f6, #6366f1);
++    background: linear-gradient(135deg, #2563eb, #3b82f6);
+     width: 40px;
+     height: 40px;
+     display: flex;
+@@ -95,6 +95,6 @@
+     justify-content: center;
+     border-radius: 10px;
+-    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
++    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+ }
+ 
+ .brand-title {
+@@ -101,6 +101,7 @@
+     font-weight: 800;
+     letter-spacing: -0.02em;
+     display: block;
++    color: #0f172a;
+ }
+ 
+ .brand-subtitle {
+@@ -107,10 +107,10 @@
+-    color: #94a3b8;
+-    text-transform: uppercase;
+-    letter-spacing: 0.05em;
+-    display: block;
+-}
+-
+-.nav-menu {
++    color: #64748b;
++    text-transform: uppercase;
++    letter-spacing: 0.05em;
++    display: block;
++}
++
++.nav-menu, .nav-links {
+     display: flex;
+     align-items: center;
+     gap: 1.5rem;
+@@ -117,9 +117,9 @@
+ 
+ .nav-link {
+-    color: #cbd5e1;
+-    text-decoration: none;
+-    font-size: 0.9rem;
+-    font-weight: 500;
++    color: #475569;
++    text-decoration: none;
++    font-size: 0.9rem;
++    font-weight: 600;
+     transition: color 0.2s;
+ }
+ 
+@@ -126,4 +126,4 @@
+-    color: #38bdf8;
++    color: var(--primary);
+ }
+ 
+ .nav-auth {
+@@ -130,5 +130,16 @@
+ }
+ 
++.badge {
++    background: #e0e7ff;
++    color: #3730a3;
++    font-size: 0.72rem;
++    font-weight: 700;
++    padding: 0.2rem 0.55rem;
++    border-radius: 6px;
++    vertical-align: middle;
++    margin-left: 0.35rem;
++}
++
+ .nav-toggle {
+     display: none;
+     background: none;
+@@ -141,7 +141,7 @@
+     display: block;
+     width: 24px;
+     height: 2px;
+-    background: white;
++    background: #0f172a;
+ }
+ 
+ /* Hero Section */
+@@ -148,9 +148,10 @@
+     position: relative;
+-    background: radial-gradient(circle at 50% -20%, #1e293b 0%, #0f172a 100%);
+-    color: white;
++    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 60%, #f1f5f9 100%);
++    color: #0f172a;
+     padding: 4.5rem 1.5rem 5.5rem;
+     text-align: center;
+     overflow: hidden;
++    border-bottom: 1px solid var(--border);
+ }
+ 
+ .hero-bg-glow {
+@@ -157,9 +157,9 @@
+     top: 20%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+-    width: 600px;
+-    height: 300px;
+-    background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, rgba(15, 23, 42, 0) 70%);
++    width: 700px;
++    height: 350px;
++    background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, rgba(241, 245, 249, 0) 70%);
+     pointer-events: none;
+ }
+ 
+@@ -173,14 +173,15 @@
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+-    background: rgba(59, 130, 246, 0.15);
+-    border: 1px solid rgba(59, 130, 246, 0.35);
+-    padding: 0.35rem 1rem;
+-    border-radius: 9999px;
+-    font-size: 0.8rem;
+-    font-weight: 600;
+-    color: #60a5fa;
+-    margin-bottom: 1.5rem;
++    background: #eff6ff;
++    border: 1px solid #bfdbfe;
++    padding: 0.4rem 1.1rem;
++    border-radius: 9999px;
++    font-size: 0.82rem;
++    font-weight: 700;
++    color: #1d4ed8;
++    margin-bottom: 1.5rem;
++    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+ }
+ 
+ .pulse-dot {
+@@ -202,10 +202,11 @@
+     line-height: 1.15;
+     letter-spacing: -0.03em;
+     margin-bottom: 1.25rem;
++    color: #0f172a;
+ }
+ 
+ .text-gradient {
+-    background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
++    background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+@@ -212,6 +212,6 @@
+ .hero-description {
+     font-size: 1.15rem;
+-    color: #94a3b8;
++    color: #475569;
+     line-height: 1.6;
+     max-width: 720px;
+     margin: 0 auto 2.5rem;
+@@ -223,12 +223,12 @@
+ }
+ 
+ .search-card {
+-    background: rgba(255, 255, 255, 0.98);
+-    color: var(--text-main);
+-    border-radius: 20px;
+-    padding: 2rem;
+-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+-    border: 1px solid rgba(255, 255, 255, 0.2);
++    background: #ffffff;
++    color: var(--text-main);
++    border-radius: 20px;
++    padding: 2rem;
++    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
++    border: 1px solid var(--border);
+     text-align: left;
+ }
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

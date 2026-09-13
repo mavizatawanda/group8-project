@@ -1,0 +1,1 @@
+{"id":"e7453c9c-a339-4330-9445-90b1d8931de3","recipient":"dbeb5914-02b0-421e-b3f2-bf49be569d2f","sender":"dbeb5914-02b0-421e-b3f2-bf49be569d2f/task-286","priority":"MESSAGE_PRIORITY_HIGH","timestamp":"2026-09-05T19:52:52.075029400Z","renderDetails":{"messageTitle":"Wait for test execution: Timer has expired"},"content":"Check mvn test completion"}

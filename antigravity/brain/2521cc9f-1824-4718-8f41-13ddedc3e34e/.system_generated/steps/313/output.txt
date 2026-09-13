@@ -1,0 +1,14 @@
+Task: 2521cc9f-1824-4718-8f41-13ddedc3e34e/task-311
+Status: DONE
+Log: C:\Users\Madziva\.gemini\antigravity\brain\2521cc9f-1824-4718-8f41-13ddedc3e34e\.system_generated\tasks\task-311.log
+Log output:
+Invoke-RestMethod : The remote server returned an error: (403) Forbidden.
+At line:2 char:1
++ Invoke-RestMethod -Uri "http://localhost:8080/api/v1/verifications/ve ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-RestMethod], WebExc 
+   eption
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
+ 
+
+Last progress: 1s ago

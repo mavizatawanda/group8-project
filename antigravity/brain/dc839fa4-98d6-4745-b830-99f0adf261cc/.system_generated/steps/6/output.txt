@@ -1,0 +1,35 @@
+
+The command exited with code 0.
+Output:
+
+
+    Directory: C:\Users\Madziva
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----          9/2/2026   7:29 PM                .chocolatey                                                          
+d-----          9/5/2026   9:04 PM                .copilot                                                             
+d-----          9/4/2026   6:31 AM                .gemini                                                              
+d-----          9/2/2026   7:35 PM                .m2                                                                  
+d-----          9/4/2026   6:56 PM                .vscode                                                              
+d-----          9/4/2026   6:56 PM                .vscode-shared                                                       
+d-r---         8/20/2025   2:30 AM                3D Objects                                                           
+d-----         6/19/2025   9:53 PM                amagwani                                                             
+d-r---          6/2/2025   7:15 PM                Contacts                                                             
+d-r---          9/5/2026   8:35 PM                Desktop                                                              
+d-r---          9/4/2026  12:36 PM                Documents                                                            
+d-r---          9/6/2026  10:16 AM                Downloads                                                            
+d-r---          6/2/2025   7:15 PM                Favorites                                                            
+d-----         9/21/2025   4:41 AM                kimberly                                                             
+d-r---          6/2/2025   7:15 PM                Links                                                                
+d-r---         8/28/2026   7:01 PM                Music                                                                
+d-r---         8/28/2026   7:01 PM                OneDrive                                                             
+d-----          8/8/2025   4:44 AM                PIC                                                                  
+d-r---         6/12/2026   9:03 AM                Pictures                                                             
+d-r---          6/2/2025   7:15 PM                Saved Games                                                          
+d-r---          6/2/2025   7:16 PM                Searches                                                             
+d-r---         6/21/2026   8:27 AM                Videos                                                               
+
+
+

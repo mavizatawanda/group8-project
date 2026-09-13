@@ -1,0 +1,11 @@
+Task: dc839fa4-98d6-4745-b830-99f0adf261cc/task-264
+Status: RUNNING
+Log: C:\Users\Madziva\.gemini\antigravity\brain\dc839fa4-98d6-4745-b830-99f0adf261cc\.system_generated\tasks\task-264.log
+Log output:
+<truncated 165 lines>
+36:45.302+02:00  INFO 3684 --- [qualification-verification-system] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-06T15:36:46.652+02:00  INFO 3684 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Initializing Blockchain Genesis Block for Qualification Verification System...
+2026-09-06T15:36:46.718+02:00  INFO 3684 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Genesis block successfully forged. Block Hash: 900297785d0462eaa8a5e9f2b445f9bb11304fc61e039e8ed20455fc7c4c9ea7
+2026-09-06T15:36:47.289+02:00  WARN 3684 --- [qualification-verification-system] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+Last progress: 0s ago

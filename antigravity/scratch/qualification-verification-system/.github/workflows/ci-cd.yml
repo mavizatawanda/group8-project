@@ -1,0 +1,119 @@
+name: DevOps CI/CD Pipeline - Qualification Verification System
+
+on:
+  push:
+    branches: [ main, develop, 'feature/**' ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  # ==========================================
+  # 1. BUILD & STATIC CODE ANALYSIS (Linting)
+  # ==========================================
+  build-and-lint:
+    name: 🔍 Build & Static Analysis
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Java JDK 17 (Eclipse Temurin)
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Verify Coding Standards (Checkstyle)
+        run: mvn checkstyle:check -B
+
+      - name: Compile Source Code
+        run: mvn clean compile -B
+
+  # ==========================================
+  # 2. AUTOMATED TESTING & QUALITY GATES
+  # ==========================================
+  test-and-coverage:
+    name: 🧪 Automated Testing & JaCoCo Coverage Gate
+    needs: build-and-lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Java JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Run Unit & Integration Tests with Coverage
+        run: mvn clean test jacoco:report jacoco:check -B
+
+      - name: Upload Test Results & Surefire Reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: surefire-test-reports
+          path: target/surefire-reports/
+
+      - name: Upload JaCoCo Coverage Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: jacoco-coverage-report
+          path: target/site/jacoco/
+
+  # ==========================================
+  # 3. PACKAGING & ARTIFACT GENERATION
+  # ==========================================
+  package-application:
+    name: 📦 Package Spring Boot Executable JAR
+    needs: test-and-coverage
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Java JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Package Executable JAR
+        run: mvn package -DskipTests -B
+
+      - name: Upload Application JAR Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: qvs-application-jar
+          path: target/*.jar
+
+  # ==========================================
+  # 4. CONTAINERIZATION & DEPLOYMENT PREPARATION
+  # ==========================================
+  docker-build:
+    name: 🐳 Docker Container Build & Verification
+    needs: package-application
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker Container Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: false
+          tags: devops-qvs:latest

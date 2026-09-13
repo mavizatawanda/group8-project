@@ -1,0 +1,205 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AiFraudDetectionService.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -149,43 +149,43 @@
+     /**
+      * Conversational AI Assistant for natural language qualification queries.
+      */
++    /**
++     * Conversational AI Assistant for natural language qualification and role permission queries.
++     * Truly queries the institutional repository and blockchain state to eliminate hallucinations.
++     */
+     public AiChatResponse processUserQuery(AiChatRequest request) {
+-        String msg = request.getMessage() != null ? request.getMessage().trim().toLowerCase() : "";
++        String rawMsg = request.getMessage() != null ? request.getMessage().trim() : "";
++        String msg = rawMsg.toLowerCase();
+         LocalDateTime now = LocalDateTime.now();
+ 
+-        if (msg.contains("sarah") || msg.contains("qvs-2024-bsc-8891")) {
+-            return AiChatResponse.builder()
+-                    .reply("🔍 **Verification Analysis for Sarah Jenkins (`QVS-2024-BSC-8891`)**:\n\n"
+-                            + "• **Status**: Active (Genuine)\n"
+-                            + "• **Degree**: BSc in Software Engineering (First Class Honours)\n"
+-                            + "• **Institution**: University of Tech & Science\n"
+-                            + "• **Blockchain Proof**: Mined on Block #1 with verified SHA-256 signature.\n"
+-                            + "• **AI Fraud Risk**: **0% (LOW RISK - AUTHENTIC)**.")
+-                    .intent("VERIFY_SARAH")
+-                    .status("SUCCESS")
+-                    .timestamp(now)
+-                    .build();
+-        }
+-
+-        if (msg.contains("marcus") || msg.contains("qvs-2022-dip-1109") || msg.contains("revoked")) {
+-            return AiChatResponse.builder()
+-                    .reply("⚠️ **Disciplinary Warning for Marcus Vance (`QVS-2022-DIP-1109`)**:\n\n"
+-                            + "• **Status**: **REVOKED**\n"
+-                            + "• **Reason**: Academic Disciplinary Action\n"
+-                            + "• **Institution**: Global Technical Institute\n"
+-                            + "• **AI Recommendation**: This credential must **not** be accepted for employment or admission.")
+-                    .intent("VERIFY_REVOKED")
+-                    .status("WARNING")
+-                    .timestamp(now)
+-                    .build();
+-        }
+-
+-        if (msg.contains("how") && (msg.contains("verify") || msg.contains("check"))) {
++        // 1. Role Access Levels and Permission Matrix
++        if (msg.contains("access") || msg.contains("role") || msg.contains("permission")
++                || msg.contains("difference") || (msg.contains("admin") && msg.contains("officer"))) {
++            return AiChatResponse.builder()
++                    .reply("🛡️ **QVS Role-Based Access Control (RBAC) Matrix**:\n\n"
++                            + "1. **System Administrator (`ROLE_ADMIN`)**:\n"
++                            + "   • **Full Master Authority**: Can register qualifications, inspect system audit trails, and access real-time JVM telemetry.\n"
++                            + "   • **Exclusive Revocation Power**: Only Administrators have the authority to revoke credentials on the blockchain.\n\n"
++                            + "2. **Registrar Officer (`ROLE_INSTITUTION`)**:\n"
++                            + "   • **Institutional Registrar**: Can issue new academic credentials for their university and manage the institutional registry.\n"
++                            + "   • **Access Restrictions**: **Cannot revoke credentials** (disciplinary/admin authority required) and cannot view internal server telemetry or audit trails.\n\n"
++                            + "3. **Accredited Verifier (`ROLE_VERIFIER`)**:\n"
++                            + "   • **Verification Specialist**: Can perform instant qualification verification, inspect blockchain blocks, and run AI anomaly scans.\n"
++                            + "   • **Access Restrictions**: Cannot browse student registries, cannot issue credentials, and cannot revoke records.")
++                    .intent("EXPLAIN_ACCESS_LEVELS")
++                    .status("INFO")
++                    .timestamp(now)
++                    .build();
++        }
++
++        // 2. How to Verify
++        if (msg.contains("how") && (msg.contains("verify") || msg.contains("check") || msg.contains("lookup"))) {
+             return AiChatResponse.builder()
+                     .reply("💡 **How to Verify a Certificate**:\n\n"
+-                            + "1. Enter the certificate number (e.g. `QVS-2024-BSC-8891`) in the search box on the home page.\n"
+-                            + "2. Click **'Verify Authenticity'**.\n"
+-                            + "3. The system will cross-reference the registry, validate the SHA-256 digital fingerprint, and confirm the blockchain notarization in real-time.")
++                            + "1. **Sign In**: Log into the portal using your accredited Verifier, Officer, or Admin account.\n"
++                            + "2. **Open Console**: Navigate to the **'Verify Credential'** tab on your dashboard.\n"
++                            + "3. **Enter Identifier**: Enter the Certificate Serial Number (e.g. `QVS-2024-BSC-8891`) or SHA-256 hash.\n"
++                            + "4. **Validate**: Click **'Verify Authenticity'** to inspect the real-time institutional match, blockchain consensus, and AI anomaly heuristics.")
+                     .intent("HOW_TO_VERIFY")
+                     .status("INFO")
+                     .timestamp(now)
+@@ -192,9 +192,10 @@
+         }
+ 
++        // 3. Explain Blockchain
+         if (msg.contains("blockchain") || msg.contains("ledger") || msg.contains("block")) {
+             return AiChatResponse.builder()
+-                    .reply("⛓️ **Blockchain Security Explained**:\n\n"
+-                            + "Every qualification event (issuance or revocation) is cryptographically sealed into a block containing a timestamp, previous block hash, and SHA-256 payload digest. This creates an immutable chain that prevents retroactive tampering or unauthorized diploma forging.")
++                    .reply("⛓️ **Cryptographic Blockchain Ledger Explained**:\n\n"
++                            + "Every qualification event (issuance or revocation) is cryptographically sealed into an immutable block containing a timestamp, previous block hash, and SHA-256 payload digest. This creates an unbroken cryptographic chain preventing retroactive diploma alteration or forged degrees.")
+                     .intent("EXPLAIN_BLOCKCHAIN")
+                     .status("INFO")
+                     .timestamp(now)
+@@ -201,9 +201,15 @@
+         }
+ 
+-        if (msg.contains("ai") || msg.contains("fraud") || msg.contains("anomaly")) {
+-            return AiChatResponse.builder()
+-                    .reply("🤖 **Agentic AI Fraud Shield**:\n\n"
+-                            + "Our AI engine analyzes 6 distinct heuristic vectors: cryptographic signature math, chronological date feasibility, institutional accreditation records, credential entropy, velocity anomaly tracking, and degree semantic alignment.")
++        // 4. Explain AI Fraud Shield
++        if (msg.contains("ai") && (msg.contains("fraud") || msg.contains("anomaly") || msg.contains("shield") || msg.contains("score"))) {
++            return AiChatResponse.builder()
++                    .reply("🤖 **Agentic AI Fraud Shield Heuristics**:\n\n"
++                            + "Our AI engine executes multi-vector anomaly detection:\n"
++                            + "• **Cryptographic Check**: SHA-256 payload consistency.\n"
++                            + "• **Chronology Check**: Validates conferment date feasibility.\n"
++                            + "• **Pattern Recognition**: Validates ISO-standard serial entropy.\n"
++                            + "• **Institutional Accreditation**: Confirms issuing body licensing.\n"
++                            + "• **Disciplinary Check**: Flags any official revocation rulings.")
+                     .intent("EXPLAIN_AI")
+                     .status("INFO")
+                     .timestamp(now)
+@@ -210,9 +210,54 @@
+         }
+ 
++        // 5. Dynamic Database Query (Zero Hallucinations)
++        List<Qualification> matches = findMatchingQualifications(rawMsg);
++        if (!matches.isEmpty()) {
++            Qualification q = matches.get(0);
++            AiAnalysisResultDto aiAnalysis = analyzeCertificate(q.getCertificateNumber());
++
++            StringBuilder sb = new StringBuilder();
++            sb.append("🔍 **Official Registry & Blockchain AI Record for ")
++              .append(q.getStudentFullName()).append(" (`").append(q.getCertificateNumber()).append("`)**:\n\n");
++            sb.append("• **Status**: ").append(q.getStatus() == QualificationStatus.ACTIVE ? "✅ **Active (Genuine & Valid)**" : "⚠️ **OFFICIALLY REVOKED**").append("\n");
++            sb.append("• **Degree / Award**: ").append(q.getAwardTitle()).append(" (").append(q.getMajorSpecialization()).append(")\n");
++            sb.append("• **Classification**: ").append(q.getClassification()).append("\n");
++            sb.append("• **Awarding Institution**: ").append(q.getInstitution() != null ? q.getInstitution().getName() : "Accredited Body").append("\n");
++            sb.append("• **Award Date**: ").append(q.getAwardDate()).append("\n");
++            sb.append("• **Student ID**: ").append(q.getStudentIdNumber()).append("\n");
++
++            if (q.getStatus() == QualificationStatus.REVOKED && q.getRevocationReason() != null) {
++                sb.append("• **Revocation Ruling**: ⚠️ *").append(q.getRevocationReason()).append("*\n");
++            }
++
++            sb.append("• **AI Fraud Score**: **").append(aiAnalysis.getAuthenticityScore())
++              .append("/100 (").append(aiAnalysis.getRiskLevel()).append(" RISK)**\n");
++            sb.append("• **AI Recommendation**: ").append(aiAnalysis.getRecommendation());
++
++            return AiChatResponse.builder()
++                    .reply(sb.toString())
++                    .intent(q.getStatus() == QualificationStatus.ACTIVE ? "VERIFY_ACTIVE" : "VERIFY_REVOKED")
++                    .status(q.getStatus() == QualificationStatus.ACTIVE ? "SUCCESS" : "WARNING")
++                    .timestamp(now)
++                    .build();
++        }
++
++        // 6. If user tried to check a non-existent certificate
++        if (msg.contains("qvs-") || msg.contains("check") || msg.contains("verify")) {
++            return AiChatResponse.builder()
++                    .reply("⚠️ **Institutional Registry Search Outcome**:\n\n"
++                            + "No accredited qualification record was found matching your query in the institutional database. "
++                            + "If this certificate was presented on physical paper or PDF, there is a **high risk of unauthorized alteration or forgery**.")
++                    .intent("NOT_FOUND")
++                    .status("WARNING")
++                    .timestamp(now)
++                    .build();
++        }
++
+         // Generic intelligent fallback
+         return AiChatResponse.builder()
+                 .reply("Hello! I am your **QVS Agentic AI Assistant**. You can ask me to:\n\n"
+-                        + "• Check specific certificates (e.g., *'Check Sarah Jenkins'* or *'Verify QVS-2024-BSC-8891'*)\n"
++                        + "• Check specific student records (e.g., *'Check Sarah Jenkins'*, *'Check David Miller'*, or *'Check Marcus Vance'*)\n"
++                        + "• Explain the **Access Levels between Admin, Officer, and Verifier**\n"
+                         + "• Explain how the **Blockchain Ledger** ensures zero tampering\n"
+                         + "• Inspect **AI Fraud Risk** rules and anomaly scoring")
+                 .intent("GENERAL_ASSIST")
+@@ -219,5 +219,34 @@
+                 .timestamp(now)
+                 .build();
+     }
++
++    private List<Qualification> findMatchingQualifications(String query) {
++        if (query == null || query.isBlank()) {
++            return List.of();
++        }
++        try {
++            // First check direct certificate number format
++            for (String part : query.split("[^a-zA-Z0-9-]")) {
++                if (part.toUpperCase().startsWith("QVS-")) {
++                    Optional<Qualification> byCert = qualificationRepository.findByCertificateNumber(part.toUpperCase());
++                    if (byCert.isPresent()) {
++                        return List.of(byCert.get());
++                    }
++                }
++            }
++
++            // Next check search query
++            String cleanQuery = query.replaceAll("(?i)\\b(check|verify|inspect|who is|what is|tell me about|certificate|student)\\b", "").trim();
++            if (!cleanQuery.isBlank()) {
++                List<Qualification> results = qualificationRepository.searchQualifications(cleanQuery);
++                if (results != null && !results.isEmpty()) {
++                    return results;
++                }
++            }
++        } catch (Exception e) {
++            log.warn("Error during AI chat qualification lookup: {}", e.getMessage());
++        }
++        return List.of();
++    }
+ }
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

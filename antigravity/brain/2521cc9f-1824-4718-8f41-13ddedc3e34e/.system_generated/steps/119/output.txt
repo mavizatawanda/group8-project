@@ -1,0 +1,12 @@
+Task: 2521cc9f-1824-4718-8f41-13ddedc3e34e/task-117
+Status: RUNNING
+Log: C:\Users\Madziva\.gemini\antigravity\brain\2521cc9f-1824-4718-8f41-13ddedc3e34e\.system_generated\tasks\task-117.log
+Log output:
+<truncated 146 lines>
+onTest    : Starting AuthControllerIntegrationTest using Java 17.0.10 with PID 10860 (started by Madziva in C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system)
+2026-09-07T19:52:16.984+02:00 DEBUG 10860 --- [qualification-verification-system] [           main] c.d.q.c.AuthControllerIntegrationTest    : Running with Spring Boot v3.2.3, Spring v6.1.4
+2026-09-07T19:52:16.985+02:00  INFO 10860 --- [qualification-verification-system] [           main] c.d.q.c.AuthControllerIntegrationTest    : The following 1 profile is active: "dev"
+2026-09-07T19:52:19.155+02:00  INFO 10860 --- [qualification-verification-system] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T19:52:19.275+02:00  INFO 10860 --- [qualification-verification-system] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 5 JPA repository interfaces.
+
+Last progress: 0s ago

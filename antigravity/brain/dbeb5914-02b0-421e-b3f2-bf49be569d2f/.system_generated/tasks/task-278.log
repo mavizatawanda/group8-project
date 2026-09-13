@@ -1,0 +1,7 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-05T21:49:42+02:00
+Prompt: Check mvn test completion
+Early Termination: dbeb5914-02b0-421e-b3f2-bf49be569d2f/task-276
+
+[2026-09-05T21:49:32+02:00] Still waiting. Remaining time: 10s
+[2026-09-05T21:49:36+02:00] Timer cancelled: early-termination condition (dbeb5914-02b0-421e-b3f2-bf49be569d2f/task-276) met by a message from dbeb5914-02b0-421e-b3f2-bf49be569d2f/task-276.

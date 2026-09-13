@@ -1,0 +1,46 @@
+
+The command exited with code 1.
+Output:
+<truncated 1 lines>
+2026-09-05T21:59:31.045+02:00  INFO 14844 --- [qualification-verification-system] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-05T21:59:31.069+02:00  INFO 14844 --- [qualification-verification-system] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:qvsdb'
+2026-09-05T21:59:31.386+02:00  INFO 14844 --- [qualification-verification-system] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-05T21:59:31.481+02:00  INFO 14844 --- [qualification-verification-system] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-09-05T21:59:31.536+02:00  INFO 14844 --- [qualification-verification-system] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-05T21:59:31.964+02:00  INFO 14844 --- [qualification-verification-system] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-05T21:59:32.036+02:00  WARN 14844 --- [qualification-verification-system] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-05T21:59:33.795+02:00  INFO 14844 --- [qualification-verification-system] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-05T21:59:33.929+02:00  INFO 14844 --- [qualification-verification-system] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-05T21:59:34.596+02:00 DEBUG 14844 --- [qualification-verification-system] [           main] c.d.qvs.config.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-09-05T21:59:34.829+02:00  INFO 14844 --- [qualification-verification-system] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-05T21:59:35.878+02:00  INFO 14844 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Initializing Blockchain Genesis Block for Qualification Verification System...
+2026-09-05T21:59:35.936+02:00  INFO 14844 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Genesis block successfully forged. Block Hash: 24916f645566753a67fddc7bf9204cdcc6c4d54655ebe5220bdda61dedb30958
+2026-09-05T21:59:36.535+02:00  WARN 14844 --- [qualification-verification-system] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-05T21:59:36.760+02:00  INFO 14844 --- [qualification-verification-system] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-09-05T21:59:37.566+02:00  INFO 14844 --- [qualification-verification-system] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-09-05T21:59:37.841+02:00  INFO 14844 --- [qualification-verification-system] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18b378a2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d039fe6, org.springframework.security.web.context.SecurityContextHolderFilter@16454a28, org.springframework.security.web.header.HeaderWriterFilter@d476a21, org.springframework.security.web.authentication.logout.LogoutFilter@4d630ffa, com.devops.qvs.config.JwtAuthenticationFilter@ab11e76, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c97d5d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@496de48b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a82d4b4, org.springframework.security.web.session.SessionManagementFilter@1b9b8759, org.springframework.security.web.access.ExceptionTranslationFilter@c93275f, org.springframework.security.web.access.intercept.AuthorizationFilter@5084cf1c]
+2026-09-05T21:59:38.826+02:00  INFO 14844 --- [qualification-verification-system] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-09-05T21:59:38.875+02:00  INFO 14844 --- [qualification-verification-system] [           main] d.q.QualificationVerificationApplication : Started QualificationVerificationApplication in 13.52 seconds (process running for 14.268)
+2026-09-05T21:59:38.966+02:00  INFO 14844 --- [qualification-verification-system] [           main] com.devops.qvs.config.DataInitializer    : Initializing Sample DevOps Qualification Data & Blockchain Blocks...
+2026-09-05T21:59:39.371+02:00  INFO 14844 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #1 mined on QVS Ledger for Cert [QVS-2024-BSC-8891]. Hash: f3909254cf655662764666cc829c250bbaac2ab1a7231f22303a423df7bdea86
+2026-09-05T21:59:39.386+02:00  INFO 14844 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #2 mined on QVS Ledger for Cert [QVS-2023-MSC-4412]. Hash: 59d7d58596ff086dbad0c4ef7bed9868eed351164840a3361da84d9c31b9bee9
+2026-09-05T21:59:39.399+02:00  INFO 14844 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #3 mined on QVS Ledger for Cert [QVS-2022-DIP-1109]. Hash: 861befca02d0b4fe0faea4e9799bcc039d7a736fb3ac4e1c504ce9a4afff4fbf
+2026-09-05T21:59:39.400+02:00  INFO 14844 --- [qualification-verification-system] [           main] com.devops.qvs.config.DataInitializer    : Sample qualification data & blockchain ledger successfully initialized.
+2026-09-05T22:01:00.586+02:00  INFO 14844 --- [qualification-verification-system] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-05T22:01:00.588+02:00  INFO 14844 --- [qualification-verification-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-05T22:01:00.590+02:00  INFO 14844 --- [qualification-verification-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-09-05T22:01:00.694+02:00 ERROR 14844 --- [qualification-verification-system] [nio-8080-exec-1] c.d.qvs.service.BlockchainLedgerService  : Blockchain corruption detected at Block #0: expected hash caea83d8c3240a5ce72a9c72b4f0a461ece18748ca9735262b47ef956110296e but found 24916f645566753a67fddc7bf9204cdcc6c4d54655ebe5220bdda61dedb30958
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:14 min
+[INFO] Finished at: 2026-09-05T22:02:30+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.3:run (default-cli) on project qualification-verification-system: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+

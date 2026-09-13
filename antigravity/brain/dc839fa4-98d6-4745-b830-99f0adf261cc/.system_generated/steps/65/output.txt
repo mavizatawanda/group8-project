@@ -1,0 +1,16 @@
+Task: dc839fa4-98d6-4745-b830-99f0adf261cc/task-48
+Status: RUNNING
+Log: C:\Users\Madziva\.gemini\antigravity\brain\dc839fa4-98d6-4745-b830-99f0adf261cc\.system_generated\tasks\task-48.log
+Log output:
+<truncated 132 lines>
+2:test (default-test) @ qualification-verification-system ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.devops.qvs.controller.AuthControllerIntegrationTest
+11:16:51.250 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.devops.qvs.controller.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:16:52.049 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.devops.qvs.QualificationVerificationApplication for test class com.devops.qvs.controller.AuthControllerIntegrationTest
+
+Last progress: 0s ago

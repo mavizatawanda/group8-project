@@ -1,0 +1,4 @@
+{"name":"apache-maven-3.9.6","isDir":true}
+{"name":"jdk-17.0.10+7","isDir":true}
+
+Summary: This directory contains 2 subdirectories and 0 files.

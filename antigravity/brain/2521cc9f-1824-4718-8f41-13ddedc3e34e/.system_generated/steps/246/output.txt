@@ -1,0 +1,78 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\dashboard.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -252,13 +252,13 @@
+                 </div>
+ 
+                 <form id="qualificationForm" onsubmit="handleRegisterQualification(event)">
+-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+-                        <div>
+-                            <label class="form-label">Certificate Serial Number *</label>
+-                            <input type="text" id="certNumber" class="input-control" placeholder="e.g. QVS-2024-BENG-1092" required>
+-                        </div>
+-                        <div>
+-                            <label class="form-label">Student Full Name *</label>
++                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 0.5rem;">
++                        <div class="form-group">
++                            <label class="form-label" for="certNumber">Certificate Serial Number <span class="required-star">*</span></label>
++                            <input type="text" id="certNumber" class="input-control font-mono" placeholder="e.g. QVS-2024-BENG-1092" required>
++                        </div>
++                        <div class="form-group">
++                            <label class="form-label" for="studentName">Student Full Name <span class="required-star">*</span></label>
+                             <input type="text" id="studentName" class="input-control" placeholder="e.g. Alexander Clark" required>
+                         </div>
+                     </div>
+@@ -265,25 +265,25 @@
+-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+-                        <div>
+-                            <label class="form-label">Student ID / National ID *</label>
+-                            <input type="text" id="studentId" class="input-control" placeholder="e.g. STU-119283" required>
+-                        </div>
+-                        <div>
+-                            <label class="form-label">Award Title *</label>
+-                            <input type="text" id="awardTitle" class="input-control" placeholder="e.g. Bachelor of Engineering" required>
+-                        </div>
+-                    </div>
+-
+-                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+-                        <div>
+-                            <label class="form-label">Major / Specialization *</label>
+-                            <input type="text" id="majorSpec" class="input-control" placeholder="e.g. Cloud Computing" required>
+-                        </div>
+-                        <div>
+-                            <label class="form-label">Classification / Grade *</label>
++                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 0.5rem;">
++                        <div class="form-group">
++                            <label class="form-label" for="studentId">Student ID / Registry Ref <span class="required-star">*</span></label>
++                            <input type="text" id="studentId" class="input-control font-mono" placeholder="e.g. STU-119283, ITM 190020" required>
++                        </div>
++                        <div class="form-group">
++                            <label class="form-label" for="awardTitle">Award Title <span class="required-star">*</span></label>
++                            <input type="text" id="awardTitle" class="input-control" placeholder="e.g. Bachelor of Science Honours in Computer Science" required>
++                        </div>
++                    </div>
++
++                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; margin-bottom: 1.5rem;">
++                        <div class="form-group">
++                            <label class="form-label" for="majorSpec">Major / Specialization <span class="required-star">*</span></label>
++                            <input type="text" id="majorSpec" class="input-control" placeholder="e.g. Cloud Computing & DevOps" required>
++                        </div>
++                        <div class="form-group">
++                            <label class="form-label" for="classification">Classification / Grade <span class="required-star">*</span></label>
+                             <input type="text" id="classification" class="input-control" placeholder="e.g. First Class Honours" required>
+                         </div>
+-                        <div>
+-                            <label class="form-label">Award Date *</label>
++                        <div class="form-group">
++                            <label class="form-label" for="awardDate">Award Date <span class="required-star">*</span></label>
+                             <input type="date" id="awardDate" class="input-control" required>
+                         </div>
+                     </div>
+@@ -290,4 +290,4 @@
+-                    <button type="submit" class="btn-primary" style="width: 100%;">
++                    <button type="submit" class="btn-primary" style="width: 100%; height: 50px; font-size: 1rem;">
+                         🔒 Sign, Notarize on Blockchain & Register Credential
+                     </button>
+                 </form>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

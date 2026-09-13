@@ -1,0 +1,58 @@
+Task: d0cc2976-9e61-47fa-b68d-c861e50f24d0/task-120
+Status: DONE
+Log: C:\Users\Madziva\.gemini\antigravity\brain\d0cc2976-9e61-47fa-b68d-c861e50f24d0\.system_generated\tasks\task-120.log
+Log output:
+<truncated 1193 lines>
+r(--primary);
+}
+
+.footer-bottom {
+    border-top: 1px solid #f1f5f9;
+    padding: 1.25rem 1.5rem;
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+footer p {
+    text-align: center;
+    padding: 1.5rem;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.1rem;
+    }
+    .input-group {
+        flex-direction: column;
+    }
+    .nav-toggle {
+        display: flex;
+    }
+    .nav-menu, .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        padding: 1.5rem;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    .nav-menu.open, .nav-links.open {
+        display: flex;
+    }
+    .ai-chat-window {
+        width: calc(100vw - 2rem);
+        right: -1rem;
+    }
+}
+
+
+
+
+Last progress: 4s ago

@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: qualification-verification-system
+  profiles:
+    active: dev
+  thymeleaf:
+    cache: false
+    mode: HTML
+    encoding: UTF-8
+  mvc:
+    static-path-pattern: /**
+
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+
+# JWT Security Configuration
+app:
+  jwt:
+    secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    expiration-ms: 86400000 # 24 hours
+  crypto:
+    salt: QVS-SECURE-SALT-2026-DEVOPS-VERIFICATION-HASH
+
+# SpringDoc / Swagger OpenAPI UI
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+
+# Actuator Endpoints for DevOps Health Monitoring
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always

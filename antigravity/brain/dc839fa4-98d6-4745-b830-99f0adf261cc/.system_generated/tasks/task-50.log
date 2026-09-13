@@ -1,0 +1,6 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-06T11:16:34+02:00
+Prompt: Check test status
+Early Termination: dc839fa4-98d6-4745-b830-99f0adf261cc/task-48
+
+[2026-09-06T11:16:34+02:00] Timer fired.

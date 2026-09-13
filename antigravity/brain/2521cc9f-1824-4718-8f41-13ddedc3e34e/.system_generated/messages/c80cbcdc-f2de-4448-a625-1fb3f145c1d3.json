@@ -1,0 +1,1 @@
+{"id":"c80cbcdc-f2de-4448-a625-1fb3f145c1d3","recipient":"2521cc9f-1824-4718-8f41-13ddedc3e34e","sender":"2521cc9f-1824-4718-8f41-13ddedc3e34e/task-121","priority":"MESSAGE_PRIORITY_HIGH","timestamp":"2026-09-07T17:52:35.659036100Z","renderDetails":{"messageTitle":"Wait for task-117 to finish: Timer has expired"},"content":"Check if mvn test has completed"}

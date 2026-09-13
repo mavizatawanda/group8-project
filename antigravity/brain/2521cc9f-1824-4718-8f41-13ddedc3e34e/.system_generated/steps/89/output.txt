@@ -1,0 +1,32 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\VerificationService.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -34,11 +34,25 @@
+                                                      String userAgent) {
+         String cleanQuery = request.getQuery().trim();
+ 
+-        // Check by Certificate Number or Digital Fingerprint
++        // Check by Certificate Number, Digital Fingerprint, or Student ID
+         Optional<Qualification> opt = qualificationRepository.findByCertificateNumber(cleanQuery.toUpperCase());
+         if (opt.isEmpty()) {
++            opt = qualificationRepository.findByCertificateNumber(cleanQuery);
++        }
++        if (opt.isEmpty()) {
+             opt = qualificationRepository.findByDigitalFingerprint(cleanQuery);
+         }
++        if (opt.isEmpty()) {
++            java.util.List<Qualification> byStudentId = qualificationRepository.findByStudentIdNumber(cleanQuery);
++            if (!byStudentId.isEmpty()) {
++                opt = Optional.of(byStudentId.get(0));
++            } else {
++                byStudentId = qualificationRepository.findByStudentIdNumber(cleanQuery.toUpperCase());
++                if (!byStudentId.isEmpty()) {
++                    opt = Optional.of(byStudentId.get(0));
++                }
++            }
++        }
+ 
+         String verifierId = (request.getVerifierName() != null && !request.getVerifierName().isBlank())
+                 ? request.getVerifierName() + " (" + (request.getVerifierOrganization() != null ? request.getVerifierOrganization() : "Individual") + ")"
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,47 @@
+
+The command exited with code 0.
+Output:
+<truncated 234 lines>
+2026-09-07T19:53:39.358+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #60 mined on QVS Ledger for Cert [BUSE-2024-SSM-8178]. Hash: ca534064220032636e5c1e768b02c3948c7fee1f4529242a1f81e71b3c11107c
+2026-09-07T19:53:39.364+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #61 mined on QVS Ledger for Cert [BUSE-2025-AEC-9289]. Hash: 6df11d65e4bf56f08a7b146a2d542e91222643084bbe972b5ef1ccea5700ad8e
+2026-09-07T19:53:39.369+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #62 mined on QVS Ledger for Cert [BUSE-2025-SFM-0390]. Hash: 743f5d40ba19f34e35e80c3be16864913d1ea0031684aa21c9e36e8e25fed76b
+2026-09-07T19:53:39.373+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #63 mined on QVS Ledger for Cert [BUSE-2025-MED-1401]. Hash: 49fbc00e188076b1dc235d7fb9965468b41c5e06f97c732634fa43a4bf45102c
+2026-09-07T19:53:39.475+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #64 mined on QVS Ledger for Cert [GZU-2024-AMH-2456]. Hash: 04bd002ad0ee816315fbf5f860762ff4ec673e98260fdd3fb34cd22aff4bd601
+2026-09-07T19:53:39.483+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #65 mined on QVS Ledger for Cert [GZU-2023-BM-2345]. Hash: 252cf4554ac732ee50d741e4aa9b45713c1c5282aad846149d3110daee067a15
+2026-09-07T19:53:39.492+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #66 mined on QVS Ledger for Cert [GZU-2025-DS-2567]. Hash: 7ef50c653a0556278a2d1af6c9447f159819d093cf4e33e1f8132ff63a1ae521
+2026-09-07T19:53:39.498+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #67 mined on QVS Ledger for Cert [GZU-2024-ANS-2678]. Hash: 5c6ebf78c06848f329303051e8e0be7607887a2d62847d87629baacc4468fc14
+2026-09-07T19:53:39.504+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #68 mined on QVS Ledger for Cert [GZU-2023-ECD-2789]. Hash: 02edd1767dc7137b336d494a2bc64a333ca86681e0b9b93c178540b703381a28
+2026-09-07T19:53:39.510+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #69 mined on QVS Ledger for Cert [GZU-2025-IT-2890]. Hash: 24fa278e2bc9035b30dc1dc9dde5ddec40ec99111faeee2a31d12fb5ca4b9f6a
+2026-09-07T19:53:39.517+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #70 mined on QVS Ledger for Cert [GZU-2024-MKT-2901]. Hash: c425589d7a7a6d19d899156084fc81806d9aa0c2c91a34c0f74fc83826c7b763
+2026-09-07T19:53:39.522+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #71 mined on QVS Ledger for Cert [GZU-2025-SOC-3012]. Hash: ebf1b545fed8bbcbcb66f488fa9a386cce1a3b19bfa4839bbbdb6fff02836136
+2026-09-07T19:53:39.527+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #72 mined on QVS Ledger for Cert [GZU-2023-LLB-3123]. Hash: a181b98af9ec2abcfea22694d174cb9bb2e780f5d99732db52b3b368eadefcc1
+2026-09-07T19:53:39.533+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #73 mined on QVS Ledger for Cert [GZU-2025-MS-3234]. Hash: 79216e338a4ff760e1f67286dafa5976be9ba6324b974d3ee84b62032bc3f7fd
+2026-09-07T19:53:39.640+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #74 mined on QVS Ledger for Cert [HIT-2024-BSE-0234]. Hash: f4ae7e4eb6b6cf0b1648c7aeed38ef44908367e650d32cecb96f88afa99e4008
+2026-09-07T19:53:39.651+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #75 mined on QVS Ledger for Cert [HIT-2023-ISA-0123]. Hash: 6af66aa6324df75c9ebb6ce11a2e3c69dd4223b3bfe1abc9c2df224256f0b727
+2026-09-07T19:53:39.656+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #76 mined on QVS Ledger for Cert [HIT-2025-ECO-0345]. Hash: 523456d729225dbf8402d1b12e379204ceddbea8a83b329266ccff0ed121110a
+2026-09-07T19:53:39.661+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #77 mined on QVS Ledger for Cert [HIT-2024-CT-0456]. Hash: 0282e5b1aae2719ca003d4134d215ae7230be31acb0dfe61b1cdabba90836f59
+2026-09-07T19:53:39.667+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #78 mined on QVS Ledger for Cert [HIT-2025-BIO-0567]. Hash: 427babcc5bd9ece802a768b4a7403bcb228aaab9c366e1e8d70f7e6af26a15c0
+2026-09-07T19:53:39.671+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #79 mined on QVS Ledger for Cert [HIT-2023-ELE-0678]. Hash: 6969bde35868e58c29896bf40323800e6f8c1785f044f9fdeff24e5617369cec
+2026-09-07T19:53:39.676+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #80 mined on QVS Ledger for Cert [HIT-2025-MST-0789]. Hash: d867bedfd09a7fff47a077ace2e931fd009e76397c7e68da35d76c9c8122a849
+2026-09-07T19:53:39.680+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #81 mined on QVS Ledger for Cert [HIT-2024-BME-0890]. Hash: 734cb86fcf35cefdda33cbe5c2cd083c18ab7d643558d2863782553200f55037
+2026-09-07T19:53:39.685+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #82 mined on QVS Ledger for Cert [HIT-2025-PHT-0901]. Hash: 98e019fe9f8ec3788b8c43a8e3076a21177782999e441ccbc0d565e4344d0361
+2026-09-07T19:53:39.691+02:00  INFO 16616 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : New Block #83 mined on QVS Ledger for Cert [HIT-2025-MCC-1012]. Hash: e294bf5a267ba18bf0b1b04f2f49996209a321e64ce55f4c3ce6e92bf632f174
+2026-09-07T19:53:39.696+02:00  INFO 16616 --- [qualification-verification-system] [           main] com.devops.qvs.config.DataInitializer    : Qualification Verification System successfully seeded with 10 institutions and 83 qualifications on blockchain ledger.
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.89 s -- in com.devops.qvs.controller.ZimbabweUniversitiesVerificationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.11:report (report) @ qualification-verification-system ---
+[INFO] Loading execution data file C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\target\jacoco.exec
+[INFO] Analyzed bundle 'qualification-verification-system' with 65 classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  28.125 s
+[INFO] Finished at: 2026-09-07T19:53:42+02:00
+[INFO] ------------------------------------------------------------------------
+

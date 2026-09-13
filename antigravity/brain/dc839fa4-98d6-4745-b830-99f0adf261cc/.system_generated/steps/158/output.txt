@@ -1,0 +1,78 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\dashboard.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -404,7 +404,8 @@
+         function switchTab(tabId, btn) {
+             document.querySelectorAll('.tab-pane').forEach(p => p.style.display = 'none');
+             document.querySelectorAll('.dash-tab-btn').forEach(b => b.classList.remove('active'));
+-            document.getElementById(tabId).style.display = 'block';
++            const targetPane = document.getElementById(tabId);
++            if (targetPane) targetPane.style.display = 'block';
+             if (btn) btn.classList.add('active');
+ 
+             if (tabId === 'blockchainTab') loadDashboardBlockchain();
+@@ -411,6 +411,62 @@
+         }
+ 
++        function showIssueForm() {
++            switchTab('qualificationsTab', document.getElementById('tabBtnQuals'));
++            const reg = document.getElementById('registerSection');
++            if (reg) reg.scrollIntoView({ behavior: 'smooth' });
++        }
++
+         document.addEventListener('DOMContentLoaded', () => {
++            // 1. Enforce authentication on dashboard
++            const token = getAuthToken();
++            if (!token) {
++                window.location.href = '/login?notice=verify_required';
++                return;
++            }
++
++            const user = getStoredUser();
++
++            // 2. Role-based adjustments
++            if (user && user.role === 'ROLE_VERIFIER') {
++                const btnIssue = document.getElementById('btnIssueQual');
++                if (btnIssue) btnIssue.style.display = 'none';
++
++                const regSection = document.getElementById('registerSection');
++                if (regSection) regSection.style.display = 'none';
++
++                const title = document.getElementById('dashHeaderTitle');
++                if (title) title.innerText = 'Accredited Credential Verification Portal';
++
++                const sub = document.getElementById('dashHeaderSubtitle');
++                if (sub) sub.innerText = 'Verify academic credentials, inspect blockchain blocks, and evaluate AI fraud heuristics.';
++            }
++
++            // 3. Tab routing via URL query parameter
++            const params = new URLSearchParams(window.location.search);
++            const targetTab = params.get('tab');
++            const certQuery = params.get('cert');
++
++            if (targetTab === 'qualificationsTab') {
++                switchTab('qualificationsTab', document.getElementById('tabBtnQuals'));
++            } else if (targetTab === 'blockchainTab') {
++                switchTab('blockchainTab', document.getElementById('tabBtnBlockchain'));
++            } else if (targetTab === 'aiTab') {
++                switchTab('aiTab', document.getElementById('tabBtnAi'));
++            } else if (targetTab === 'telemetryTab') {
++                switchTab('telemetryTab', document.getElementById('tabBtnTelemetry'));
++            } else {
++                // Default to Verification Console for authenticated users
++                switchTab('verifyTab', document.getElementById('tabBtnVerify'));
++            }
++
++            // 4. Auto-verify if cert query parameter is present
++            if (certQuery) {
++                const input = document.getElementById('verificationInput');
++                if (input) input.value = certQuery;
++                verifyCredential(certQuery);
++            }
++
++            // 5. Load data
+             loadQualifications();
+             fetchTelemetry();
+         });
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

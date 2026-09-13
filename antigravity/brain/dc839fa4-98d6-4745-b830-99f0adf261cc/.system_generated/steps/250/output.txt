@@ -1,0 +1,26 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\dashboard.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -46,6 +46,20 @@
+             </button>
+         </div>
+ 
++        <!-- Role Permission Scope Banner -->
++        <div id="roleScopeBanner" style="display: flex; justify-content: space-between; align-items: center; background: #ffffff; border: 1px solid #e2e8f0; border-left: 5px solid #2563eb; border-radius: 12px; padding: 0.9rem 1.25rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm); flex-wrap: wrap; gap: 0.75rem;">
++            <div style="display: flex; align-items: center; gap: 0.85rem;">
++                <span id="roleScopeIcon" style="font-size: 1.6rem;">🛡️</span>
++                <div>
++                    <div style="font-size: 0.95rem; font-weight: 700; color: #0f172a;" id="roleScopeTitle">Authenticated Session</div>
++                    <div style="font-size: 0.8rem; color: #64748b;" id="roleScopeDesc">Enforcing role-based access permissions...</div>
++                </div>
++            </div>
++            <div id="roleScopeBadges" style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
++                <!-- dynamic tags -->
++            </div>
++        </div>
++
+         <!-- Dashboard Navigation Tabs -->
+         <div class="dash-tabs">
+             <button class="dash-tab-btn active" id="tabBtnVerify" onclick="switchTab('verifyTab', this)">
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

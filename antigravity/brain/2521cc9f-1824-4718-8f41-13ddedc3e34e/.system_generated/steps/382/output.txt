@@ -1,0 +1,17 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\static\css\style.css. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1045,8 +1045,9 @@
+     position: absolute;
+     bottom: 4rem;
+     right: 0;
+-    width: 380px;
+-    height: 520px;
++    width: 420px;
++    max-width: calc(100vw - 2rem);
++    height: 560px;
+     background: white;
+     border-radius: 20px;
+     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

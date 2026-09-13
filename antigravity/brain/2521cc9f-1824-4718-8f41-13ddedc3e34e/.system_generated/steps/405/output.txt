@@ -1,0 +1,22 @@
+
+The command exited with code 0.
+Output:
+{
+    "reply":  "?? **What the Qualification Verification System (QVS) Does**:\n\nThe **DevOps Qualification Verification System (QVS)** is a high-integrity platform designed to eliminate degree fraud and fake certificates:\n\n�?� **Instant Credential Verification**: Employers, embassies, and academic bodies can verify certificates by Certificate Number, Student ID, or cryptographic hash.\n�?� **Immutable Blockchain Ledger**: Every qualification issued or revoked is permanently hashed into a cryptographic blockchain block (SHA-256) ensuring zero tampering.\n�?� **Agentic AI Fraud Shield**: Evaluates certificates across 5 security vectors (cryptographic integrity, chronological timeline, pattern entropy, accreditation, and disciplinary history).\n�?� **Role-Based Portals**: Tailored interfaces for System Administrators, University Registrar Officers, and Accredited Verifiers.\n�?� **Audit \u0026 Telemetry**: Full forensics logging (IP addresses, user agents) and live JVM Actuator telemetry.",
+    "intent":  "SYSTEM_OVERVIEW",
+    "status":  "INFO",
+    "timestamp":  "2026-09-12T21:57:28.4814379"
+}
+{
+    "reply":  "?? **How to Run the System**:\n\nYou can run QVS locally using either **Maven** or **Docker**:\n\n1. **Windows Quick Run**:\n   �?� Double-click or execute `run-app.bat` in the project root directory.\n\n2. **Command Line (Maven \u0026 Java 17+)**:\n   �?� Build \u0026 Test: `mvn clean test`\n   �?� Launch Server: `mvn spring-boot:run`\n   �?� Or launch JAR: `java -jar target/qualification-verification-system-1.0.0.jar`\n\n3. **Docker Compose (Production Stack)**:\n   �?� Command: `docker compose up --build`\n   �?� Launches the Spring Boot application container with PostgreSQL 15.\n\n?? Once running, open your web browser at: **`http://localhost:8080`**",
+    "intent":  "HOW_TO_RUN",
+    "status":  "INFO",
+    "timestamp":  "2026-09-12T21:57:28.7834548"
+}
+{
+    "reply":  "?? **How to Log In to the System**:\n\n1. Navigate to the login page: **[http://localhost:8080/login](/login)**\n2. Use one of the pre-configured demo roles (or click the demo card on the login screen to auto-fill):\n\n�?� **System Administrator**:\n  - Username: `admin` | Password: `Admin@12345`\n  - *Full administrative control, revoking certificates, viewing audit logs \u0026 telemetry.*\n\n�?� **University Registrar Officer (e.g. ZOU)**:\n  - Username: `officer_zou` (or `officer`) | Password: `Officer@12345`\n  - *Issue new academic degrees and manage university qualifications.*\n\n�?� **Accredited Verifier**:\n  - Username: `verifier` | Password: `Verifier@12345`\n  - *Inspect blockchain proofs, verify qualifications, and run AI anomaly scans.*",
+    "intent":  "HOW_TO_LOGIN",
+    "status":  "INFO",
+    "timestamp":  "2026-09-12T21:57:28.7915569"
+}
+

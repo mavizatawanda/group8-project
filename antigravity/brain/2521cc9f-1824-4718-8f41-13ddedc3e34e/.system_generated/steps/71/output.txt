@@ -1,0 +1,16 @@
+
+The command exited with code 1.
+Output:
+INFO: Could not find files for the given pattern(s).
+
+
+    Directory: C:\Users\Madziva\AppData\Local\Programs
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----          9/5/2026   8:49 PM                antigravity                                                          
+d-----          9/4/2026   6:56 PM                Microsoft VS Code                                                    
+
+
+

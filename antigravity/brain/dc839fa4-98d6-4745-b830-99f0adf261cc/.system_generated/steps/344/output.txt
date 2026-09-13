@@ -1,0 +1,46 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\static\css\style.css. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -542,8 +542,9 @@
+ 
+ /* Crypto Proof Box */
+ .crypto-proof-box {
+-    background: #0f172a;
+-    color: white;
++    background: #f8fafc;
++    border: 1px solid var(--border);
++    color: #1e293b;
+     padding: 1.25rem;
+     border-radius: 12px;
+     margin-bottom: 1.25rem;
+@@ -553,7 +553,7 @@
+     justify-content: space-between;
+     font-size: 0.85rem;
+     font-weight: 600;
+-    color: #94a3b8;
++    color: #64748b;
+     margin-bottom: 0.5rem;
+ }
+ 
+@@ -560,4 +560,4 @@
+-    color: #4ade80;
++    color: #16a34a;
+ }
+ 
+ .hash-code {
+@@ -564,7 +564,12 @@
+     font-size: 0.85rem;
+-    color: #38bdf8;
++    color: #0284c7;
+     word-break: break-all;
+     line-height: 1.4;
++    background: #ffffff;
++    padding: 0.5rem 0.75rem;
++    border-radius: 6px;
++    border: 1px solid var(--border);
++    display: block;
+ }
+ 
+ /* AI Assessment Box */
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

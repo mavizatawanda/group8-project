@@ -1,0 +1,14 @@
+
+The command exited with code 0.
+Output:
+
+
+    Directory: C:\Users\Madziva\.gemini\antigravity\scratch\flutter_welcome_page
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----          9/6/2026   6:44 PM                lib                                                                  
+
+
+

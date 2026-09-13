@@ -1,0 +1,29 @@
+
+The command exited with code 0.
+Output:
+{
+    "certificateNumber":  "QVS-2024-BSC-8891",
+    "authenticityScore":  100,
+    "riskLevel":  "LOW",
+    "confidencePercentage":  98.5,
+    "anomalyFlags":  [
+
+                     ],
+    "passedChecks":  [
+                         "Cryptographic Integrity: Deterministic SHA-256 digital fingerprint verified (No payload tampering detected).",
+                         "Institutional Standing: Credential is actively endorsed with zero disciplinary holds.",
+                         "Chronological Feasibility: Award date (2024-07-15) conforms to standard academic calendar cycles.",
+                         "Pattern Recognition: Certificate serial number adheres to ISO-standard QVS cryptographic entropy scheme.",
+                         "Accreditation: Issued by verified accredited body \u0027National Institute of Technology\u0027."
+                     ],
+    "recommendation":  "ACCEPT CREDENTIAL: Full confidence in academic authenticity and digital integrity.",
+    "agentExplanation":  "AI Agent Evaluation: All security vectors passed with flying colors. No data tampering, valid cryptographic signature, and active institutional endorsement.",
+    "analyzedAt":  "2026-09-05T22:06:27.8942472"
+}
+{
+    "reply":  "?? **Verification Analysis for Sarah Jenkins (`QVS-2024-BSC-8891`)**:\n\n�?� **Status**: Active (Genuine)\n�?� **Degree**: BSc in Software Engineering (First Class Honours)\n�?� **Institution**: University of Tech \u0026 Science\n�?� **Blockchain Proof**: Mined on Block #1 with verified SHA-256 signature.\n�?� **AI Fraud Risk**: **0% (LOW RISK - AUTHENTIC)**.",
+    "intent":  "VERIFY_SARAH",
+    "status":  "SUCCESS",
+    "timestamp":  "2026-09-05T22:06:28.4372925"
+}
+

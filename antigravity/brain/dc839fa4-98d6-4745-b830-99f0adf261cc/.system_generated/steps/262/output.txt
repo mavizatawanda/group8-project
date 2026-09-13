@@ -1,0 +1,99 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\static\js\app.js. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -418,9 +418,22 @@
+             return;
+         }
+ 
++        const user = getStoredUser();
++        const isAdmin = user && user.role === 'ROLE_ADMIN';
++
+         list.forEach(q => {
+             const row = document.createElement('tr');
+             const statusClass = q.status === 'ACTIVE' ? 'color: #059669; font-weight: bold;' : 'color: #dc2626; font-weight: bold;';
++            let actionButtons = `<button class="chip-btn chip-neutral" onclick="verifyFromDashboard('${q.certificateNumber}')">Verify</button>`;
++
++            if (q.status === 'ACTIVE') {
++                if (isAdmin) {
++                    actionButtons += ` <button class="chip-btn chip-danger" onclick="revokeCert(${q.id})">Revoke</button>`;
++                } else {
++                    actionButtons += ` <span class="chip-btn" style="background:#f1f5f9; color:#94a3b8; font-size:0.72rem; cursor:not-allowed;" title="Only System Administrator can revoke credentials">🔒 Revoke (Admin Only)</span>`;
++                }
++            }
++
+             row.innerHTML = `
+                 <td><strong>${q.certificateNumber}</strong></td>
+                 <td>${q.studentFullName}<br><small style="color: #64748b;">${q.studentIdNumber}</small></td>
+@@ -427,10 +427,7 @@
+                 <td>${q.classification}</td>
+                 <td>${q.institutionName}</td>
+                 <td><span style="${statusClass}">${q.status}</span></td>
+-                <td>
+-                    <button class="chip-btn chip-neutral" onclick="verifyFromDashboard('${q.certificateNumber}')">Verify</button>
+-                    ${q.status === 'ACTIVE' ? `<button class="chip-btn chip-danger" onclick="revokeCert(${q.id})">Revoke</button>` : ''}
+-                </td>
++                <td>${actionButtons}</td>
+             `;
+             tableBody.appendChild(row);
+         });
+@@ -451,6 +451,12 @@
+ }
+ 
+ async function revokeCert(id) {
++    const user = getStoredUser();
++    if (!user || user.role !== 'ROLE_ADMIN') {
++        alert('Access Denied: Only users with System Administrator (ROLE_ADMIN) privileges are authorized to revoke academic credentials.');
++        return;
++    }
++
+     const reason = prompt('Please enter reason for revocation:');
+     if (!reason) return;
+ 
+@@ -483,8 +483,10 @@
+ async function handleRegisterQualification(event) {
+     event.preventDefault();
+     const token = getAuthToken();
+-    if (!token) {
+-        alert('Please login to register qualifications.');
++    const user = getStoredUser();
++
++    if (!token || !user || (user.role !== 'ROLE_ADMIN' && user.role !== 'ROLE_INSTITUTION')) {
++        alert('Access Denied: You must be signed in as an accredited Registrar Officer or Administrator to issue qualifications.');
+         window.location.href = '/login';
+         return;
+     }
+@@ -528,8 +528,30 @@
+     const tableBody = document.getElementById('auditTableBody');
+     if (!tableBody) return;
+ 
+-    try {
+-        const response = await fetch('/api/v1/audit-logs');
++    const user = getStoredUser();
++    if (!user || user.role !== 'ROLE_ADMIN') {
++        tableBody.innerHTML = `
++            <tr>
++                <td colspan="6" style="text-align: center; padding: 2.5rem 1rem;">
++                    <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">🔒</div>
++                    <strong style="color: #dc2626; font-size: 1.05rem;">Access Denied: System Administrator Authorization Required</strong>
++                    <p style="color: #64748b; font-size: 0.85rem; margin-top: 0.5rem; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.5;">
++                        Audit trails and client IP security logs are restricted to <strong>ROLE_ADMIN</strong> accounts.
++                        Your current active role is: <strong style="color: #0f172a;">${user ? user.role : 'UNAUTHENTICATED'}</strong>.
++                    </p>
++                    <a href="/dashboard" class="btn-primary btn-sm" style="margin-top: 1rem; display: inline-block;">Return to Dashboard</a>
++                </td>
++            </tr>
++        `;
++        return;
++    }
++
++    try {
++        const token = getAuthToken();
++        const headers = {};
++        if (token) headers['Authorization'] = 'Bearer ' + token;
++
++        const response = await fetch('/api/v1/audit-logs', { headers });
+         const logs = await response.json();
+ 
+         tableBody.innerHTML = '';
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

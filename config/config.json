@@ -1,0 +1,13 @@
+{
+  "userSettings": {
+    "globalPermissionGrants": {
+      "allow": [
+        "command(mvn clean test)",
+        "command(java -version)",
+        "command(choco list)"
+      ]
+    },
+    "remoteControlHostname": "desktop-74ih0vg-galactic-spark",
+    "themeMode": "THEME_MODE_DARK"
+  }
+}

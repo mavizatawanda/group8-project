@@ -1,0 +1,11 @@
+
+The command exited with code 1.
+Output:
+At line:1 char:256
++ ... :PATH"; mvn test -Dtest=ZimbabweUniversitiesVerificationTest,AuthCont ...
++                                                                 ~
+Missing argument in parameter list.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingArgument
+ 
+

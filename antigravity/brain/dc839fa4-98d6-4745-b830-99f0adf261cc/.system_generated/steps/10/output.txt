@@ -1,0 +1,2 @@
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\resources\\templates\\index.html"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\target\\classes\\templates\\index.html"}

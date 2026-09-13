@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+{
+    "valid":  false,
+    "chainHeight":  4,
+    "message":  "Integrity alert! A block payload or previous hash pointer mismatch has been detected.",
+    "status":  "CHAIN_INTEGRITY_FAILED"
+}
+

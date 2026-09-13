@@ -1,0 +1,36 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\dashboard.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -99,13 +99,25 @@
+                     </div>
+ 
+                     <!-- Quick Test Chips -->
+-                    <div class="quick-test-bar" style="margin-bottom: 1.5rem;">
++                    <div class="quick-test-bar" style="margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                         <span class="quick-test-label">Demo Records:</span>
++                        <button class="chip-btn chip-success" onclick="verifyCredential('ITM 190020')">
++                            ✓ ZOU: Itai Muringani (ITM 190020 - BSc IT)
++                        </button>
++                        <button class="chip-btn chip-success" onclick="verifyCredential('EH250001')">
++                            ✓ ZOU: Sekai Mataranyika (EH250001 - PGDE '25)
++                        </button>
++                        <button class="chip-btn chip-success" onclick="verifyCredential('UZ-2024-BSC-3112')">
++                            ✓ UZ: Tendai Moyo (BSc CompSci)
++                        </button>
++                        <button class="chip-btn chip-success" onclick="verifyCredential('NUST-2025-CSC-4321')">
++                            ✓ NUST: Sibusiso Nyathi (BSc CompSci)
++                        </button>
++                        <button class="chip-btn chip-success" onclick="verifyCredential('HIT-2024-BSE-0234')">
++                            ✓ HIT: Craig Mupanduki (BTech SE)
++                        </button>
+                         <button class="chip-btn chip-success" onclick="verifyCredential('QVS-2024-BSC-8891')">
+-                            ✓ Sarah Jenkins (Active BSc)
+-                        </button>
+-                        <button class="chip-btn chip-success" onclick="verifyCredential('QVS-2023-MSC-4412')">
+-                            ✓ David Miller (Active MSc)
++                            ✓ Sarah Jenkins (BSc)
+                         </button>
+                         <button class="chip-btn chip-danger" onclick="verifyCredential('QVS-2022-DIP-1109')">
+                             ⚠ Marcus Vance (Revoked)
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

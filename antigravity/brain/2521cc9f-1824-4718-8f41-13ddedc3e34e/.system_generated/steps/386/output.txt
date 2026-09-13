@@ -1,0 +1,49 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\test\java\com\devops\qvs\service\AiFraudDetectionServiceTest.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -138,5 +138,43 @@
+         assertEquals("INFO", response.getStatus());
+         assertTrue(response.getReply().contains("How to Verify"));
+     }
++
++    @Test
++    @DisplayName("Should answer questions about what the system does")
++    void testChatWhatTheSystemDoes() {
++        AiChatResponse response = aiFraudDetectionService.processUserQuery(
++                AiChatRequest.builder().message("What does the system do?").build()
++        );
++
++        assertNotNull(response);
++        assertEquals("SYSTEM_OVERVIEW", response.getIntent());
++        assertTrue(response.getReply().contains("DevOps Qualification Verification System"));
++    }
++
++    @Test
++    @DisplayName("Should answer questions about how to run the system")
++    void testChatHowToRunTheSystem() {
++        AiChatResponse response = aiFraudDetectionService.processUserQuery(
++                AiChatRequest.builder().message("How to run the system?").build()
++        );
++
++        assertNotNull(response);
++        assertEquals("HOW_TO_RUN", response.getIntent());
++        assertTrue(response.getReply().contains("mvn spring-boot:run"));
++        assertTrue(response.getReply().contains("run-app.bat"));
++    }
++
++    @Test
++    @DisplayName("Should answer questions about how to log in")
++    void testChatHowToLogIn() {
++        AiChatResponse response = aiFraudDetectionService.processUserQuery(
++                AiChatRequest.builder().message("How to log in to the system?").build()
++        );
++
++        assertNotNull(response);
++        assertEquals("HOW_TO_LOGIN", response.getIntent());
++        assertTrue(response.getReply().contains("admin"));
++        assertTrue(response.getReply().contains("Admin@12345"));
++    }
+ }
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

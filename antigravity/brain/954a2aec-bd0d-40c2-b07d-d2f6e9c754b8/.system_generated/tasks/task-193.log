@@ -1,0 +1,16 @@
+Downloading OpenJDK 17...
+Extracting OpenJDK 17...
+Downloading Apache Maven...
+Extracting Apache Maven...
+Setup complete.
+
+
+    Directory: C:\Users\Madziva\.gemini\antigravity\scratch\tools
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----          9/2/2026   7:33 PM                apache-maven-3.9.6                                                   
+d-----          9/2/2026   7:32 PM                jdk-17.0.10+7                                                        
+
+

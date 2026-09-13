@@ -1,0 +1,91 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\static\css\style.css. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -1145,9 +1145,10 @@
+ }
+ 
+ /* Footer */
+-.footer {
+-    background: #0f172a;
+-    color: #94a3b8;
++.footer, footer {
++    background: #ffffff;
++    border-top: 1px solid var(--border);
++    color: #64748b;
+     margin-top: auto;
+ }
+ 
+@@ -1165,6 +1165,11 @@
+     display: flex;
+     align-items: center;
+     gap: 1rem;
++    color: #0f172a;
++}
++
++.footer-brand .brand-title {
++    color: #0f172a;
+ }
+ 
+ .footer-links {
+@@ -1173,9 +1173,10 @@
+ }
+ 
+ .footer-links a {
+-    color: #cbd5e1;
+-    text-decoration: none;
+-    font-size: 0.9rem;
++    color: #64748b;
++    text-decoration: none;
++    font-size: 0.9rem;
++    font-weight: 500;
+     transition: color 0.2s;
+ }
+ 
+@@ -1182,9 +1182,18 @@
+-    color: #38bdf8;
++    color: var(--primary);
+ }
+ 
+ .footer-bottom {
+-    border-top: 1px solid rgba(255, 255, 255, 0.08);
++    border-top: 1px solid #f1f5f9;
+     padding: 1.25rem 1.5rem;
++    color: #94a3b8;
++    font-size: 0.85rem;
++}
++
++footer p {
++    text-align: center;
++    padding: 1.5rem;
++    color: #64748b;
++    font-size: 0.85rem;
+ }
+ 
+ /* Responsive Media Queries */
+@@ -1197,7 +1197,7 @@
+     .nav-toggle {
+         display: flex;
+     }
+-    .nav-menu {
++    .nav-menu, .nav-links {
+         display: none;
+         flex-direction: column;
+         position: absolute;
+@@ -1204,10 +1204,11 @@
+         left: 0;
+         right: 0;
+-        background: #0f172a;
++        background: #ffffff;
+         padding: 1.5rem;
+-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+-    }
+-    .nav-menu.open {
++        border-bottom: 1px solid var(--border);
++        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
++    }
++    .nav-menu.open, .nav-links.open {
+         display: flex;
+     }
+     .ai-chat-window {
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

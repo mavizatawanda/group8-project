@@ -1,0 +1,12 @@
+Task: dc839fa4-98d6-4745-b830-99f0adf261cc/task-176
+Status: RUNNING
+Log: C:\Users\Madziva\.gemini\antigravity\brain\dc839fa4-98d6-4745-b830-99f0adf261cc\.system_generated\tasks\task-176.log
+Log output:
+<truncated 153 lines>
+08:51.790+02:00  INFO 15340 --- [qualification-verification-system] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-06T15:08:52.003+02:00  INFO 15340 --- [qualification-verification-system] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 188 ms. Found 5 JPA repository interfaces.
+2026-09-06T15:08:54.161+02:00  INFO 15340 --- [qualification-verification-system] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-06T15:08:54.391+02:00  INFO 15340 --- [qualification-verification-system] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-09-06T15:08:54.495+02:00  INFO 15340 --- [qualification-verification-system] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+
+Last progress: 0s ago

@@ -1,0 +1,1 @@
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\resources\\static\\js\\app.js","LineNumber":639,"LineContent":"    const navAuthContainer = document.getElementById('navAuthStatus');"}

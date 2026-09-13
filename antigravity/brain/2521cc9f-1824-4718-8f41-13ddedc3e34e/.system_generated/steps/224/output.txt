@@ -1,0 +1,205 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\static\css\style.css. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -284,6 +284,28 @@
+     color: #64748b;
+ }
+ 
++/* Forms, Inputs & Textboxes */
++.form-group {
++    margin-bottom: 1.25rem;
++    position: relative;
++    display: flex;
++    flex-direction: column;
++}
++
++.form-label {
++    display: block;
++    font-size: 0.875rem;
++    font-weight: 600;
++    color: #1e293b;
++    margin-bottom: 0.45rem;
++    letter-spacing: -0.01em;
++}
++
++.form-label .required-star {
++    color: var(--danger);
++    margin-left: 2px;
++}
++
+ .input-group {
+     display: flex;
+     gap: 0.75rem;
+@@ -290,43 +290,143 @@
++    width: 100%;
++    align-items: stretch;
++}
++
++.input-wrapper {
++    position: relative;
++    display: flex;
++    align-items: center;
++    width: 100%;
++}
++
++.input-icon-left {
++    position: absolute;
++    left: 1rem;
++    color: #94a3b8;
++    pointer-events: none;
++    display: flex;
++    align-items: center;
++    justify-content: center;
++    font-size: 1.1rem;
++    transition: color 0.2s ease;
++    z-index: 2;
++}
++
++.input-action-right {
++    position: absolute;
++    right: 0.75rem;
++    display: flex;
++    align-items: center;
++    justify-content: center;
++    background: transparent;
++    border: none;
++    color: #94a3b8;
++    cursor: pointer;
++    padding: 0.35rem 0.5rem;
++    border-radius: 6px;
++    font-size: 1.1rem;
++    transition: all 0.2s ease;
++    z-index: 2;
++}
++
++.input-action-right:hover {
++    color: #1e293b;
++    background: #f1f5f9;
+ }
+ 
+ .input-control {
+-    flex: 1;
+-    padding: 0.9rem 1.25rem;
+-    border: 2px solid var(--border);
+-    border-radius: 12px;
+-    font-size: 1rem;
+-    outline: none;
+-    transition: all 0.2s;
+-    background: #f8fafc;
++    width: 100% !important;
++    min-width: 0;
++    display: block;
++    height: 48px;
++    padding: 0.75rem 1rem;
++    border: 1.5px solid #cbd5e1;
++    border-radius: 12px;
++    font-size: 0.95rem;
++    font-family: inherit;
++    color: #0f172a;
++    background: #ffffff !important;
++    outline: none;
++    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
++    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
++}
++
++.input-wrapper .input-control.has-icon-left {
++    padding-left: 2.85rem;
++}
++
++.input-wrapper .input-control.has-action-right {
++    padding-right: 2.85rem;
++}
++
++.input-control::placeholder {
++    color: #94a3b8;
++    font-weight: 400;
++}
++
++.input-control:hover {
++    border-color: #94a3b8;
+ }
+ 
+ .input-control:focus {
+-    border-color: var(--primary);
+-    background: #ffffff;
+-    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
++    border-color: #2563eb;
++    background: #ffffff !important;
++    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12), 0 1px 2px rgba(0, 0, 0, 0.04);
++}
++
++.input-wrapper:focus-within .input-icon-left {
++    color: #2563eb;
++}
++
++/* Chrome / Safari / Edge Autofill Fix */
++input:-webkit-autofill,
++input:-webkit-autofill:hover, 
++input:-webkit-autofill:focus, 
++input:-webkit-autofill:active {
++    -webkit-box-shadow: 0 0 0 50px #ffffff inset !important;
++    -webkit-text-fill-color: #0f172a !important;
++    border-color: #94a3b8 !important;
++    transition: background-color 5000s ease-in-out 0s;
++}
++
++.input-group .input-control {
++    flex: 1;
++    height: 52px;
++}
++
++.input-group .btn-search {
++    height: 52px;
++    padding: 0 1.75rem;
++    white-space: nowrap;
+ }
+ 
+ .btn-primary {
+-    background: var(--primary-gradient);
+-    color: white;
+-    padding: 0.9rem 1.75rem;
+-    border: none;
+-    border-radius: 12px;
+-    font-size: 0.95rem;
+-    font-weight: 700;
+-    cursor: pointer;
+-    transition: all 0.2s;
+-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+-    display: inline-flex;
+-    align-items: center;
+-    justify-content: center;
+-    gap: 0.5rem;
+-    text-decoration: none;
++    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
++    color: white;
++    padding: 0.85rem 1.5rem;
++    border: none;
++    border-radius: 12px;
++    font-size: 0.95rem;
++    font-weight: 600;
++    cursor: pointer;
++    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
++    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25), 0 1px 2px rgba(37, 99, 235, 0.15);
++    display: inline-flex;
++    align-items: center;
++    justify-content: center;
++    gap: 0.5rem;
++    text-decoration: none;
++    letter-spacing: -0.01em;
+ }
+ 
+ .btn-primary:hover {
++    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+     transform: translateY(-1px);
+-    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
++    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35), 0 2px 4px rgba(37, 99, 235, 0.2);
++}
++
++.btn-primary:active {
++    transform: translateY(0);
++    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+ }
+ 
+ .btn-primary.btn-sm {
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

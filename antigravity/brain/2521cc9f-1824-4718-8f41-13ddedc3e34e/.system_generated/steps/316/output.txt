@@ -1,0 +1,12 @@
+
+The command exited with code 1.
+Output:
+Invoke-RestMethod : The remote server returned an error: (403) Forbidden.
+At line:2 char:1
++ Invoke-RestMethod -Uri "http://localhost:8080/api/v1/verifications/pu ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-RestMethod], WebExc 
+   eption
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
+ 
+

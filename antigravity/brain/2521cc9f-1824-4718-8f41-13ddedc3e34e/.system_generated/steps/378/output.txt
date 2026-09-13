@@ -1,0 +1,36 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -268,11 +268,13 @@
+ 
+             <div class="ai-chat-messages" id="aiChatMessages">
+                 <div class="ai-message ai-bot">
+-                    <p>Hello! I am your <strong>QVS Agentic AI Assistant</strong>. Ask me to:</p>
++                    <p>Hello! I am your <strong>QVS Agentic AI Assistant</strong>. Ask me any question, such as:</p>
+                     <ul>
+-                        <li>• Check specific certificates (e.g. <em>"Check Sarah Jenkins"</em>)</li>
+-                        <li>• Explain how the <strong>Blockchain Ledger</strong> works</li>
+-                        <li>• Analyze <strong>AI Fraud Risk</strong> and anomaly rules</li>
++                        <li>• <strong>What does the system do?</strong></li>
++                        <li>• <strong>How to run the system?</strong></li>
++                        <li>• <strong>How to log in to the system?</strong></li>
++                        <li>• <strong>Check certificates</strong> (e.g. <em>"Check EH250001"</em> or <em>"Check Sarah Jenkins"</em>)</li>
++                        <li>• <strong>Explain Blockchain</strong> and AI Fraud detection</li>
+                     </ul>
+                 </div>
+             </div>
+@@ -279,7 +279,9 @@
+             <div class="ai-quick-prompts">
+-                <button onclick="sendAiPrompt('Check Sarah Jenkins credential')">Check Sarah</button>
+-                <button onclick="sendAiPrompt('Why is Marcus Vance revoked?')">Check Marcus</button>
+-                <button onclick="sendAiPrompt('How does the blockchain protect credentials?')">Explain Blockchain</button>
++                <button onclick="sendAiPrompt('What does the system do?')">What does system do?</button>
++                <button onclick="sendAiPrompt('How to run the system?')">How to run?</button>
++                <button onclick="sendAiPrompt('How to log in to the system?')">How to log in?</button>
++                <button onclick="sendAiPrompt('Check ZOU student EH250001')">Check EH250001</button>
++                <button onclick="sendAiPrompt('Explain how the blockchain protects credentials')">Explain Blockchain</button>
+             </div>
+ 
+             <div class="ai-chat-input-row">
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

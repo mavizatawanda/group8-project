@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorized Portal Authentication | DevOps QVS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css?v=sky4">
+    <style>
+        /* Scoped High-Impact Presentation Styles for Auth Portal */
+        body {
+            background: radial-gradient(circle at 50% -20%, #dbeafe 0%, #eff6ff 25%, #f8fafc 65%, #f1f5f9 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            color: #0f172a;
+        }
+
+        .auth-nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid #e2e8f0;
+            padding: 0.85rem 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        }
+
+        .auth-nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .auth-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: #0f172a;
+        }
+
+        .auth-brand-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+        }
+
+        .auth-brand-title {
+            font-weight: 800;
+            font-size: 1.15rem;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            line-height: 1.2;
+        }
+
+        .auth-brand-subtitle {
+            font-size: 0.75rem;
+            color: #64748b;
+            font-weight: 500;
+            display: block;
+        }
+
+        .auth-nav-links {
+            display: flex;
+            gap: 1.25rem;
+            align-items: center;
+        }
+
+        .auth-nav-link {
+            color: #475569;
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        .auth-nav-link:hover {
+            color: #2563eb;
+        }
+
+        /* Main Container */
+        .auth-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1.25rem;
+        }
+
+        /* The Card */
+        .auth-card-container {
+            width: 100%;
+            max-width: 500px;
+            background: #ffffff;
+            border-radius: 24px;
+            border: 1px solid rgba(226, 232, 240, 0.9);
+            box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(226, 232, 240, 0.6);
+            padding: 2.5rem 2.25rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .auth-card-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb 0%, #4f46e5 50%, #06b6d4 100%);
+        }
+
+        .auth-icon-badge {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.12) 0%, rgba(79, 70, 229, 0.12) 100%);
+            border: 1.5px solid rgba(37, 99, 235, 0.2);
+            font-size: 1.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.25rem;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.1);
+        }
+
+        .auth-card-title {
+            font-size: 1.65rem;
+            font-weight: 800;
+            text-align: center;
+            margin: 0 0 0.45rem 0;
+            color: #0f172a;
+            letter-spacing: -0.025em;
+        }
+
+        .auth-card-subtitle {
+            color: #64748b;
+            text-align: center;
+            font-size: 0.9rem;
+            margin: 0 0 1.75rem 0;
+            line-height: 1.5;
+        }
+
+        /* Form Controls */
+        .form-group {
+            margin-bottom: 1.25rem;
+            text-align: left;
+        }
+
+        .form-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.45rem;
+            letter-spacing: -0.01em;
+        }
+
+        .input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .input-icon-left {
+            position: absolute;
+            left: 14px;
+            color: #94a3b8;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.2s ease;
+            z-index: 2;
+        }
+
+        .input-action-right {
+            position: absolute;
+            right: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            border: none;
+            color: #94a3b8;
+            cursor: pointer;
+            padding: 6px 8px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            z-index: 2;
+        }
+
+        .input-action-right:hover {
+            color: #1e293b;
+            background: #f1f5f9;
+        }
+
+        .input-control {
+            width: 100% !important;
+            box-sizing: border-box !important;
+            height: 48px;
+            padding: 0 1rem 0 2.85rem;
+            border: 1.5px solid #cbd5e1;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            color: #0f172a;
+            background: #ffffff !important;
+            outline: none;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease;
+        }
+
+        .input-control.has-action-right {
+            padding-right: 2.85rem;
+        }
+
+        .input-control::placeholder {
+            color: #94a3b8;
+            font-weight: 400;
+        }
+
+        .input-control:hover {
+            border-color: #94a3b8;
+        }
+
+        .input-control:focus {
+            border-color: #2563eb;
+            background: #ffffff !important;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12), 0 1px 2px rgba(0, 0, 0, 0.04);
+        }
+
+        .input-wrapper:focus-within .input-icon-left {
+            color: #2563eb;
+        }
+
+        /* Autofill Overrides */
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 50px #ffffff inset !important;
+            -webkit-text-fill-color: #0f172a !important;
+            border-color: #94a3b8 !important;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+
+        /* Primary Button */
+        .btn-submit {
+            width: 100%;
+            height: 48px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff;
+            font-size: 0.975rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25), 0 1px 2px rgba(37, 99, 235, 0.15);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-top: 0.5rem;
+        }
+
+        .btn-submit:hover {
+            background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35), 0 2px 4px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-submit:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Alert Banners */
+        .alert-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            padding: 0.85rem 1rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            line-height: 1.45;
+            margin-bottom: 1.25rem;
+            text-align: left;
+        }
+
+        .alert-info {
+            background: #eff6ff;
+            color: #1e40af;
+            border: 1.5px solid #bfdbfe;
+            box-shadow: 0 1px 2px rgba(30, 64, 175, 0.05);
+        }
+
+        .alert-danger {
+            background: #fef2f2;
+            color: #991b1b;
+            border: 1.5px solid #fecaca;
+            box-shadow: 0 1px 2px rgba(185, 28, 28, 0.05);
+        }
+
+        /* Demo Matrix Section */
+        .demo-panel {
+            margin-top: 1.75rem;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 1.25rem;
+            text-align: left;
+        }
+
+        .demo-panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.825rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 0.85rem;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.65rem;
+        }
+
+        @media (max-width: 480px) {
+            .demo-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .demo-card {
+            background: #ffffff;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 0.75rem 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+            user-select: none;
+        }
+
+        .demo-card:hover {
+            border-color: #2563eb;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+            transform: translateY(-1px);
+        }
+
+        .demo-card.active-fill {
+            border-color: #10b981;
+            background: #f0fdf4;
+        }
+
+        .demo-card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.35rem;
+        }
+
+        .demo-card-title {
+            font-size: 0.825rem;
+            font-weight: 700;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .demo-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.15rem 0.45rem;
+            border-radius: 6px;
+        }
+
+        .demo-tag-admin { background: #f5f3ff; color: #6d28d9; border: 1px solid #ddd6fe; }
+        .demo-tag-zou { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+        .demo-tag-verifier { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
+        .demo-tag-nit { background: #fefce8; color: #854d0e; border: 1px solid #fef08a; }
+
+        .demo-card-desc {
+            font-size: 0.725rem;
+            color: #64748b;
+            line-height: 1.35;
+        }
+
+        /* Trust Footer */
+        .auth-footer {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.25rem;
+            font-size: 0.78rem;
+            color: #64748b;
+            flex-wrap: wrap;
+        }
+
+        .trust-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <nav class="auth-nav">
+        <div class="auth-nav-inner">
+            <a href="/" class="auth-brand">
+                <div class="auth-brand-logo">🎓</div>
+                <div>
+                    <span class="auth-brand-title">DevOps QVS</span>
+                    <span class="auth-brand-subtitle">High-Integrity Academic Ledger</span>
+                </div>
+            </a>
+            <div class="auth-nav-links">
+                <a href="/dashboard?tab=verifyTab" class="auth-nav-link">Verify Credential 🔒</a>
+                <a href="/dashboard" class="auth-nav-link">Institution Portal</a>
+                <a href="/audit" class="auth-nav-link">Audit Trail</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="auth-main">
+        <div class="auth-card-container">
+            <!-- Header Icon & Title -->
+            <div class="auth-icon-badge">🎓</div>
+            <h1 class="auth-card-title">Authorized Portal Login</h1>
+            <p class="auth-card-subtitle">
+                Sign in with your accredited Verifier, Institution Officer, or Administrator account.
+            </p>
+
+            <!-- Access Gate Alert Banner (If redirected from unauthenticated page) -->
+            <div id="noticeBanner" class="alert-box alert-info" style="display: none;">
+                <span style="font-size: 1.1rem; flex-shrink: 0;">🔒</span>
+                <div>
+                    <strong>Verification Access Restricted:</strong> Credential verification is strictly reserved for authorized entities. Please sign in below.
+                </div>
+            </div>
+
+            <!-- Login Error Banner -->
+            <div id="loginError" class="alert-box alert-danger" style="display: none;">
+                <span style="font-size: 1.1rem; flex-shrink: 0;">⚠️</span>
+                <span id="loginErrorText">Invalid credentials. Please verify your username and password.</span>
+            </div>
+
+            <!-- The Authentication Form -->
+            <form onsubmit="handleLogin(event)" id="loginForm">
+                <!-- Username -->
+                <div class="form-group">
+                    <label class="form-label" for="username">
+                        <span>Username</span>
+                        <span style="font-size: 0.75rem; color: #64748b; font-weight: normal;">Required</span>
+                    </label>
+                    <div class="input-wrapper">
+                        <span class="input-icon-left">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </span>
+                        <input type="text" id="username" class="input-control" placeholder="Enter username (e.g. admin, officer_zou)" required autofocus autocomplete="username">
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label class="form-label" for="password">
+                        <span>Password</span>
+                        <span style="font-size: 0.75rem; color: #64748b; font-weight: normal;">Required</span>
+                    </label>
+                    <div class="input-wrapper">
+                        <span class="input-icon-left">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </span>
+                        <input type="password" id="password" class="input-control has-action-right" placeholder="Enter password" required autocomplete="current-password">
+                        <button type="button" class="input-action-right" onclick="togglePasswordVisibility()" aria-label="Toggle password visibility" title="Show/Hide password">
+                            <span id="eyeIcon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-submit" id="loginSubmitBtn">
+                    <span>Sign In & Access Portal</span>
+                    <span style="font-size: 1.1rem;">➔</span>
+                </button>
+            </form>
+
+            <!-- Quick Demo Accounts Grid -->
+            <div class="demo-panel">
+                <div class="demo-panel-header">
+                    <span>⚡ Demo Accounts Matrix</span>
+                    <span style="font-size: 0.75rem; color: #64748b; font-weight: normal;">(Click card to auto-fill)</span>
+                </div>
+
+                <div class="demo-grid">
+                    <!-- Admin -->
+                    <div class="demo-card" id="cardAdmin" onclick="fillCredentials('admin', 'Admin@12345', this)">
+                        <div class="demo-card-top">
+                            <span class="demo-card-title">🛡️ Admin</span>
+                            <span class="demo-tag demo-tag-admin">admin</span>
+                        </div>
+                        <div class="demo-card-desc">Master Access: Revoke, Registry & Telemetry</div>
+                    </div>
+
+                    <!-- ZOU Officer -->
+                    <div class="demo-card" id="cardZou" onclick="fillCredentials('officer_zou', 'Officer@12345', this)">
+                        <div class="demo-card-top">
+                            <span class="demo-card-title">🏛️ ZOU Officer</span>
+                            <span class="demo-tag demo-tag-zou">officer_zou</span>
+                        </div>
+                        <div class="demo-card-desc">Issue ZOU Degrees & Registry Manager</div>
+                    </div>
+
+                    <!-- Verifier -->
+                    <div class="demo-card" id="cardVerifier" onclick="fillCredentials('verifier', 'Verifier@12345', this)">
+                        <div class="demo-card-top">
+                            <span class="demo-card-title">🔍 Verifier</span>
+                            <span class="demo-tag demo-tag-verifier">verifier</span>
+                        </div>
+                        <div class="demo-card-desc">Verify Credentials & AI Scanner</div>
+                    </div>
+
+                    <!-- NIT Officer -->
+                    <div class="demo-card" id="cardNit" onclick="fillCredentials('officer', 'Officer@12345', this)">
+                        <div class="demo-card-top">
+                            <span class="demo-card-title">🏛️ NIT Officer</span>
+                            <span class="demo-tag demo-tag-nit">officer</span>
+                        </div>
+                        <div class="demo-card-desc">Accredited Registrar Officer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Badges Below Card -->
+        <div class="auth-footer">
+            <span class="trust-pill">⛓️ <strong>SHA-256</strong> Blockchain Consensus</span>
+            <span>•</span>
+            <span class="trust-pill">🤖 <strong>Agentic AI</strong> Fraud Shield</span>
+            <span>•</span>
+            <span class="trust-pill">🔒 <strong>Zero-Trust</strong> Role Access</span>
+        </div>
+    </main>
+
+    <!-- Global App Client Logic -->
+    <script src="/js/app.js"></script>
+    <script>
+        function fillCredentials(user, pass, element) {
+            const u = document.getElementById('username');
+            const p = document.getElementById('password');
+            if (u) u.value = user;
+            if (p) p.value = pass;
+
+            // Highlight selected demo card
+            document.querySelectorAll('.demo-card').forEach(c => c.classList.remove('active-fill'));
+            if (element) {
+                element.classList.add('active-fill');
+                setTimeout(() => element.classList.remove('active-fill'), 1200);
+            }
+
+            // Hide previous error message
+            const err = document.getElementById('loginError');
+            if (err) err.style.display = 'none';
+
+            if (u) u.focus();
+        }
+
+        function togglePasswordVisibility() {
+            const pwd = document.getElementById('password');
+            const eyeIcon = document.getElementById('eyeIcon');
+            if (pwd.type === 'password') {
+                pwd.type = 'text';
+                eyeIcon.innerHTML = `
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                        <line x1="1" y1="1" x2="23" y2="23"></line>
+                    </svg>
+                `;
+            } else {
+                pwd.type = 'password';
+                eyeIcon.innerHTML = `
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                `;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            if (params.get('notice') === 'verify_required' || params.get('notice') === 'auth_required') {
+                const banner = document.getElementById('noticeBanner');
+                if (banner) banner.style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\static\js\app.js. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -441,7 +441,15 @@
+ }
+ 
+ function verifyFromDashboard(certNumber) {
+-    window.location.href = '/?cert=' + encodeURIComponent(certNumber);
++    const tabBtnVerify = document.getElementById('tabBtnVerify');
++    if (tabBtnVerify && typeof switchTab === 'function') {
++        switchTab('verifyTab', tabBtnVerify);
++        const input = document.getElementById('verificationInput');
++        if (input) input.value = certNumber;
++        verifyCredential(certNumber);
++    } else {
++        window.location.href = '/dashboard?tab=verifyTab&cert=' + encodeURIComponent(certNumber);
++    }
+ }
+ 
+ async function revokeCert(id) {
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,1 @@
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\resources\\static\\css\\style.css","LineNumber":168,"LineContent":"    background: #0f172a;"}

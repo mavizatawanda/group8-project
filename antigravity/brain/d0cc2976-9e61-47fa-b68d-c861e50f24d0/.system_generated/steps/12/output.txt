@@ -1,0 +1,18 @@
+{"name":".dockerignore","sizeBytes":"64"}
+{"name":".github","isDir":true}
+{"name":".gitignore","sizeBytes":"425"}
+{"name":".vscode","isDir":true}
+{"name":"Dockerfile","sizeBytes":"1006"}
+{"name":"README.md","sizeBytes":"6007"}
+{"name":"checkstyle.xml","sizeBytes":"3562"}
+{"name":"docker-compose.yml","sizeBytes":"1234"}
+{"name":"docs","isDir":true}
+{"name":"k8s","isDir":true}
+{"name":"pom.xml","sizeBytes":"7231"}
+{"name":"run-app.bat","sizeBytes":"709"}
+{"name":"run-tests.bat","sizeBytes":"661"}
+{"name":"src","isDir":true}
+{"name":"target","isDir":true}
+{"name":"terraform","isDir":true}
+
+Summary: This directory contains 7 subdirectories and 9 files.

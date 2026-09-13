@@ -1,0 +1,4 @@
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\target\\classes\\templates\\login.html","LineNumber":15,"LineContent":"        \u003cdiv class=\"nav-links\"\u003e"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\target\\classes\\templates\\audit.html","LineNumber":15,"LineContent":"        \u003cdiv class=\"nav-links\"\u003e"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\resources\\templates\\login.html","LineNumber":15,"LineContent":"        \u003cdiv class=\"nav-links\"\u003e"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\resources\\templates\\audit.html","LineNumber":15,"LineContent":"        \u003cdiv class=\"nav-links\"\u003e"}

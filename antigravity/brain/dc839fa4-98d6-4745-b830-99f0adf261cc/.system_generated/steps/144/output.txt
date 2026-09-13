@@ -1,0 +1,23 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -32,7 +32,7 @@
+             </button>
+ 
+             <div class="nav-menu" id="navMenu">
+-                <a href="#verifySection" class="nav-link active">Verify Credential</a>
++                <a href="/dashboard?tab=verifyTab" class="nav-link">Verify Credential 🔒</a>
+                 <a href="#blockchainSection" class="nav-link">Blockchain Ledger</a>
+                 <a href="#aiSection" class="nav-link">AI Fraud Shield</a>
+                 <a href="#featuresSection" class="nav-link">DevOps Architecture</a>
+@@ -39,6 +39,6 @@
+                 <a href="/swagger-ui.html" target="_blank" class="nav-link">API Docs</a>
+-                <div class="nav-auth">
+-                    <a href="/login" class="btn-primary btn-sm">Staff Login ➔</a>
++                <div class="nav-auth" id="navAuthStatus">
++                    <a href="/login" class="btn-primary btn-sm">Sign In ➔</a>
+                 </div>
+             </div>
+         </div>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

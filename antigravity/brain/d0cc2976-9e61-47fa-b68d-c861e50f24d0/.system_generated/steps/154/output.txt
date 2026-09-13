@@ -1,0 +1,6 @@
+{"name":"GIT_COLLABORATION_GUIDE.md","sizeBytes":"7414"}
+{"name":"INDIVIDUAL_CONTRIBUTION_GUIDE.md","sizeBytes":"3622"}
+{"name":"TECHNICAL_REPORT_TEMPLATE.md","sizeBytes":"10980"}
+{"name":"VIVA_DEMO_SCRIPT.md","sizeBytes":"4971"}
+
+Summary: This directory contains 0 subdirectories and 4 files.

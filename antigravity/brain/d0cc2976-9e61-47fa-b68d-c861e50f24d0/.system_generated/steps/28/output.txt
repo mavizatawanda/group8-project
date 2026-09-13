@@ -1,0 +1,7 @@
+{"name":"application-dev.yml","sizeBytes":"492"}
+{"name":"application-prod.yml","sizeBytes":"478"}
+{"name":"application.yml","sizeBytes":"861"}
+{"name":"static","isDir":true}
+{"name":"templates","isDir":true}
+
+Summary: This directory contains 2 subdirectories and 3 files.

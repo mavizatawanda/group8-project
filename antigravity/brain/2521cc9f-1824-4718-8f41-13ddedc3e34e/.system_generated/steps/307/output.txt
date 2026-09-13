@@ -1,0 +1,12 @@
+Task: 2521cc9f-1824-4718-8f41-13ddedc3e34e/task-305
+Status: RUNNING
+Log: C:\Users\Madziva\.gemini\antigravity\brain\2521cc9f-1824-4718-8f41-13ddedc3e34e\.system_generated\tasks\task-305.log
+Log output:
+<truncated 25 lines>
+026: Second-level cache disabled
+2026-09-12T21:31:24.681+02:00  INFO 1368 --- [qualification-verification-system] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-12T21:31:24.748+02:00  WARN 1368 --- [qualification-verification-system] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-12T21:31:25.826+02:00  INFO 1368 --- [qualification-verification-system] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-12T21:31:25.900+02:00  INFO 1368 --- [qualification-verification-system] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+Last progress: 0s ago

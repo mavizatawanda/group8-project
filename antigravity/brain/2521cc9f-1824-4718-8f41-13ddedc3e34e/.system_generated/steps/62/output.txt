@@ -1,0 +1,4 @@
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\target\\site\\jacoco\\jacoco.xml"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\java\\com\\devops\\qvs\\config\\DataInitializer.java"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\target\\site\\jacoco\\com.devops.qvs.config\\DataInitializer.html"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\target\\site\\jacoco\\com.devops.qvs.config\\DataInitializer.java.html"}

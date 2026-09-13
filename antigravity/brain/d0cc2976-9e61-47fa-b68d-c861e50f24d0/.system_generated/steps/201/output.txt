@@ -1,0 +1,20 @@
+Task: d0cc2976-9e61-47fa-b68d-c861e50f24d0/task-199
+Status: RUNNING
+Log: C:\Users\Madziva\.gemini\antigravity\brain\d0cc2976-9e61-47fa-b68d-c861e50f24d0\.system_generated\tasks\task-199.log
+Log output:
+<truncated 135 lines>
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-09-06T19:21:44.280+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.q.c.AuthControllerIntegrationTest    : Starting AuthControllerIntegrationTest using Java 17.0.10 with PID 16428 (started by Madziva in C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system)
+2026-09-06T19:21:44.281+02:00 DEBUG 16428 --- [qualification-verification-system] [           main] c.d.q.c.AuthControllerIntegrationTest    : Running with Spring Boot v3.2.3, Spring v6.1.4
+2026-09-06T19:21:44.282+02:00  INFO 16428 --- [qualification-verification-system] [           main] c.d.q.c.AuthControllerIntegrationTest    : The following 1 profile is active: "dev"
+
+Last progress: 0s ago

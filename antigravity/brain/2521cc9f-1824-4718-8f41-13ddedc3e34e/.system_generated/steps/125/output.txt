@@ -1,0 +1,12 @@
+Task: 2521cc9f-1824-4718-8f41-13ddedc3e34e/task-117
+Status: RUNNING
+Log: C:\Users\Madziva\.gemini\antigravity\brain\2521cc9f-1824-4718-8f41-13ddedc3e34e\.system_generated\tasks\task-117.log
+Log output:
+<truncated 266 lines>
+g com.devops.qvs.controller.VerificationControllerIntegrationTest
+2026-09-07T19:52:33.839+02:00  INFO 10860 --- [qualification-verification-system] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.devops.qvs.controller.VerificationControllerIntegrationTest]: VerificationControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-07T19:52:33.844+02:00  INFO 10860 --- [qualification-verification-system] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.devops.qvs.QualificationVerificationApplication for test class com.devops.qvs.controller.VerificationControllerIntegrationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 s -- in com.devops.qvs.controller.VerificationControllerIntegrationTest
+[INFO] Running com.devops.qvs.service.AiFraudDetectionServiceTest
+
+Last progress: 0s ago

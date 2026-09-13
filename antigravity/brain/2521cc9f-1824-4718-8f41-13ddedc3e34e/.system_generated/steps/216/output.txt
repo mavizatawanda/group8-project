@@ -1,0 +1,4 @@
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\resources\\templates\\login.html","LineNumber":41,"LineContent":"            \u003cform onsubmit=\"handleLogin(event)\"\u003e"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\resources\\static\\js\\app.js","LineNumber":373,"LineContent":"async function handleLogin(event) {"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\target\\classes\\static\\js\\app.js","LineNumber":373,"LineContent":"async function handleLogin(event) {"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\target\\classes\\templates\\login.html","LineNumber":41,"LineContent":"            \u003cform onsubmit=\"handleLogin(event)\"\u003e"}

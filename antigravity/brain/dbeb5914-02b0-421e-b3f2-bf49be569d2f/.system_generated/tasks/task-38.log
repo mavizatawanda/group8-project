@@ -1,0 +1,6 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-03T18:16:30+02:00
+Prompt: Check if mvn test-compile has completed
+Early Termination: dbeb5914-02b0-421e-b3f2-bf49be569d2f/task-36
+
+[2026-09-03T18:16:30+02:00] Timer fired.

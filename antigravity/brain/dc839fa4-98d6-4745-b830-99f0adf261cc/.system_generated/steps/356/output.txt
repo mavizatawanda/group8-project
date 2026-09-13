@@ -1,0 +1,32 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\login.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -9,13 +9,19 @@
+ <body>
+ 
+     <nav class="navbar">
+-        <a href="/" class="nav-brand">
+-            🎓 DevOps QVS <span class="badge">Auth</span>
+-        </a>
+-        <div class="nav-links">
+-            <a href="/" class="nav-link">Verify</a>
+-            <a href="/dashboard" class="nav-link">Institution Portal</a>
+-            <a href="/audit" class="nav-link">Audit Trail</a>
++        <div class="nav-container">
++            <a href="/" class="nav-brand">
++                <div class="brand-logo">🎓</div>
++                <div class="brand-text">
++                    <span class="brand-title">DevOps QVS</span>
++                    <span class="brand-subtitle">Authentication Portal</span>
++                </div>
++            </a>
++            <div class="nav-links">
++                <a href="/dashboard?tab=verifyTab" class="nav-link">Verify Credential 🔒</a>
++                <a href="/dashboard" class="nav-link">Institution Portal</a>
++                <a href="/audit" class="nav-link">Audit Trail</a>
++            </div>
+         </div>
+     </nav>
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,7 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-03T18:16:59+02:00
+Prompt: Check maven compile status
+Early Termination: dbeb5914-02b0-421e-b3f2-bf49be569d2f/task-36
+
+[2026-09-03T18:16:54+02:00] Still waiting. Remaining time: 5s
+[2026-09-03T18:16:56+02:00] Timer cancelled: early-termination condition (dbeb5914-02b0-421e-b3f2-bf49be569d2f/task-36) met by a message from dbeb5914-02b0-421e-b3f2-bf49be569d2f/task-36.

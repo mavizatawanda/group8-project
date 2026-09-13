@@ -1,0 +1,17 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\dashboard.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -92,7 +92,10 @@
+ 
+                 <div class="search-box-wrapper" style="max-width: 100%; margin: 1.5rem 0 0;">
+                     <div class="input-group">
+-                        <input type="text" id="verificationInput" class="input-control" placeholder="Enter Certificate ID, Student ID, or SHA-256 Hash (e.g. QVS-2024-BSC-8891)" autofocus>
++                        <div class="input-wrapper" style="flex: 1;">
++                            <span class="input-icon-left">🔍</span>
++                            <input type="text" id="verificationInput" class="input-control has-icon-left" placeholder="Enter Certificate ID, Student ID, or SHA-256 Hash (e.g. QVS-2024-BSC-8891, ITM 190020)" autofocus>
++                        </div>
+                         <button class="btn-primary btn-search" onclick="verifyCredential()">
+                             <span>Verify Authenticity</span> ➔
+                         </button>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

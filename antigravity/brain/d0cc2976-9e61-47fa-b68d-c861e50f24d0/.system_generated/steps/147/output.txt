@@ -1,0 +1,174 @@
+
+The command exited with code 0.
+Output:
+<truncated 185 lines>
+                        <span style="font-size: 0.85rem; color: #64748b;">Consensus: Proof-of-Integrity (PoI)  Hash 
+Algorithm: SHA-256</span>
+                    </div>
+                    <button class="btn-outline btn-sm" onclick="validateBlockchain()">
+                        ?? Validate Full Chain Integrity
+                    </button>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="blockchain-table">
+                        <thead>
+                            <tr>
+                                <th>Block #</th>
+                                <th>Timestamp</th>
+                                <th>Certificate No.</th>
+                                <th>Payload Hash</th>
+                                <th>Previous Block Hash</th>
+                                <th>Block Hash</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="blockchainTableBody">
+                            <tr><td colspan="7" style="text-align: center; color: #64748b;">Loading blockchain 
+blocks...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agentic AI & Advanced Features (Bonus Features 2 & 3) -->
+    <section class="features-section" id="featuresSection">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">DevOps & Enterprise Security</span>
+                <h2 class="section-title">DevOps Architecture & Bonus Modules</h2>
+                <p class="section-subtitle">Engineered to meet enterprise software quality, CI/CD, and multi-cloud 
+deployment benchmarks.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">??</div>
+                    <h3>Agentic AI Fraud Detection</h3>
+                    <p>Heuristic anomaly engine analyzing date timelines, signature patterns, and serial formatting to 
+catch forged degrees before acceptance.</p>
+                    <span class="feature-pill">AI Anomaly Scoring</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">??</div>
+                    <h3>Blockchain Ledger</h3>
+                    <p>Cryptographic hash chaining with Genesis block foundation and Proof-of-Integrity consensus 
+ensuring zero retroactive tampering.</p>
+                    <span class="feature-pill">SHA-256 Chaining</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">??</div>
+                    <h3>Infrastructure-as-Code</h3>
+                    <p>Production Terraform modules (VPC, ECS Fargate, RDS) and Kubernetes manifests for automated 
+multi-cloud provisioning.</p>
+                    <span class="feature-pill">Terraform & K8s</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">??</div>
+                    <h3>Real-Time Telemetry</h3>
+                    <p>Live Actuator metrics, JVM memory telemetry, and verification velocity monitoring 
+dashboards.</p>
+                    <span class="feature-pill">Prometheus & Actuator</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">??</div>
+                    <h3>Advanced Security & RBAC</h3>
+                    <p>Stateless JWT authentication, BCrypt password hashing, and role-based permissions (Admin, 
+Institution, Verifier).</p>
+                    <span class="feature-pill">Zero-Trust JWT</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">??</div>
+                    <h3>DevOps CI/CD Pipelines</h3>
+                    <p>Automated GitHub Actions workflow running Checkstyle static analysis, JaCoCo >80% coverage 
+quality gates, and Docker multi-stage builds.</p>
+                    <span class="feature-pill">GitHub Actions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Agentic AI Verification Assistant Widget -->
+    <div class="ai-widget-container" id="aiSection">
+        <button class="ai-floating-btn" onclick="toggleAiChat()" id="aiToggleBtn" title="Ask QVS AI Assistant">
+            <span class="ai-btn-icon">??</span>
+            <span class="ai-btn-text">AI Verification Assistant</span>
+            <span class="ai-btn-pulse"></span>
+        </button>
+
+        <div class="ai-chat-window" id="aiChatWindow" style="display: none;">
+            <div class="ai-chat-header">
+                <div class="ai-header-info">
+                    <span class="ai-avatar">??</span>
+                    <div>
+                        <strong>QVS Agentic AI Assistant</strong>
+                        <span class="ai-online-status">? Live Heuristic Agent</span>
+                    </div>
+                </div>
+                <button class="ai-close-btn" onclick="toggleAiChat()">?</button>
+            </div>
+
+            <div class="ai-chat-messages" id="aiChatMessages">
+                <div class="ai-message ai-bot">
+                    <p>Hello! I am your <strong>QVS Agentic AI Assistant</strong>. Ask me to:</p>
+                    <ul>
+                        <li> Check specific certificates (e.g. <em>"Check Sarah Jenkins"</em>)</li>
+                        <li> Explain how the <strong>Blockchain Ledger</strong> works</li>
+                        <li> Analyze <strong>AI Fraud Risk</strong> and anomaly rules</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ai-quick-prompts">
+                <button onclick="sendAiPrompt('Check Sarah Jenkins credential')">Check Sarah</button>
+                <button onclick="sendAiPrompt('Why is Marcus Vance revoked?')">Check Marcus</button>
+                <button onclick="sendAiPrompt('How does the blockchain protect credentials?')">Explain 
+Blockchain</button>
+            </div>
+
+            <div class="ai-chat-input-row">
+                <input type="text" id="aiChatInput" placeholder="Ask anything about credential verification..." 
+onkeydown="if(event.key==='Enter') sendAiMessage()">
+                <button class="btn-primary btn-sm" onclick="sendAiMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modern Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="brand-logo">??</div>
+                <div>
+                    <h4 style="margin: 0; font-size: 1.1rem; color: #fff;">DevOps Qualification Verification 
+System</h4>
+                    <p style="margin: 0.25rem 0 0; font-size: 0.85rem; color: #94a3b8;">High-Integrity Academic & 
+Professional Credential Infrastructure</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="/swagger-ui.html" target="_blank">Swagger OpenAPI</a>
+                <a href="/actuator/health" target="_blank">Health Status</a>
+                <a href="/audit">Audit Trail</a>
+                <a href="/dashboard">Institution Dashboard</a>
+                <a href="/login">Officer Login</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display: flex; justify-content: space-between; font-size: 0.8rem; color: 
+#64748b;">
+                <span>&copy; 2026 DevOps QVS. Automated CI/CD  JaCoCo &gt;80% Gate  Docker Ready.</span>
+                <span>Version 2.0.0 (Enterprise Release)</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
+
+
+
+
