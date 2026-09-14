@@ -402,7 +402,7 @@
         }
 
         .demo-tag-admin { background: #f5f3ff; color: #6d28d9; border: 1px solid #ddd6fe; }
-        .demo-tag-zou { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+        .demo-tag-manager, .demo-tag-zou { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
         .demo-tag-verifier { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
         .demo-tag-nit { background: #fefce8; color: #854d0e; border: 1px solid #fef08a; }
 
@@ -440,7 +440,7 @@
                 <div class="auth-brand-logo">🎓</div>
                 <div>
                     <span class="auth-brand-title">DevOps QVS</span>
-                    <span class="auth-brand-subtitle">High-Integrity Academic Ledger</span>
+                    <span class="auth-brand-subtitle">Group 8 • MSU Master Students</span>
                 </div>
             </a>
             <div class="auth-nav-links">
@@ -458,7 +458,7 @@
             <div class="auth-icon-badge">🎓</div>
             <h1 class="auth-card-title">Authorized Portal Login</h1>
             <p class="auth-card-subtitle">
-                Sign in with your accredited Verifier, Institution Officer, or Administrator account.
+                Group 8 Academic & Professional Credential Verification System (MSU Master Students).
             </p>
 
             <!-- Access Gate Alert Banner (If redirected from unauthenticated page) -->
@@ -490,7 +490,7 @@
                                 <circle cx="12" cy="7" r="4"></circle>
                             </svg>
                         </span>
-                        <input type="text" id="username" class="input-control" placeholder="Enter username (e.g. admin, officer_zou)" required autofocus autocomplete="username">
+                        <input type="text" id="username" class="input-control" placeholder="Enter username (e.g. admin, it_manager, verifier)" required autofocus autocomplete="username">
                     </div>
                 </div>
 
@@ -529,45 +529,45 @@
             <!-- Quick Demo Accounts Grid -->
             <div class="demo-panel">
                 <div class="demo-panel-header">
-                    <span>⚡ Demo Accounts Matrix</span>
+                    <span>⚡ Group 8 Demo Accounts Matrix</span>
                     <span style="font-size: 0.75rem; color: #64748b; font-weight: normal;">(Click card to auto-fill)</span>
                 </div>
 
                 <div class="demo-grid">
-                    <!-- Admin -->
+                    <!-- Admin: Maviza -->
                     <div class="demo-card" id="cardAdmin" onclick="fillCredentials('admin', 'Admin@12345', this)">
                         <div class="demo-card-top">
-                            <span class="demo-card-title">🛡️ Admin</span>
+                            <span class="demo-card-title">🛡️ Admin (Maviza)</span>
                             <span class="demo-tag demo-tag-admin">admin</span>
                         </div>
                         <div class="demo-card-desc">Master Access: Revoke, Registry & Telemetry</div>
                     </div>
 
-                    <!-- ZOU Officer -->
-                    <div class="demo-card" id="cardZou" onclick="fillCredentials('officer_zou', 'Officer@12345', this)">
+                    <!-- IT Manager: Takura -->
+                    <div class="demo-card" id="cardManager" onclick="fillCredentials('it_manager', 'Officer@12345', this)">
                         <div class="demo-card-top">
-                            <span class="demo-card-title">🏛️ ZOU Officer</span>
-                            <span class="demo-tag demo-tag-zou">officer_zou</span>
+                            <span class="demo-card-title">🏛️ IT Manager (Takura)</span>
+                            <span class="demo-tag demo-tag-manager">it_manager</span>
                         </div>
-                        <div class="demo-card-desc">Issue ZOU Degrees & Registry Manager</div>
+                        <div class="demo-card-desc">Degree Issuance & Registry IT Manager</div>
                     </div>
 
-                    <!-- Verifier -->
+                    <!-- Verifier: Moses -->
                     <div class="demo-card" id="cardVerifier" onclick="fillCredentials('verifier', 'Verifier@12345', this)">
                         <div class="demo-card-top">
-                            <span class="demo-card-title">🔍 Verifier</span>
+                            <span class="demo-card-title">🔍 Verifier (Moses)</span>
                             <span class="demo-tag demo-tag-verifier">verifier</span>
                         </div>
                         <div class="demo-card-desc">Verify Credentials & AI Scanner</div>
                     </div>
 
-                    <!-- NIT Officer -->
+                    <!-- IT Officer: Sandra -->
                     <div class="demo-card" id="cardNit" onclick="fillCredentials('officer', 'Officer@12345', this)">
                         <div class="demo-card-top">
-                            <span class="demo-card-title">🏛️ NIT Officer</span>
+                            <span class="demo-card-title">💻 IT Officer (Sandra)</span>
                             <span class="demo-tag demo-tag-nit">officer</span>
                         </div>
-                        <div class="demo-card-desc">Accredited Registrar Officer</div>
+                        <div class="demo-card-desc">Accredited Registrar & IT Operations</div>
                     </div>
                 </div>
             </div>

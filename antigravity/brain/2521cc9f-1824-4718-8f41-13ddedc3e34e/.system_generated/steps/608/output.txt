@@ -1,0 +1,18 @@
+Task: 2521cc9f-1824-4718-8f41-13ddedc3e34e/task-605
+Status: DONE
+Log: C:\Users\Madziva\.gemini\antigravity\brain\2521cc9f-1824-4718-8f41-13ddedc3e34e\.system_generated\tasks\task-605.log
+Log output:
+<truncated 141 lines>
+ing jar: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\target\qualification-verification-system-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.3:repackage (repackage) @ qualification-verification-system ---
+[INFO] Replacing main artifact C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\target\qualification-verification-system-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\target\qualification-verification-system-1.0.0.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.484 s
+[INFO] Finished at: 2026-09-14T06:36:28+02:00
+[INFO] ------------------------------------------------------------------------
+
+Last progress: 0s ago

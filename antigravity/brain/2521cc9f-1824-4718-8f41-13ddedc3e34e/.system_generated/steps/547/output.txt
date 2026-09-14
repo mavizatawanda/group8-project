@@ -1,0 +1,11 @@
+
+The command exited with code 1.
+Output:
+At line:3 char:44
++ mvn test -Dtest=AiFraudDetectionServiceTest,QualificationControllerIn ...
++                                            ~
+Missing argument in parameter list.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingArgument
+ 
+

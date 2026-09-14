@@ -1,0 +1,15 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\DataInitializer.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -178,7 +178,8 @@
+                         "Merit", LocalDate.of(2022, 11, 25), QualificationStatus.ACTIVE, null),
+                 new SeedRecord("ZOU-2021-PGDE-EH210005", "Patience Mutungwazi", "EH210005",
+                         "Postgraduate Diploma in Education (ICT in Education)", "Instructional Media & E-Learning",
+-                        "Pass", LocalDate.of(2021, 11, 26), QualificationStatus.ACTIVE, null)
++                        "Pass", LocalDate.of(2021, 11, 26), QualificationStatus.REVOKED,
++                        "Issued in error - Academic misconduct disciplinary committee finding")
+         );
+         batchSaveQualifications(zou, zouRecords);
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

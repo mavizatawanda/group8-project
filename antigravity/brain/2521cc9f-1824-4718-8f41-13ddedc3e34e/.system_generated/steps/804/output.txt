@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AiFraudDetectionService.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -345,7 +345,7 @@
+         try {
+             // First check direct certificate number format
+             for (String part : query.split("[^a-zA-Z0-9-]")) {
+-                if (part.toUpperCase().startsWith("QVS-")) {
++                if (part.contains("-") && part.length() >= 8) {
+                     Optional<Qualification> byCert = qualificationRepository.findByCertificateNumber(part.toUpperCase());
+                     if (byCert.isPresent()) {
+                         return List.of(byCert.get());
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

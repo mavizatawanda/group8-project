@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+{
+    "reply":  "?? **How to Log In to the System (Group 8 Demo Accounts)**:\n\n1. Navigate to the login page: **[http://localhost:8080/login](/login)**\n2. Click any of the **Group 8 Demo Accounts** cards on the login screen to auto-fill:\n\n�?� **Admin (Maviza)**:\n  - Username: `admin` | Password: `Admin@12345`\n  - *Master authority: revoking certificates, viewing audit logs \u0026 server telemetry.*\n\n�?� **Manager (Takura)**:\n  - Username: `officer_zou` | Password: `Officer@12345`\n  - *Degree issuance and institutional registry management.*\n\n�?� **Verifier (Moses)**:\n  - Username: `verifier` | Password: `Verifier@12345`\n  - *Inspect blockchain proofs, verify credentials, and run AI anomaly scans.*\n\n�?� **IT Officer (Sandra)**:\n  - Username: `officer` | Password: `Officer@12345`\n  - *Accredited registrar and IT operations.*",
+    "intent":  "HOW_TO_LOGIN",
+    "status":  "INFO",
+    "timestamp":  "2026-09-14T06:29:37.8208632"
+}
+

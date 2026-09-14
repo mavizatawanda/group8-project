@@ -1,0 +1,64 @@
+
+The command exited with code 0.
+Output:
+<truncated 92 lines>
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\BlockchainLedgerService.java:15:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\BlockchainLedgerService.java:16:1: Wrong lexicographical order for 'java.time.temporal.ChronoUnit' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\BlockchainLedgerService.java:17:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\BlockchainLedgerService.java:18:1: Wrong lexicographical order for 'java.util.stream.Collectors' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\CryptoHashService.java:6:1: Extra separation in import group before 'java.nio.charset.StandardCharsets' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\CryptoHashService.java:6:1: Wrong lexicographical order for 'java.nio.charset.StandardCharsets' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\CryptoHashService.java:7:1: Wrong lexicographical order for 'java.security.MessageDigest' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\CryptoHashService.java:8:1: Wrong lexicographical order for 'java.security.NoSuchAlgorithmException' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\CryptoHashService.java:9:1: Wrong lexicographical order for 'java.time.LocalDate' import. Should be before 'org.springframework.stereotype.Service'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\QualificationService.java:16:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\QualificationService.java:16:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\QualificationService.java:17:1: Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\QualificationService.java:18:1: Wrong lexicographical order for 'java.util.stream.Collectors' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\VerificationService.java:13:1: Extra separation in import group before 'java.time.LocalDateTime' [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\VerificationService.java:13:1: Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+[WARN] C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\VerificationService.java:14:1: Wrong lexicographical order for 'java.util.Optional' import. Should be before 'org.springframework.transaction.annotation.Transactional'. [CustomImportOrder]
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ qualification-verification-system ---
+[INFO] argLine set to -javaagent:C:\\Users\\Madziva\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.11\\org.jacoco.agent-0.8.11-runtime.jar=destfile=C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\target\\jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ qualification-verification-system ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 6 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ qualification-verification-system ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 51 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ qualification-verification-system ---
+[INFO] skip non existing resourceDirectory C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ qualification-verification-system ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 10 source files with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ qualification-verification-system ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco:0.8.11:report (report) @ qualification-verification-system ---
+[INFO] Loading execution data file C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\target\jacoco.exec
+[INFO] Analyzed bundle 'qualification-verification-system' with 65 classes
+[WARNING] Classes in bundle 'qualification-verification-system' do not match with execution data. For report generation the same class files must be used as at runtime.
+[WARNING] Execution data for class com/devops/qvs/service/AiFraudDetectionService does not match.
+[WARNING] Execution data for class com/devops/qvs/config/DataInitializer does not match.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ qualification-verification-system ---
+[INFO] Building jar: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\target\qualification-verification-system-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.3:repackage (repackage) @ qualification-verification-system ---
+[INFO] Replacing main artifact C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\target\qualification-verification-system-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\target\qualification-verification-system-1.0.0.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.484 s
+[INFO] Finished at: 2026-09-14T06:36:28+02:00
+[INFO] ------------------------------------------------------------------------
+

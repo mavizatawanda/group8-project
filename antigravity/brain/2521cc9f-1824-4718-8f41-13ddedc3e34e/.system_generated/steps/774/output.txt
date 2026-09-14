@@ -1,0 +1,45 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\test\java\com\devops\qvs\controller\VerificationControllerIntegrationTest.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -30,7 +30,7 @@
+     @DisplayName("Should verify active seeded qualification via POST")
+     void testVerifyActiveQualificationPost() throws Exception {
+         VerificationRequest request = VerificationRequest.builder()
+-                .query("QVS-2024-BSC-8891")
++                .query("UZ-2024-BSC-3112")
+                 .verifierName("Employer Recruiter")
+                 .build();
+ 
+@@ -40,7 +40,7 @@
+                 .andExpect(jsonPath("$.verificationStatus").value("GENUINE_AND_VALID"))
+                 .andExpect(jsonPath("$.valid").value(true))
+                 .andExpect(jsonPath("$.tamperProofCheckPassed").value(true))
+-                .andExpect(jsonPath("$.studentFullName").value("Sarah Jenkins"))
++                .andExpect(jsonPath("$.studentFullName").value("Tendai Moyo"))
+                 .andExpect(jsonPath("$.auditLogId").isNotEmpty());
+     }
+ 
+@@ -47,9 +47,9 @@
+     @DisplayName("Should verify active qualification via GET endpoint")
+     void testVerifyActiveQualificationGet() throws Exception {
+-        mockMvc.perform(get("/api/v1/verify/QVS-2024-BSC-8891"))
+-                .andExpect(status().isOk())
+-                .andExpect(jsonPath("$.verificationStatus").value("GENUINE_AND_VALID"))
+-                .andExpect(jsonPath("$.studentFullName").value("Sarah Jenkins"));
++        mockMvc.perform(get("/api/v1/verify/UZ-2024-BSC-3112"))
++                .andExpect(status().isOk())
++                .andExpect(jsonPath("$.verificationStatus").value("GENUINE_AND_VALID"))
++                .andExpect(jsonPath("$.studentFullName").value("Tendai Moyo"));
+     }
+ 
+     @Test
+@@ -56,6 +56,6 @@
+     void testVerifyRevokedQualification() throws Exception {
+         VerificationRequest request = VerificationRequest.builder()
+-                .query("QVS-2022-DIP-1109")
++                .query("ZOU-2021-PGDE-EH210005")
+                 .build();
+ 
+         mockMvc.perform(post("/api/v1/verify")
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

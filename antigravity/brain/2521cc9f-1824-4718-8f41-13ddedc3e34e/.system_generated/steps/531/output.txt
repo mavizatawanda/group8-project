@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\dashboard.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -18,7 +18,7 @@
+                 <div class="brand-logo">🎓</div>
+                 <div class="brand-text">
+                     <span class="brand-title">DevOps QVS</span>
+-                    <span class="brand-subtitle">Institution Portal Group 8 Project</span>
++                    <span class="brand-subtitle">Group 8 • MSU Master Students</span>
+                 </div>
+             </a>
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

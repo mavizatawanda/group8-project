@@ -1,0 +1,29 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\DataInitializer.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -169,9 +169,20 @@
+                 "ZOU-004",
+                 "registry@zou.ac.zw",
+                 "https://www.zou.ac.zw",
+-                "officer_zou",
+-                "Takura (Group 8 Manager)"
+-        );
++                "it_manager",
++                "Takura (Group 8 IT Manager)"
++        );
++
++        // Also alias officer_zou to Takura for backward compatibility
++        userRepository.save(User.builder()
++                .username("officer_zou")
++                .email("takura@zou.ac.zw")
++                .password(passwordEncoder.encode("Officer@12345"))
++                .fullName("Takura (Group 8 IT Manager)")
++                .role(Role.ROLE_INSTITUTION)
++                .institution(zou)
++                .enabled(true)
++                .build());
+ 
+         List<SeedRecord> zouRecords = List.of(
+                 // IT Degrees: format ITM 190020 etc.
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

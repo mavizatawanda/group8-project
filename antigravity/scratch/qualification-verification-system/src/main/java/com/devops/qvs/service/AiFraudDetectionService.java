@@ -198,18 +198,21 @@ public class AiFraudDetectionService {
         // 3. How to log in to the system / Login credentials
         if ((msg.contains("how") || msg.contains("where") || msg.contains("can i")) && (msg.contains("log in") || msg.contains("login") || msg.contains("sign in") || msg.contains("signin") || msg.contains("credential") || msg.contains("account") || msg.contains("password") || msg.contains("username"))) {
             return AiChatResponse.builder()
-                .reply("🔑 **How to Log In to the System**:\n\n"
+                .reply("🔑 **How to Log In to the System (Group 8 Demo Accounts)**:\n\n"
                         + "1. Navigate to the login page: **[http://localhost:8080/login](/login)**\n"
-                        + "2. Use one of the pre-configured demo roles (or click the demo card on the login screen to auto-fill):\n\n"
-                        + "• **System Administrator**:\n"
+                        + "2. Click any of the **Group 8 Demo Accounts** cards on the login screen to auto-fill:\n\n"
+                        + "• **Admin (Maviza)**:\n"
                         + "  - Username: `admin` | Password: `Admin@12345`\n"
-                        + "  - *Full administrative control, revoking certificates, viewing audit logs & telemetry.*\n\n"
-                        + "• **University Registrar Officer (e.g. ZOU)**:\n"
-                        + "  - Username: `officer_zou` (or `officer`) | Password: `Officer@12345`\n"
-                        + "  - *Issue new academic degrees and manage university qualifications.*\n\n"
-                        + "• **Accredited Verifier**:\n"
+                        + "  - *Master authority: revoking certificates, viewing audit logs & server telemetry.*\n\n"
+                        + "• **IT Manager (Takura)**:\n"
+                        + "  - Username: `it_manager` | Password: `Officer@12345`\n"
+                        + "  - *Degree issuance and institutional registry management.*\n\n"
+                        + "• **Verifier (Moses)**:\n"
                         + "  - Username: `verifier` | Password: `Verifier@12345`\n"
-                        + "  - *Inspect blockchain proofs, verify qualifications, and run AI anomaly scans.*")
+                        + "  - *Inspect blockchain proofs, verify credentials, and run AI anomaly scans.*\n\n"
+                        + "• **IT Officer (Sandra)**:\n"
+                        + "  - Username: `officer` | Password: `Officer@12345`\n"
+                        + "  - *Accredited registrar and IT operations.*")
                 .intent("HOW_TO_LOGIN")
                 .status("INFO")
                 .timestamp(now)
@@ -240,7 +243,7 @@ public class AiFraudDetectionService {
         if (msg.contains("how") && (msg.contains("verify") || msg.contains("check") || msg.contains("lookup"))) {
             return AiChatResponse.builder()
                     .reply("💡 **How to Verify a Certificate**:\n\n"
-                            + "1. **Public Portal**: Go to the homepage **[http://localhost:8080/](/)**, enter any Certificate Number (e.g. `QVS-2024-BSC-8891`) or Student ID (e.g. `EH250001`, `ITM 190020`), and click **Verify Now**.\n"
+                            + "1. **Public Portal**: Go to the homepage **[http://localhost:8080/](/)**, enter any Certificate Number (e.g. `UZ-2024-BSC-3112`) or Student ID (e.g. `EH250001`, `ITM 190020`), and click **Verify Now**.\n"
                             + "2. **Dashboard Console**: Log in to **[http://localhost:8080/dashboard](/dashboard)**, navigate to **'Verify Credential'**, and test by certificate, student ID, or SHA-256 hash.\n"
                             + "3. **Inspect Output**: View real-time status (Genuine or Revoked), institutional accreditation, blockchain proof block, and AI Fraud Score.")
                     .intent("HOW_TO_VERIFY")
@@ -327,7 +330,7 @@ public class AiFraudDetectionService {
                         + "• **How do I run the system?** → Commands for Maven, Docker Compose, and `run-app.bat`.\n"
                         + "• **How do I log in?** → Demo credentials for Admin, University Officers, and Verifiers.\n"
                         + "• **How to verify a certificate?** → Step-by-step verification guidelines.\n"
-                        + "• **Check student records** → e.g., *'Check EH250001'*, *'Check ITM 190020'*, *'Check Sarah Jenkins'*.\n"
+                        + "• **Check student records** → e.g., *'Check EH250001'*, *'Check ITM 190020'*, *'Check Tendai Moyo'*.\n"
                         + "• **How does the blockchain ledger work?** → SHA-256 blocks and cryptographic consensus.")
                 .intent("GENERAL_ASSIST")
                 .status("INFO")
@@ -342,7 +345,7 @@ public class AiFraudDetectionService {
         try {
             // First check direct certificate number format
             for (String part : query.split("[^a-zA-Z0-9-]")) {
-                if (part.toUpperCase().startsWith("QVS-")) {
+                if (part.contains("-") && part.length() >= 8) {
                     Optional<Qualification> byCert = qualificationRepository.findByCertificateNumber(part.toUpperCase());
                     if (byCert.isPresent()) {
                         return List.of(byCert.get());

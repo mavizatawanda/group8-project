@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\login.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -490,7 +490,7 @@
+                                 <circle cx="12" cy="7" r="4"></circle>
+                             </svg>
+                         </span>
+-                        <input type="text" id="username" class="input-control" placeholder="Enter username (e.g. admin, officer_zou)" required autofocus autocomplete="username">
++                        <input type="text" id="username" class="input-control" placeholder="Enter username (e.g. admin, it_manager, verifier)" required autofocus autocomplete="username">
+                     </div>
+                 </div>
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

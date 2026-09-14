@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -274,7 +274,7 @@
+                         <li>• <strong>What does the system do?</strong></li>
+                         <li>• <strong>How to run the system?</strong></li>
+                         <li>• <strong>How to log in to the system?</strong></li>
+-                        <li>• <strong>Check certificates</strong> (e.g. <em>"Check EH250001"</em> or <em>"Check Sarah Jenkins"</em>)</li>
++                        <li>• <strong>Check certificates</strong> (e.g. <em>"Check EH250001"</em>, <em>"Check ITM 190020"</em>, or <em>"Check Tendai Moyo"</em>)</li>
+                         <li>• <strong>Explain Blockchain</strong> and AI Fraud detection</li>
+                     </ul>
+                 </div>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

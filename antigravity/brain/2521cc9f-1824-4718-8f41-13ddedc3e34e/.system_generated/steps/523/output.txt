@@ -1,0 +1,23 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\login.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -440,7 +440,7 @@
+                 <div class="auth-brand-logo">🎓</div>
+                 <div>
+                     <span class="auth-brand-title">DevOps QVS</span>
+-                    <span class="auth-brand-subtitle">High-Integrity Academic Ledger</span>
++                    <span class="auth-brand-subtitle">Group 8 • MSU Master Students</span>
+                 </div>
+             </a>
+             <div class="auth-nav-links">
+@@ -457,7 +457,7 @@
+             <div class="auth-icon-badge">🎓</div>
+             <h1 class="auth-card-title">Authorized Portal Login</h1>
+             <p class="auth-card-subtitle">
+-                Sign in with your accredited Verifier, Institution Officer, or Administrator account.
++                Group 8 Academic & Professional Credential Verification System (MSU Master Students).
+             </p>
+ 
+             <!-- Access Gate Alert Banner (If redirected from unauthenticated page) -->
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

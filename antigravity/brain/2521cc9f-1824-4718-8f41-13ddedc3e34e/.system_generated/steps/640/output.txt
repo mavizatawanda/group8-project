@@ -1,0 +1,8 @@
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\README.md"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\docs\\VIVA_DEMO_SCRIPT.md"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\test\\java\\com\\devops\\qvs\\controller\\VerificationControllerIntegrationTest.java"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\test\\java\\com\\devops\\qvs\\service\\BlockchainLedgerServiceTest.java"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\resources\\templates\\dashboard.html"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\test\\java\\com\\devops\\qvs\\service\\AiFraudDetectionServiceTest.java"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\java\\com\\devops\\qvs\\service\\AiFraudDetectionService.java"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\java\\com\\devops\\qvs\\config\\DataInitializer.java"}

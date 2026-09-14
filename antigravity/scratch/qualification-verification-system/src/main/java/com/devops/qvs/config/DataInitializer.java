@@ -62,21 +62,21 @@ public class DataInitializer implements CommandLineRunner {
         if (institutionRepository.count() == 0) {
             logger.info("Initializing Comprehensive DevOps Qualification Data & Zimbabwe State Universities Ledger...");
 
-            // 1. Core Users (Admin & Verifier)
+            // 1. Core Users (Admin: Maviza, Verifier: Moses - Group 8 Master Students, MSU)
             userRepository.save(User.builder()
                     .username("admin")
-                    .email("admin@qvs.internal")
+                    .email("maviza@msu.ac.zw")
                     .password(passwordEncoder.encode("Admin@12345"))
-                    .fullName("DevOps System Administrator")
+                    .fullName("Maviza (Group 8 Admin)")
                     .role(Role.ROLE_ADMIN)
                     .enabled(true)
                     .build());
 
             userRepository.save(User.builder()
                     .username("verifier")
-                    .email("verifier@trusted-partner.org")
+                    .email("moses@msu.ac.zw")
                     .password(passwordEncoder.encode("Verifier@12345"))
-                    .fullName("Accredited Verification Agent")
+                    .fullName("Moses (Group 8 Verifier)")
                     .role(Role.ROLE_VERIFIER)
                     .enabled(true)
                     .build());
@@ -111,52 +111,13 @@ public class DataInitializer implements CommandLineRunner {
 
         userRepository.save(User.builder()
                 .username("officer")
-                .email("officer@nit.edu")
+                .email("sandra@msu.ac.zw")
                 .password(passwordEncoder.encode("Officer@12345"))
-                .fullName("Academic Registrar Officer")
+                .fullName("Sandra (Group 8 IT Officer)")
                 .role(Role.ROLE_INSTITUTION)
                 .institution(inst1)
                 .enabled(true)
                 .build());
-
-        createSeedQualification(
-                "QVS-2024-BSC-8891",
-                "Sarah Jenkins",
-                "STU-990142",
-                "Bachelor of Science in Software Engineering",
-                "DevOps & Cloud Computing",
-                "First Class Honours",
-                LocalDate.of(2024, 7, 15),
-                inst1,
-                QualificationStatus.ACTIVE,
-                null
-        );
-
-        createSeedQualification(
-                "QVS-2023-MSC-4412",
-                "David Miller",
-                "STU-881230",
-                "Master of Science in Cybersecurity",
-                "Information Security & Cryptography",
-                "Distinction",
-                LocalDate.of(2023, 11, 20),
-                inst1,
-                QualificationStatus.ACTIVE,
-                null
-        );
-
-        createSeedQualification(
-                "QVS-2022-DIP-1109",
-                "Marcus Vance",
-                "STU-772911",
-                "Diploma in Enterprise Systems Administration",
-                "Infrastructure Management",
-                "Upper Second Class",
-                LocalDate.of(2022, 6, 30),
-                inst2,
-                QualificationStatus.REVOKED,
-                "Issued in error - Academic misconduct disciplinary ruling"
-        );
     }
 
     private void seedZimbabweStateUniversities() {
@@ -169,9 +130,20 @@ public class DataInitializer implements CommandLineRunner {
                 "ZOU-004",
                 "registry@zou.ac.zw",
                 "https://www.zou.ac.zw",
-                "officer_zou",
-                "ZOU Academic Registrar Officer"
+                "it_manager",
+                "Takura (Group 8 IT Manager)"
         );
+
+        // Also alias officer_zou to Takura for backward compatibility
+        userRepository.save(User.builder()
+                .username("officer_zou")
+                .email("takura@zou.ac.zw")
+                .password(passwordEncoder.encode("Officer@12345"))
+                .fullName("Takura (Group 8 IT Manager)")
+                .role(Role.ROLE_INSTITUTION)
+                .institution(zou)
+                .enabled(true)
+                .build());
 
         List<SeedRecord> zouRecords = List.of(
                 // IT Degrees: format ITM 190020 etc.
@@ -206,7 +178,8 @@ public class DataInitializer implements CommandLineRunner {
                         "Merit", LocalDate.of(2022, 11, 25), QualificationStatus.ACTIVE, null),
                 new SeedRecord("ZOU-2021-PGDE-EH210005", "Patience Mutungwazi", "EH210005",
                         "Postgraduate Diploma in Education (ICT in Education)", "Instructional Media & E-Learning",
-                        "Pass", LocalDate.of(2021, 11, 26), QualificationStatus.ACTIVE, null)
+                        "Pass", LocalDate.of(2021, 11, 26), QualificationStatus.REVOKED,
+                        "Issued in error - Academic misconduct disciplinary committee finding")
         );
         batchSaveQualifications(zou, zouRecords);
 

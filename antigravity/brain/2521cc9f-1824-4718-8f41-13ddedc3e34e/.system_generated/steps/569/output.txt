@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+User: admin | Name: Maviza (Group 8 Admin) | Role: ROLE_ADMIN | Token: OK
+User: officer_zou | Name: Takura (Group 8 Manager) | Role: ROLE_INSTITUTION | Token: OK
+User: verifier | Name: Moses (Group 8 Verifier) | Role: ROLE_VERIFIER | Token: OK
+User: officer | Name: Sandra (Group 8 IT Officer) | Role: ROLE_INSTITUTION | Token: OK
+

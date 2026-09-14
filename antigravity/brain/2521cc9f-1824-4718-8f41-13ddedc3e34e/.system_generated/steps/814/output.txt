@@ -1,0 +1,11 @@
+
+The command exited with code 1.
+Output:
+At line:1 char:223
++ ... tigravity\scratch\tools\apache-maven-3.9.6\bin;$env:PATH\"; mvn test"
++                                                             ~~~~~~~~~~~~~
+Unexpected token '\"; mvn test"' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+ 
+

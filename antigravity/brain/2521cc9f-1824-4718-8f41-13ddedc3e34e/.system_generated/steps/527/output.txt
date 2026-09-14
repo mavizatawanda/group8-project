@@ -1,0 +1,23 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\index.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -13,7 +13,7 @@
+ 
+     <!-- Top Announcement Bar -->
+     <div class="top-announcement">
+-        <span>🛡️ <strong>DevOps-Enabled QVS</strong> • Immutable Blockchain Ledger • Agentic AI Fraud Shield • Multi-Cloud Ready</span>
++        <span>🛡️ <strong>Group 8 (MSU Master Students)</strong> • DevOps-Enabled QVS • Immutable Blockchain Ledger • Agentic AI Fraud Shield</span>
+     </div>
+ 
+     <!-- Main Navigation -->
+@@ -22,7 +22,7 @@
+                 <div class="brand-logo">🎓</div>
+                 <div class="brand-text">
+                     <span class="brand-title">DevOps QVS</span>
+-                    <span class="brand-subtitle">GROUP 8 PROJECT</span>
++                    <span class="brand-subtitle">GROUP 8 • MSU MASTER STUDENTS</span>
+                 </div>
+             </a>
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

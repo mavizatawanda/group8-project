@@ -1,0 +1,16 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AiFraudDetectionService.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -204,8 +204,8 @@
+                         + "• **Admin (Maviza)**:\n"
+                         + "  - Username: `admin` | Password: `Admin@12345`\n"
+                         + "  - *Master authority: revoking certificates, viewing audit logs & server telemetry.*\n\n"
+-                        + "• **Manager (Takura)**:\n"
+-                        + "  - Username: `officer_zou` | Password: `Officer@12345`\n"
++                        + "• **IT Manager (Takura)**:\n"
++                        + "  - Username: `it_manager` | Password: `Officer@12345`\n"
+                         + "  - *Degree issuance and institutional registry management.*\n\n"
+                         + "• **Verifier (Moses)**:\n"
+                         + "  - Username: `verifier` | Password: `Verifier@12345`\n"
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -18,7 +18,7 @@
                 <div class="brand-logo">🎓</div>
                 <div class="brand-text">
                     <span class="brand-title">DevOps QVS</span>
-                    <span class="brand-subtitle">Institution Portal</span>
+                    <span class="brand-subtitle">Group 8 • MSU Master Students</span>
                 </div>
             </a>
 
@@ -94,7 +94,7 @@
                     <div class="input-group">
                         <div class="input-wrapper" style="flex: 1;">
                             <span class="input-icon-left">🔍</span>
-                            <input type="text" id="verificationInput" class="input-control has-icon-left" placeholder="Enter Certificate ID, Student ID, or SHA-256 Hash (e.g. QVS-2024-BSC-8891, ITM 190020)" autofocus>
+                            <input type="text" id="verificationInput" class="input-control has-icon-left" placeholder="Enter Certificate ID, Student ID, or SHA-256 Hash (e.g. UZ-2024-BSC-3112, ITM 190020, EH250001)" autofocus>
                         </div>
                         <button class="btn-primary btn-search" onclick="verifyCredential()">
                             <span>Verify Authenticity</span> ➔
@@ -113,17 +113,17 @@
                         <button class="chip-btn chip-success" onclick="verifyCredential('UZ-2024-BSC-3112')">
                             ✓ UZ: Tendai Moyo (BSc CompSci)
                         </button>
+                        <button class="chip-btn chip-success" onclick="verifyCredential('MSU-2024-IS-2133')">
+                            ✓ MSU: Tafadzwa Chigumba (BSc InfoSystems)
+                        </button>
                         <button class="chip-btn chip-success" onclick="verifyCredential('NUST-2025-CSC-4321')">
                             ✓ NUST: Sibusiso Nyathi (BSc CompSci)
                         </button>
                         <button class="chip-btn chip-success" onclick="verifyCredential('HIT-2024-BSE-0234')">
                             ✓ HIT: Craig Mupanduki (BTech SE)
                         </button>
-                        <button class="chip-btn chip-success" onclick="verifyCredential('QVS-2024-BSC-8891')">
-                            ✓ Sarah Jenkins (BSc)
-                        </button>
-                        <button class="chip-btn chip-danger" onclick="verifyCredential('QVS-2022-DIP-1109')">
-                            ⚠ Marcus Vance (Revoked)
+                        <button class="chip-btn chip-danger" onclick="verifyCredential('ZOU-2021-PGDE-EH210005')">
+                            ⚠ ZOU: Patience Mutungwazi (Revoked)
                         </button>
                         <button class="chip-btn chip-neutral" onclick="verifyCredential('FAKE-INVALID-999')">
                             ✕ Fake Certificate
@@ -343,7 +343,7 @@
                 <div class="input-group" style="max-width: 720px; margin-bottom: 1.5rem;">
                     <div class="input-wrapper" style="flex: 1;">
                         <span class="input-icon-left">🤖</span>
-                        <input type="text" id="aiScanInput" class="input-control has-icon-left font-mono" placeholder="Enter Certificate Serial Number (e.g. QVS-2024-BSC-8891, ZOU-2023-ITM-190020)">
+                        <input type="text" id="aiScanInput" class="input-control has-icon-left font-mono" placeholder="Enter Certificate Serial Number (e.g. UZ-2024-BSC-3112, ZOU-2023-ITM-190020)">
                     </div>
                     <button class="btn-primary" onclick="runAiScan()" style="height: 52px; white-space: nowrap;">
                         <span>Run AI Fraud Scan</span> ➔

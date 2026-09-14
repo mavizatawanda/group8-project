@@ -55,9 +55,9 @@ class QualificationControllerIntegrationTest {
     @Test
     @DisplayName("Should search qualifications by keyword")
     void testSearchQualifications() throws Exception {
-        mockMvc.perform(get("/api/v1/qualifications/search?q=Jenkins"))
+        mockMvc.perform(get("/api/v1/qualifications/search?q=Moyo"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].studentFullName").value("Sarah Jenkins"));
+                .andExpect(jsonPath("$[0].studentFullName").value("Tendai Moyo"));
     }
 
     @Test

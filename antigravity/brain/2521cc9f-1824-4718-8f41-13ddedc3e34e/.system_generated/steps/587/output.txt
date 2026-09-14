@@ -1,0 +1,26 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\login.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -543,13 +543,13 @@
+                         <div class="demo-card-desc">Master Access: Revoke, Registry & Telemetry</div>
+                     </div>
+ 
+-                    <!-- Manager: Takura -->
+-                    <div class="demo-card" id="cardZou" onclick="fillCredentials('officer_zou', 'Officer@12345', this)">
+-                        <div class="demo-card-top">
+-                            <span class="demo-card-title">🏛️ Manager (Takura)</span>
+-                            <span class="demo-tag demo-tag-zou">officer_zou</span>
+-                        </div>
+-                        <div class="demo-card-desc">Degree Issuance & Registry Manager</div>
++                    <!-- IT Manager: Takura -->
++                    <div class="demo-card" id="cardManager" onclick="fillCredentials('it_manager', 'Officer@12345', this)">
++                        <div class="demo-card-top">
++                            <span class="demo-card-title">🏛️ IT Manager (Takura)</span>
++                            <span class="demo-tag demo-tag-manager">it_manager</span>
++                        </div>
++                        <div class="demo-card-desc">Degree Issuance & Registry IT Manager</div>
+                     </div>
+ 
+                     <!-- Verifier: Moses -->
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

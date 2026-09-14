@@ -1,0 +1,40 @@
+
+The command exited with code 0.
+Output:
+warning: in the working copy of 'antigravity/bin/agentapi.bat', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/brain/2521cc9f-1824-4718-8f41-13ddedc3e34e/.system_generated/logs/chunks/transcript/00000006.jsonl', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/brain/2521cc9f-1824-4718-8f41-13ddedc3e34e/.system_generated/logs/chunks/transcript_full/00000008.jsonl', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/brain/2521cc9f-1824-4718-8f41-13ddedc3e34e/.system_generated/logs/transcript.jsonl', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/brain/2521cc9f-1824-4718-8f41-13ddedc3e34e/.system_generated/logs/transcript_full.jsonl', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/scratch/qualification-verification-system/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/scratch/qualification-verification-system/docs/VIVA_DEMO_SCRIPT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/scratch/qualification-verification-system/run-app.bat', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/scratch/qualification-verification-system/src/main/java/com/devops/qvs/config/DataInitializer.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/scratch/qualification-verification-system/src/main/java/com/devops/qvs/service/AiFraudDetectionService.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/scratch/qualification-verification-system/src/main/resources/templates/audit.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/scratch/qualification-verification-system/src/main/resources/templates/dashboard.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/scratch/qualification-verification-system/src/main/resources/templates/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/scratch/qualification-verification-system/src/main/resources/templates/login.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/scratch/qualification-verification-system/src/test/java/com/devops/qvs/controller/QualificationControllerIntegrationTest.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'antigravity/scratch/qualification-verification-system/src/test/java/com/devops/qvs/controller/VerificationControllerIntegrationTest.java', LF will be replaced by CRLF the next time Git touches it
+antigravity/agyhub_summaries_proto.pb
+antigravity/annotations/2521cc9f-1824-4718-8f41-13ddedc3e34e.pbtxt
+antigravity/brain/2521cc9f-1824-4718-8f41-13ddedc3e34e/.system_generated/logs/chunks/transcript/00000006.jsonl
+antigravity/brain/2521cc9f-1824-4718-8f41-13ddedc3e34e/.system_generated/logs/chunks/transcript_full/00000008.jsonl
+antigravity/brain/2521cc9f-1824-4718-8f41-13ddedc3e34e/.system_generated/logs/transcript.jsonl
+antigravity/brain/2521cc9f-1824-4718-8f41-13ddedc3e34e/.system_generated/logs/transcript_full.jsonl
+antigravity/brain/2521cc9f-1824-4718-8f41-13ddedc3e34e/.system_generated/messages/read.json
+antigravity/conversations/2521cc9f-1824-4718-8f41-13ddedc3e34e.db
+antigravity/crashes/crash_13204_8d1a21e6-c869-48c2-9fc4-c8c3ddb71b88.log
+antigravity/scratch/qualification-verification-system/README.md
+antigravity/scratch/qualification-verification-system/docs/VIVA_DEMO_SCRIPT.md
+antigravity/scratch/qualification-verification-system/run-app.bat
+antigravity/scratch/qualification-verification-system/src/main/java/com/devops/qvs/config/DataInitializer.java
+antigravity/scratch/qualification-verification-system/src/main/java/com/devops/qvs/service/AiFraudDetectionService.java
+antigravity/scratch/qualification-verification-system/src/main/resources/templates/audit.html
+antigravity/scratch/qualification-verification-system/src/main/resources/templates/dashboard.html
+antigravity/scratch/qualification-verification-system/src/main/resources/templates/index.html
+antigravity/scratch/qualification-verification-system/src/main/resources/templates/login.html
+antigravity/scratch/qualification-verification-system/src/test/java/com/devops/qvs/controller/QualificationControllerIntegrationTest.java
+antigravity/scratch/qualification-verification-system/src/test/java/com/devops/qvs/controller/VerificationControllerIntegrationTest.java
+

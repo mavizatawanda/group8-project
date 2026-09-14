@@ -1,0 +1,15 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\run-app.bat. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -14,6 +14,9 @@
+     echo [WARNING] Java not found in PATH or ..\tools\. Please install Java 17+ or ensure JAVA_HOME is set.
+ )
+ 
++echo Checking if port 8080 is currently occupied...
++powershell -NoProfile -Command "$pids = (Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue).OwningProcess | Select-Object -Unique; foreach ($p in $pids) { if ($p -and $p -ne 0) { Write-Host 'Freeing port 8080 (Process ID: '$p')...'; Stop-Process -Id $p -Force -ErrorAction SilentlyContinue } }" 2>nul
++
+ echo.
+ echo Launching Spring Boot server on http://localhost:8080 ...
+ echo Press Ctrl+C to stop the server.
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

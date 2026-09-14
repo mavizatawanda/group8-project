@@ -1,0 +1,8 @@
+Task: 2521cc9f-1824-4718-8f41-13ddedc3e34e/task-560
+Status: RUNNING
+Log: C:\Users\Madziva\.gemini\antigravity\brain\2521cc9f-1824-4718-8f41-13ddedc3e34e\.system_generated\tasks\task-560.log
+Log output:
+<truncated 37 lines>
+urityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5316255e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15da3ce9, org.springframework.security.web.context.SecurityContextHolderFilter@4041b733, org.springframework.security.web.header.HeaderWriterFilter@11def039, org.springframework.security.web.authentication.logout.LogoutFilter@e71bd92, com.devops.qvs.config.JwtAuthenticationFilter@661d49d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a29c848, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49b7eb3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6513fd22, org.springframework.security.web.session.SessionManagementFilter@6618b9b0, org.springframework.security.web.access.ExceptionTranslationFilter@7a8c01ef, org.springframework.security.web.access.intercept.AuthorizationFilter@2cdb1581]
+
+Last progress: 0s ago

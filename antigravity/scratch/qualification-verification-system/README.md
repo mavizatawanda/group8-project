@@ -98,22 +98,26 @@ mvn checkstyle:check
 
 ---
 
-## 📊 Pre-Seeded Demo Accounts & Records
+## 📊 Group 8 Demo Accounts & Records (MSU Master Students)
 
 The system automatically initializes test accounts and sample certificates on launch:
 
-### Demo User Accounts:
-| Role | Username | Password | Purpose |
-| :--- | :--- | :--- | :--- |
-| **System Admin** | `admin` | `Admin@12345` | Revoke credentials, manage system |
-| **Registrar Officer** | `officer` | `Officer@12345` | Issue & register new qualifications |
+### Group 8 Demo User Accounts:
+| Role / Designation | Member Name | Username | Password | Purpose |
+| :--- | :--- | :--- | :--- | :--- |
+| **System Admin** | **Maviza** | `admin` | `Admin@12345` | Full control, revoking credentials, audit logs & telemetry |
+| **IT Manager** | **Takura** | `it_manager` (or `officer_zou`) | `Officer@12345` | Degree issuance & registry management |
+| **Accredited Verifier** | **Moses** | `verifier` | `Verifier@12345` | Verification console, blockchain proof & AI fraud scan |
+| **IT Officer** | **Sandra** | `officer` | `Officer@12345` | Accredited registrar & IT operations |
 
-### Pre-Seeded Sample Qualifications:
+### Pre-Seeded Sample Qualifications (Zimbabwe State Universities):
 | Certificate Number | Graduate Name | Award Title | Status |
 | :--- | :--- | :--- | :--- |
-| `QVS-2024-BSC-8891` | Sarah Jenkins | BSc in Software Engineering | **ACTIVE (Genuine)** |
-| `QVS-2023-MSC-4412` | David Miller | MSc in Cybersecurity | **ACTIVE (Genuine)** |
-| `QVS-2022-DIP-1109` | Marcus Vance | Diploma in Enterprise Systems | **REVOKED (Disciplinary)** |
+| `UZ-2024-BSC-3112` | Tendai Moyo | BSc Honours in Computer Science (UZ) | **ACTIVE (Genuine)** |
+| `ZOU-2023-ITM-190020` | Itai Muringani | BSc Honours in Information Technology (ZOU) | **ACTIVE (Genuine)** |
+| `ZOU-2025-PGDE-EH250001` | Sekai Mataranyika | Postgraduate Diploma in Education (ZOU) | **ACTIVE (Genuine)** |
+| `MSU-2024-IS-2133` | Tafadzwa Chigumba | BSc Honours in Information Systems (MSU) | **ACTIVE (Genuine)** |
+| `ZOU-2021-PGDE-EH210005` | Patience Mutungwazi | Postgraduate Diploma in Education (ZOU) | **REVOKED (Disciplinary)** |
 
 ---
 

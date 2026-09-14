@@ -1,0 +1,5 @@
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\README.md","LineNumber":118,"LineContent":"| `QVS-2022-DIP-1109` | Marcus Vance | Diploma in Enterprise Systems | **REVOKED (Disciplinary)** |"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\docs\\VIVA_DEMO_SCRIPT.md","LineNumber":57,"LineContent":"  - Enter certificate `QVS-2022-DIP-1109` (Marcus Vance)."}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\resources\\templates\\dashboard.html","LineNumber":126,"LineContent":"                            ⚠ Marcus Vance (Revoked)"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\java\\com\\devops\\qvs\\config\\DataInitializer.java","LineNumber":150,"LineContent":"                \"Marcus Vance\","}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\test\\java\\com\\devops\\qvs\\service\\AiFraudDetectionServiceTest.java","LineNumber":71,"LineContent":"                .studentFullName(\"Marcus Vance\")"}

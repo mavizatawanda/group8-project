@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\README.md. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -106,7 +106,7 @@
+ | Role / Designation | Member Name | Username | Password | Purpose |
+ | :--- | :--- | :--- | :--- | :--- |
+ | **System Admin** | **Maviza** | `admin` | `Admin@12345` | Full control, revoking credentials, audit logs & telemetry |
+-| **Manager** | **Takura** | `officer_zou` | `Officer@12345` | Degree issuance & registry management |
++| **IT Manager** | **Takura** | `it_manager` (or `officer_zou`) | `Officer@12345` | Degree issuance & registry management |
+ | **Accredited Verifier** | **Moses** | `verifier` | `Verifier@12345` | Verification console, blockchain proof & AI fraud scan |
+ | **IT Officer** | **Sandra** | `officer` | `Officer@12345` | Accredited registrar & IT operations |
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

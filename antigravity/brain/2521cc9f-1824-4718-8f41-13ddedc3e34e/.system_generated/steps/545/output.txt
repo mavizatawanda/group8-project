@@ -1,0 +1,29 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\README.md. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -98,15 +98,17 @@
+ 
+ ---
+ 
+-## 📊 Pre-Seeded Demo Accounts & Records
++## 📊 Group 8 Demo Accounts & Records (MSU Master Students)
+ 
+ The system automatically initializes test accounts and sample certificates on launch:
+ 
+-### Demo User Accounts:
+-| Role | Username | Password | Purpose |
+-| :--- | :--- | :--- | :--- |
+-| **System Admin** | `admin` | `Admin@12345` | Revoke credentials, manage system |
+-| **Registrar Officer** | `officer` | `Officer@12345` | Issue & register new qualifications |
++### Group 8 Demo User Accounts:
++| Role / Designation | Member Name | Username | Password | Purpose |
++| :--- | :--- | :--- | :--- | :--- |
++| **System Admin** | **Maviza** | `admin` | `Admin@12345` | Full control, revoking credentials, audit logs & telemetry |
++| **Manager** | **Takura** | `officer_zou` | `Officer@12345` | Degree issuance & registry management |
++| **Accredited Verifier** | **Moses** | `verifier` | `Verifier@12345` | Verification console, blockchain proof & AI fraud scan |
++| **IT Officer** | **Sandra** | `officer` | `Officer@12345` | Accredited registrar & IT operations |
+ 
+ ### Pre-Seeded Sample Qualifications:
+ | Certificate Number | Graduate Name | Award Title | Status |
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

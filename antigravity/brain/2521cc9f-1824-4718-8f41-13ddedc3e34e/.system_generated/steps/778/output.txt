@@ -1,0 +1,18 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\test\java\com\devops\qvs\controller\QualificationControllerIntegrationTest.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -55,9 +55,9 @@
+     @Test
+     @DisplayName("Should search qualifications by keyword")
+     void testSearchQualifications() throws Exception {
+-        mockMvc.perform(get("/api/v1/qualifications/search?q=Jenkins"))
+-                .andExpect(status().isOk())
+-                .andExpect(jsonPath("$[0].studentFullName").value("Sarah Jenkins"));
++        mockMvc.perform(get("/api/v1/qualifications/search?q=Moyo"))
++                .andExpect(status().isOk())
++                .andExpect(jsonPath("$[0].studentFullName").value("Tendai Moyo"));
+     }
+ 
+     @Test
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

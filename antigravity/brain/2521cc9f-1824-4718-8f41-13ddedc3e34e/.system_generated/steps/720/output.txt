@@ -1,0 +1,2 @@
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\README.md","LineNumber":117,"LineContent":"| `QVS-2023-MSC-4412` | David Miller | MSc in Cybersecurity | **ACTIVE (Genuine)** |"}
+{"File":"C:\\Users\\Madziva\\.gemini\\antigravity\\scratch\\qualification-verification-system\\src\\main\\java\\com\\devops\\qvs\\config\\DataInitializer.java","LineNumber":137,"LineContent":"                \"David Miller\","}

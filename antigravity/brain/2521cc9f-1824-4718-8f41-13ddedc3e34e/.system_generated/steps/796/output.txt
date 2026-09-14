@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AiFraudDetectionService.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -243,7 +243,7 @@
+         if (msg.contains("how") && (msg.contains("verify") || msg.contains("check") || msg.contains("lookup"))) {
+             return AiChatResponse.builder()
+                     .reply("💡 **How to Verify a Certificate**:\n\n"
+-                            + "1. **Public Portal**: Go to the homepage **[http://localhost:8080/](/)**, enter any Certificate Number (e.g. `QVS-2024-BSC-8891`) or Student ID (e.g. `EH250001`, `ITM 190020`), and click **Verify Now**.\n"
++                            + "1. **Public Portal**: Go to the homepage **[http://localhost:8080/](/)**, enter any Certificate Number (e.g. `UZ-2024-BSC-3112`) or Student ID (e.g. `EH250001`, `ITM 190020`), and click **Verify Now**.\n"
+                             + "2. **Dashboard Console**: Log in to **[http://localhost:8080/dashboard](/dashboard)**, navigate to **'Verify Credential'**, and test by certificate, student ID, or SHA-256 hash.\n"
+                             + "3. **Inspect Output**: View real-time status (Genuine or Revoked), institutional accreditation, blockchain proof block, and AI Fraud Score.")
+                     .intent("HOW_TO_VERIFY")
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

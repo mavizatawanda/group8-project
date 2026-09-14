@@ -1,0 +1,51 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\DataInitializer.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -118,45 +118,6 @@
+                 .institution(inst1)
+                 .enabled(true)
+                 .build());
+-
+-        createSeedQualification(
+-                "QVS-2024-BSC-8891",
+-                "Sarah Jenkins",
+-                "STU-990142",
+-                "Bachelor of Science in Software Engineering",
+-                "DevOps & Cloud Computing",
+-                "First Class Honours",
+-                LocalDate.of(2024, 7, 15),
+-                inst1,
+-                QualificationStatus.ACTIVE,
+-                null
+-        );
+-
+-        createSeedQualification(
+-                "QVS-2023-MSC-4412",
+-                "David Miller",
+-                "STU-881230",
+-                "Master of Science in Cybersecurity",
+-                "Information Security & Cryptography",
+-                "Distinction",
+-                LocalDate.of(2023, 11, 20),
+-                inst1,
+-                QualificationStatus.ACTIVE,
+-                null
+-        );
+-
+-        createSeedQualification(
+-                "QVS-2022-DIP-1109",
+-                "Marcus Vance",
+-                "STU-772911",
+-                "Diploma in Enterprise Systems Administration",
+-                "Infrastructure Management",
+-                "Upper Second Class",
+-                LocalDate.of(2022, 6, 30),
+-                inst2,
+-                QualificationStatus.REVOKED,
+-                "Issued in error - Academic misconduct disciplinary ruling"
+-        );
+     }
+ 
+     private void seedZimbabweStateUniversities() {
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

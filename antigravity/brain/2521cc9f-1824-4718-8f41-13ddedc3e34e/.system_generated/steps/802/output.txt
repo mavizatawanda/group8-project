@@ -1,0 +1,14 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\service\AiFraudDetectionService.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -330,7 +330,7 @@
+                         + "• **How do I run the system?** → Commands for Maven, Docker Compose, and `run-app.bat`.\n"
+                         + "• **How do I log in?** → Demo credentials for Admin, University Officers, and Verifiers.\n"
+                         + "• **How to verify a certificate?** → Step-by-step verification guidelines.\n"
+-                        + "• **Check student records** → e.g., *'Check EH250001'*, *'Check ITM 190020'*, *'Check Sarah Jenkins'*.\n"
++                        + "• **Check student records** → e.g., *'Check EH250001'*, *'Check ITM 190020'*, *'Check Tendai Moyo'*.\n"
+                         + "• **How does the blockchain ledger work?** → SHA-256 blocks and cryptographic consensus.")
+                 .intent("GENERAL_ASSIST")
+                 .status("INFO")
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

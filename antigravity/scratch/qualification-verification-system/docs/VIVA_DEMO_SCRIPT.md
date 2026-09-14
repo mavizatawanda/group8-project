@@ -50,11 +50,11 @@
 ### Part 4: Live System Demonstration (8:00 - 12:30)
 - **Visuals:** Live Web Portal at `http://localhost:8080` & Swagger UI.
 - **Step 1: Public Verification of Authentic Credential**
-  - Enter certificate `QVS-2024-BSC-8891` (Sarah Jenkins).
+  - Enter certificate `UZ-2024-BSC-3112` (Tendai Moyo - University of Zimbabwe).
   - Click **Verify Authenticity**.
   - Show the **GENUINE & VALID** green badge and the matching SHA-256 cryptographic signature.
 - **Step 2: Verification of Revoked Credential**
-  - Enter certificate `QVS-2022-DIP-1109` (Marcus Vance).
+  - Enter certificate `ZOU-2021-PGDE-EH210005` (Patience Mutungwazi - Zimbabwe Open University).
   - Show the **REVOKED CREDENTIAL** red badge and display the disciplinary audit reason.
 - **Step 3: Tamper-Resistance Demonstration (Bonus Feature)**
   - Explain how modifying any student record attribute causes an immediate cryptographic hash mismatch, flagging the record as **TAMPERED / SUSPICIOUS**.

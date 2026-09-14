@@ -1,0 +1,32 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\DataInitializer.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -62,12 +62,12 @@
+         if (institutionRepository.count() == 0) {
+             logger.info("Initializing Comprehensive DevOps Qualification Data & Zimbabwe State Universities Ledger...");
+ 
+-            // 1. Core Users (Admin & Verifier)
++            // 1. Core Users (Admin: Maviza, Verifier: Moses - Group 8 Master Students, MSU)
+             userRepository.save(User.builder()
+                     .username("admin")
+-                    .email("admin@qvs.internal")
++                    .email("maviza@msu.ac.zw")
+                     .password(passwordEncoder.encode("Admin@12345"))
+-                    .fullName("DevOps System Administrator")
++                    .fullName("Maviza (Group 8 Admin)")
+                     .role(Role.ROLE_ADMIN)
+                     .enabled(true)
+                     .build());
+@@ -74,8 +74,8 @@
+             userRepository.save(User.builder()
+                     .username("verifier")
+-                    .email("verifier@trusted-partner.org")
++                    .email("moses@msu.ac.zw")
+                     .password(passwordEncoder.encode("Verifier@12345"))
+-                    .fullName("Accredited Verification Agent")
++                    .fullName("Moses (Group 8 Verifier)")
+                     .role(Role.ROLE_VERIFIER)
+                     .enabled(true)
+                     .build());
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

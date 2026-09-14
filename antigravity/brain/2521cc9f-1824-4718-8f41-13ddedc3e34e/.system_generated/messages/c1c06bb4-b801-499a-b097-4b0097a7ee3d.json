@@ -1,0 +1,1 @@
+{"id":"c1c06bb4-b801-499a-b097-4b0097a7ee3d","recipient":"2521cc9f-1824-4718-8f41-13ddedc3e34e","sender":"2521cc9f-1824-4718-8f41-13ddedc3e34e/task-820","priority":"MESSAGE_PRIORITY_HIGH","timestamp":"2026-09-14T05:07:19.351930400Z","renderDetails":{"messageTitle":"Wait for mvn test to complete: Timer has expired"},"content":"Check maven test task status"}

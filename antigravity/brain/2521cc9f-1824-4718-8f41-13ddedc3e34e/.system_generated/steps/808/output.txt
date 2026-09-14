@@ -1,0 +1,24 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\README.md. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -110,12 +110,14 @@
+ | **Accredited Verifier** | **Moses** | `verifier` | `Verifier@12345` | Verification console, blockchain proof & AI fraud scan |
+ | **IT Officer** | **Sandra** | `officer` | `Officer@12345` | Accredited registrar & IT operations |
+ 
+-### Pre-Seeded Sample Qualifications:
++### Pre-Seeded Sample Qualifications (Zimbabwe State Universities):
+ | Certificate Number | Graduate Name | Award Title | Status |
+ | :--- | :--- | :--- | :--- |
+-| `QVS-2024-BSC-8891` | Sarah Jenkins | BSc in Software Engineering | **ACTIVE (Genuine)** |
+-| `QVS-2023-MSC-4412` | David Miller | MSc in Cybersecurity | **ACTIVE (Genuine)** |
+-| `QVS-2022-DIP-1109` | Marcus Vance | Diploma in Enterprise Systems | **REVOKED (Disciplinary)** |
++| `UZ-2024-BSC-3112` | Tendai Moyo | BSc Honours in Computer Science (UZ) | **ACTIVE (Genuine)** |
++| `ZOU-2023-ITM-190020` | Itai Muringani | BSc Honours in Information Technology (ZOU) | **ACTIVE (Genuine)** |
++| `ZOU-2025-PGDE-EH250001` | Sekai Mataranyika | Postgraduate Diploma in Education (ZOU) | **ACTIVE (Genuine)** |
++| `MSU-2024-IS-2133` | Tafadzwa Chigumba | BSc Honours in Information Systems (MSU) | **ACTIVE (Genuine)** |
++| `ZOU-2021-PGDE-EH210005` | Patience Mutungwazi | Postgraduate Diploma in Education (ZOU) | **REVOKED (Disciplinary)** |
+ 
+ ---
+ 
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

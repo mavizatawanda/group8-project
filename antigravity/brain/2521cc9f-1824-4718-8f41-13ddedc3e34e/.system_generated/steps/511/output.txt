@@ -1,0 +1,18 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\java\com\devops\qvs\config\DataInitializer.java. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -111,9 +111,9 @@
+ 
+         userRepository.save(User.builder()
+                 .username("officer")
+-                .email("officer@nit.edu")
+-                .password(passwordEncoder.encode("Officer@12345"))
+-                .fullName("Academic Registrar Officer")
++                .email("sandra@msu.ac.zw")
++                .password(passwordEncoder.encode("Officer@12345"))
++                .fullName("Sandra (Group 8 IT Officer)")
+                 .role(Role.ROLE_INSTITUTION)
+                 .institution(inst1)
+                 .enabled(true)
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

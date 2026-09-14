@@ -1,0 +1,6 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-09-14T07:08:25+02:00
+Prompt: Check package task completion
+Early Termination: 2521cc9f-1824-4718-8f41-13ddedc3e34e/task-829
+
+[2026-09-14T07:08:10+02:00] Timer cancelled: early-termination condition (2521cc9f-1824-4718-8f41-13ddedc3e34e/task-829) met by a message from 2521cc9f-1824-4718-8f41-13ddedc3e34e/task-829.

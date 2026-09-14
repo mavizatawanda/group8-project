@@ -1,0 +1,64 @@
+The following changes were made by the replace_file_content tool to: C:\Users\Madziva\.gemini\antigravity\scratch\qualification-verification-system\src\main\resources\templates\login.html. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -529,7 +529,7 @@
+             <!-- Quick Demo Accounts Grid -->
+             <div class="demo-panel">
+                 <div class="demo-panel-header">
+-                    <span>⚡ Demo Accounts Matrix</span>
++                    <span>⚡ Group 8 Demo Accounts Matrix</span>
+                     <span style="font-size: 0.75rem; color: #64748b; font-weight: normal;">(Click card to auto-fill)</span>
+                 </div>
+ 
+@@ -536,7 +536,7 @@
+-                    <!-- Admin -->
++                    <!-- Admin: Maviza -->
+                     <div class="demo-card" id="cardAdmin" onclick="fillCredentials('admin', 'Admin@12345', this)">
+                         <div class="demo-card-top">
+-                            <span class="demo-card-title">🛡️ Admin</span>
++                            <span class="demo-card-title">🛡️ Admin (Maviza)</span>
+                             <span class="demo-tag demo-tag-admin">admin</span>
+                         </div>
+                         <div class="demo-card-desc">Master Access: Revoke, Registry & Telemetry</div>
+@@ -543,17 +543,17 @@
+ 
+-                    <!-- ZOU Officer -->
++                    <!-- Manager: Takura -->
+                     <div class="demo-card" id="cardZou" onclick="fillCredentials('officer_zou', 'Officer@12345', this)">
+                         <div class="demo-card-top">
+-                            <span class="demo-card-title">🏛️ ZOU Officer</span>
++                            <span class="demo-card-title">🏛️ Manager (Takura)</span>
+                             <span class="demo-tag demo-tag-zou">officer_zou</span>
+                         </div>
+-                        <div class="demo-card-desc">Issue ZOU Degrees & Registry Manager</div>
+-                    </div>
+-
+-                    <!-- Verifier -->
++                        <div class="demo-card-desc">Degree Issuance & Registry Manager</div>
++                    </div>
++
++                    <!-- Verifier: Moses -->
+                     <div class="demo-card" id="cardVerifier" onclick="fillCredentials('verifier', 'Verifier@12345', this)">
+                         <div class="demo-card-top">
+-                            <span class="demo-card-title">🔍 Verifier</span>
++                            <span class="demo-card-title">🔍 Verifier (Moses)</span>
+                             <span class="demo-tag demo-tag-verifier">verifier</span>
+                         </div>
+                         <div class="demo-card-desc">Verify Credentials & AI Scanner</div>
+@@ -560,11 +560,11 @@
+ 
+-                    <!-- NIT Officer -->
++                    <!-- IT Officer: Sandra -->
+                     <div class="demo-card" id="cardNit" onclick="fillCredentials('officer', 'Officer@12345', this)">
+                         <div class="demo-card-top">
+-                            <span class="demo-card-title">🏛️ NIT Officer</span>
++                            <span class="demo-card-title">💻 IT Officer (Sandra)</span>
+                             <span class="demo-tag demo-tag-nit">officer</span>
+                         </div>
+-                        <div class="demo-card-desc">Accredited Registrar Officer</div>
++                        <div class="demo-card-desc">Accredited Registrar & IT Operations</div>
+                     </div>
+                 </div>
+             </div>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

@@ -1,0 +1,12 @@
+Task: 2521cc9f-1824-4718-8f41-13ddedc3e34e/task-611
+Status: RUNNING
+Log: C:\Users\Madziva\.gemini\antigravity\brain\2521cc9f-1824-4718-8f41-13ddedc3e34e\.system_generated\tasks\task-611.log
+Log output:
+<truncated 31 lines>
+ll be used.
+2026-09-14T06:36:57.769+02:00  INFO 17428 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Initializing Blockchain Genesis Block for Qualification Verification System...
+2026-09-14T06:36:57.843+02:00  INFO 17428 --- [qualification-verification-system] [           main] c.d.qvs.service.BlockchainLedgerService  : Genesis block successfully forged. Block Hash: 2b7ecbaf864a2eb74e1e640d21d87af3a93695ab43be7182652043e9a06db963
+2026-09-14T06:36:58.376+02:00  WARN 17428 --- [qualification-verification-system] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-14T06:36:58.587+02:00  INFO 17428 --- [qualification-verification-system] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+
+Last progress: 0s ago

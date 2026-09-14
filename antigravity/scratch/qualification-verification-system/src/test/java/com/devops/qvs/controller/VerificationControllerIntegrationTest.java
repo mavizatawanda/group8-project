@@ -30,7 +30,7 @@ class VerificationControllerIntegrationTest {
     @DisplayName("Should verify active seeded qualification via POST")
     void testVerifyActiveQualificationPost() throws Exception {
         VerificationRequest request = VerificationRequest.builder()
-                .query("QVS-2024-BSC-8891")
+                .query("UZ-2024-BSC-3112")
                 .verifierName("Employer Recruiter")
                 .build();
 
@@ -41,24 +41,24 @@ class VerificationControllerIntegrationTest {
                 .andExpect(jsonPath("$.verificationStatus").value("GENUINE_AND_VALID"))
                 .andExpect(jsonPath("$.valid").value(true))
                 .andExpect(jsonPath("$.tamperProofCheckPassed").value(true))
-                .andExpect(jsonPath("$.studentFullName").value("Sarah Jenkins"))
+                .andExpect(jsonPath("$.studentFullName").value("Tendai Moyo"))
                 .andExpect(jsonPath("$.auditLogId").isNotEmpty());
     }
 
     @Test
     @DisplayName("Should verify active qualification via GET endpoint")
     void testVerifyActiveQualificationGet() throws Exception {
-        mockMvc.perform(get("/api/v1/verify/QVS-2024-BSC-8891"))
+        mockMvc.perform(get("/api/v1/verify/UZ-2024-BSC-3112"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.verificationStatus").value("GENUINE_AND_VALID"))
-                .andExpect(jsonPath("$.studentFullName").value("Sarah Jenkins"));
+                .andExpect(jsonPath("$.studentFullName").value("Tendai Moyo"));
     }
 
     @Test
     @DisplayName("Should flag revoked qualification")
     void testVerifyRevokedQualification() throws Exception {
         VerificationRequest request = VerificationRequest.builder()
-                .query("QVS-2022-DIP-1109")
+                .query("ZOU-2021-PGDE-EH210005")
                 .build();
 
         mockMvc.perform(post("/api/v1/verify")

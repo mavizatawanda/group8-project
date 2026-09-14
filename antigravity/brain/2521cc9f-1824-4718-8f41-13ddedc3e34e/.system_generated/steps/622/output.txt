@@ -1,0 +1,20 @@
+
+The command exited with code 0.
+Output:
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName                                                  
+-------  ------    -----      -----     ------     --  -- -----------                                                  
+      0       0       60          8                 0   0 Idle                                                         
+    445      31   446724     403888      60.86  17428   6 java                                                         
+Stop-Process : Cannot stop process "Idle (0)" because of the following error: Access is denied
+At line:4 char:5
++     Stop-Process -Id $pids -Force
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (System.Diagnostics.Process (Idle):Process) [Stop-Process], ProcessCommandEx 
+   ception
+    + FullyQualifiedErrorId : CouldNotStopProcess,Microsoft.PowerShell.Commands.StopProcessCommand
+ 
+Stopped process(es) holding port 8080: 17428 0
+
+
+
